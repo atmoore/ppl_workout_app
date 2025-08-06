@@ -1,0 +1,869 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    max-width: 414px;
+    max-height: 896px;
+    margin: 0 auto;
+    background: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255,255,255,0.1);
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 8px;
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.status-icons {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+}
+
+/* Phase Dividers */
+.phase-divider {
+    background: linear-gradient(135deg, #B8860B, #DAA520);
+    color: #000;
+    padding: 15px 20px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.phase-divider h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.phase-description {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.deload-notice {
+    background: rgba(255, 165, 0, 0.1);
+    border: 1px solid rgba(255, 165, 0, 0.3);
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.deload-notice p {
+    font-size: 14px;
+    color: #FFA500;
+    text-align: center;
+    margin: 0;
+}
+
+/* Page Headers */
+.page-header {
+    padding: 20px 20px 10px;
+    background: #000;
+}
+
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.red-line {
+    height: 4px;
+    background: #007AFF;
+    border-radius: 2px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #e8e8e8;
+    font-size: 17px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Workouts Screen */
+.week-section {
+    padding: 0 20px 30px;
+}
+
+.week-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.workout-list {
+    padding: 0;
+}
+
+.workout-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.workout-item:hover {
+    background-color: #111;
+}
+
+.workout-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    background: #007AFF;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.workout-info {
+    flex: 1;
+}
+
+.workout-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.workout-info p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.4;
+}
+
+.share-btn {
+    background: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    background: #0056CC;
+}
+
+.info-btn {
+    background: none;
+    border: 2px solid #007AFF;
+    color: #007AFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #666;
+}
+
+.section-divider {
+    height: 1px;
+    background: #333;
+    margin: 10px 0;
+}
+
+/* Exercises Screen */
+.muscle-group-section {
+    padding: 0 20px;
+}
+
+.muscle-group-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.exercise-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.exercise-item.highlighted {
+    background: #007AFF;
+    color: white;
+    margin: 0 -20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.exercise-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    width: 40px;
+    text-align: center;
+}
+
+.exercise-info {
+    flex: 1;
+}
+
+.exercise-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.exercise-info p {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.3;
+}
+
+/* Progress Screen */
+.progress-list {
+    padding: 0 20px;
+}
+
+.progress-item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.progress-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Measurements Screen */
+.measurements-section {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.measurements-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.measurement-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.measurement-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+    color: #007AFF;
+    font-weight: bold;
+}
+
+.measurement-text {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.measurement-sub {
+    font-size: 14px;
+    color: #999;
+    margin-left: -100px;
+    margin-right: auto;
+}
+
+.measurement-value {
+    font-size: 17px;
+    color: #999;
+    margin-right: 10px;
+}
+
+/* Settings Screen */
+.settings-list {
+    padding: 0 20px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.setting-item.danger .setting-text {
+    color: #ff4444;
+}
+
+.setting-text {
+    font-size: 17px;
+    font-weight: 500;
+    flex: 1;
+    color: #fff;
+}
+
+.setting-value {
+    font-size: 17px;
+    color: #999;
+    margin-right: 10px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 414px;
+    background: #111;
+    border-top: 1px solid #333;
+    display: flex;
+    padding: 10px 0 30px;
+    z-index: 1000;
+}
+
+.nav-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    color: #666;
+    cursor: pointer;
+}
+
+.nav-btn.active {
+    color: #007AFF;
+}
+
+.nav-label {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Scrollbar Styling */
+.tab-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+.tab-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+/* Responsive - All Mobile Devices */
+@media (max-width: 480px) {
+    .app-container {
+        border-radius: 0;
+        max-width: 100%;
+        height: 100vh;
+    }
+    
+    .exercise-list {
+        padding: 0 8px 100px;
+    }
+    
+    .exercise-card {
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .sets-header {
+        grid-template-columns: 30px 1fr 55px 40px;
+        gap: 4px;
+        padding: 6px 2px;
+        font-size: 12px;
+    }
+    
+    .set-row {
+        grid-template-columns: 30px 1fr 55px 40px;
+        gap: 4px;
+        padding: 8px 2px;
+    }
+    
+    .set-row.completed {
+        padding: 8px 2px;
+    }
+    
+    .weight-input,
+    .reps-input {
+        padding: 4px 2px;
+        font-size: 12px;
+        min-height: 30px;
+        box-sizing: border-box;
+    }
+    
+    .set-complete {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .set-label {
+        font-size: 11px;
+    }
+}
+
+/* Extra Small Phones (iPhone SE, etc.) */
+@media (max-width: 375px) {
+    .exercise-list {
+        padding: 0 5px 100px;
+    }
+    
+    .exercise-card {
+        padding: 6px;
+    }
+    
+    .sets-header {
+        grid-template-columns: 28px 1fr 50px 35px;
+        gap: 3px;
+        padding: 5px 1px;
+        font-size: 11px;
+    }
+    
+    .set-row {
+        grid-template-columns: 28px 1fr 50px 35px;
+        gap: 3px;
+        padding: 6px 1px;
+    }
+    
+    .set-row.completed {
+        padding: 6px 1px;
+    }
+    
+    .weight-input,
+    .reps-input {
+        padding: 3px 1px;
+        font-size: 11px;
+        min-height: 28px;
+    }
+    
+    .set-complete {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .set-label {
+        font-size: 10px;
+    }
+}
+
+/* Animations */
+.tab-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tab-content.active {
+    opacity: 1;
+}
+
+.workout-item:active,
+.exercise-item:active,
+.progress-item-nav:active,
+.measurement-item:active,
+.setting-item:active {
+    background: #111;
+}
+
+/* Time Update */
+.time {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Active Workout Screen */
+.workout-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #007AFF;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.end-session-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.end-session-btn:hover {
+    background: #cc3333;
+}
+
+.workout-controls {
+    margin: 15px 0;
+}
+
+.primary-btn {
+    background: #007AFF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.timer {
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.exercise-list {
+    padding: 0 15px 100px;
+}
+
+.exercise-card {
+    background: #111;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 12px;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+    border: 1px solid #333;
+}
+
+.exercise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.exercise-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+}
+
+.exercise-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.detail-item .label {
+    font-weight: 500;
+    color: #999;
+}
+
+.detail-item .value {
+    font-weight: 600;
+    color: #fff;
+}
+
+.exercise-sets {
+    margin-top: 15px;
+}
+
+.sets-header {
+    display: grid;
+    grid-template-columns: 35px 1fr 60px 45px;
+    gap: 6px;
+    padding: 10px 3px;
+    border-bottom: 2px solid #333;
+    font-weight: 600;
+    color: #999;
+    font-size: 13px;
+}
+
+.set-row {
+    display: grid;
+    grid-template-columns: 35px 1fr 60px 45px;
+    gap: 6px;
+    padding: 10px 3px;
+    border-bottom: 1px solid #222;
+    align-items: center;
+}
+
+.set-row.warmup {
+    opacity: 0.7;
+}
+
+.set-row.completed {
+    background: #003300;
+    border-radius: 6px;
+    padding: 10px 3px;
+}
+
+.set-label {
+    font-weight: 600;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+}
+
+.weight-input,
+.reps-input {
+    padding: 5px 3px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 32px;
+}
+
+.weight-input:focus,
+.reps-input:focus {
+    outline: none;
+    border-color: #007AFF;
+}
+
+.set-complete {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+
+/* Chart Screens */
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.chart-header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+}
+
+.chart-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.chart-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #007AFF;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-selector {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.time-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.time-btn.active {
+    background: #007AFF;
+    color: white;
+}
+
+.chart-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 300px;
+}
+
+.no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: #666;
+    font-size: 18px;
+}
+
+.chart-timeline {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #999;
+}
+
+#progress-chart {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* Exercise and Measurement Progress Lists */
+.exercise-list-progress,
+.measurement-list-progress {
+    padding: 0 20px 100px;
+}
+
+.progress-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.progress-item:hover {
+    background: #111;
+}
+
+.progress-item-info {
+    flex: 1;
+}
+
+.progress-item-name {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.progress-item-stats {
+    font-size: 14px;
+    color: #999;
+}
