@@ -90,11 +90,16 @@ class PPLTracker {
             this.currentWorkout = workout;
             this.currentWorkoutType = workoutType;
             this.workoutStartTime = new Date(this.currentWorkoutSession.startTime);
+            this.currentWeek = this.currentWorkoutSession.week || 1; // Restore week context
             this.isWorkoutActive = true;
             
             // Switch to active workout
             this.switchTab('active-workout');
-            document.getElementById('workout-title').textContent = workout.name;
+            
+            // Update title with week context
+            const weekContext = this.currentWeek ? ` - Week ${this.currentWeek}` : '';
+            const phaseInfo = this.getPhaseInfoFromWeek(this.currentWeek);
+            document.getElementById('workout-title').textContent = `${workout.name}${weekContext}${phaseInfo}`;
             
             // Render exercises
             this.renderWorkoutExercises();
@@ -202,7 +207,7 @@ class PPLTracker {
                 const workoutItem = e.target.closest('.workout-item');
                 const workoutType = workoutItem.dataset.workout;
                 if (workoutType) {
-                    this.startWorkout(workoutType);
+                    this.showWeekSelectionModal(workoutType);
                 }
             }
             
@@ -291,8 +296,10 @@ class PPLTracker {
             // Switch to active workout tab
             this.switchTab('active-workout');
             
-            // Update title
-            document.getElementById('workout-title').textContent = workout.name;
+            // Update title with week context
+            const weekContext = this.currentWeek ? ` - Week ${this.currentWeek}` : '';
+            const phaseInfo = this.getPhaseInfoFromWeek(this.currentWeek);
+            document.getElementById('workout-title').textContent = `${workout.name}${weekContext}${phaseInfo}`;
             
             // Render exercises
             this.renderWorkoutExercises();
@@ -356,13 +363,7 @@ class PPLTracker {
                 <div class="exercise-header">
                     <div class="exercise-title-container">
                         <h3 class="exercise-title">${simplifiedName}</h3>
-                        <button class="info-btn" onclick="window.pplTracker.showExerciseInfo(${index})" title="Exercise details">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <path d="M12 16v-4"></path>
-                                <path d="M12 8h.01"></path>
-                            </svg>
-                        </button>
+                        <button class="info-btn" onclick="window.pplTracker.showExerciseInfo(${index})" title="Exercise details">i</button>
                     </div>
                     <div class="exercise-meta">
                         <span class="sets-info">${exercise.warmup_sets ? `${exercise.warmup_sets} warmup + ` : ''}${exercise.working_sets} working sets</span>
@@ -779,13 +780,66 @@ class PPLTracker {
 
     showExerciseInfo(exerciseIndex) {
         const exercise = this.currentWorkout.exercises[exerciseIndex];
-        let info = `${exercise.name}\n\n`;
-        info += `${exercise.coaching_notes}\n\n`;
-        info += `Substitutions:\n`;
-        info += `1. ${exercise.substitution_option_1}\n`;
-        info += `2. ${exercise.substitution_option_2}`;
         
-        alert(info);
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('exercise-info-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'exercise-info-modal';
+            modal.className = 'modal';
+            modal.style.display = 'none';
+            modal.innerHTML = `
+                <div class="modal-content exercise-info">
+                    <div class="modal-header">
+                        <h1 id="exercise-info-title">Exercise Details</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div id="exercise-info-content"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="close-exercise-info" class="modal-close-btn">OK</button>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Add event listeners
+            modal.querySelector('#close-exercise-info').addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+        
+        // Update modal content
+        const title = modal.querySelector('#exercise-info-title');
+        const content = modal.querySelector('#exercise-info-content');
+        
+        title.textContent = exercise.name;
+        
+        let infoHTML = `
+            <div class="exercise-info-section">
+                <h3>Coaching Notes</h3>
+                <p>${exercise.coaching_notes}</p>
+            </div>
+            
+            <div class="exercise-info-section">
+                <h3>Substitution Options</h3>
+                <ol>
+                    <li>${exercise.substitution_option_1}</li>
+                    <li>${exercise.substitution_option_2}</li>
+                </ol>
+            </div>
+        `;
+        
+        content.innerHTML = infoHTML;
+        
+        // Show modal
+        modal.style.display = 'flex';
     }
 
     shareWorkout(workoutType) {
@@ -1201,6 +1255,10 @@ class PPLTracker {
         
         // Generate mini trend
         const trendBars = this.generateMiniTrend(log);
+        
+        // Add week information to workout name
+        const weekInfo = log.week ? ` – Week ${log.week}` : '';
+        const workoutDisplayName = `${log.workout}${weekInfo}`;
 
         return `
             <div class="workout-history-card" data-log-id="${log.id}">
@@ -1209,7 +1267,7 @@ class PPLTracker {
                     <div class="history-expand-arrow">➔</div>
                 </div>
                 
-                <div class="history-workout-name">${log.workout}</div>
+                <div class="history-workout-name">${workoutDisplayName}</div>
                 
                 <div class="history-status-row">
                     <div class="history-duration">${log.duration || 0}min</div>
@@ -1404,6 +1462,172 @@ class PPLTracker {
         // Switch to exercise progress tab
         this.switchTab('logs');
         setTimeout(() => this.switchTab('exercise-progress'), 100);
+    }
+
+    showWeekSelectionModal(workoutType) {
+        this.selectedWorkoutType = workoutType;
+        const workout = this.workoutData[workoutType];
+        
+        if (!workout) {
+            console.error('Workout not found:', workoutType);
+            return;
+        }
+
+        const modal = document.getElementById('week-selection-modal');
+        const workoutTitle = document.getElementById('selected-workout-title');
+        const phaseInfo = document.getElementById('selected-phase-info');
+        const weekSelector = document.getElementById('week-selector');
+        
+        // Set workout information
+        workoutTitle.textContent = workout.title || workoutType;
+        phaseInfo.textContent = workout.phase || 'Phase 1 - Base Hypertrophy';
+        
+        // Get smart default week
+        const smartWeek = this.getSmartDefaultWeek(workoutType);
+        weekSelector.value = smartWeek.toString();
+        
+        // Show last week info if available
+        this.updateLastWeekDisplay(workoutType, smartWeek);
+        
+        // Show modal
+        modal.style.display = 'flex';
+        
+        // Setup modal handlers if not already done
+        if (!this.weekModalHandlersSetup) {
+            this.setupWeekModalHandlers();
+            this.weekModalHandlersSetup = true;
+        }
+        
+        // Validate initial selection
+        this.validateWeekSelection(smartWeek, workoutType);
+    }
+
+    getSmartDefaultWeek(workoutType) {
+        // Get workout history for this workout type
+        const workoutHistory = this.logs.filter(log => 
+            log.workoutType === workoutType || log.workout.includes(workoutType)
+        );
+        
+        if (workoutHistory.length === 0) {
+            return 1; // Default to Week 1 if no history
+        }
+        
+        // Find the most recent workout
+        const mostRecent = workoutHistory[0]; // logs are already sorted by date desc
+        const lastWeek = mostRecent.week || 1;
+        
+        // Check if it was completed recently (within last 7 days)
+        const lastWorkoutDate = new Date(mostRecent.timestamp || mostRecent.date);
+        const daysSinceLastWorkout = Math.floor((Date.now() - lastWorkoutDate.getTime()) / (1000 * 60 * 60 * 24));
+        
+        if (daysSinceLastWorkout <= 7) {
+            // If completed recently, suggest next week (max 6)
+            return Math.min(lastWeek + 1, 6);
+        } else {
+            // If it's been a while, suggest same week
+            return lastWeek;
+        }
+    }
+
+    updateLastWeekDisplay(workoutType, currentWeek) {
+        const lastWeekInfo = document.getElementById('last-week-info');
+        const lastWeekValue = document.getElementById('last-week-value');
+        
+        // Find last completed workout of this type
+        const lastWorkout = this.logs.find(log => 
+            (log.workoutType === workoutType || log.workout.includes(workoutType)) && 
+            log.duration > 0
+        );
+        
+        if (lastWorkout) {
+            const date = new Date(lastWorkout.timestamp || lastWorkout.date);
+            const dateStr = date.toLocaleDateString('en-US', { 
+                month: 'short', 
+                day: 'numeric' 
+            });
+            const week = lastWorkout.week || 1;
+            
+            lastWeekValue.textContent = `Week ${week} on ${dateStr}`;
+            lastWeekInfo.style.display = 'block';
+        } else {
+            lastWeekInfo.style.display = 'none';
+        }
+    }
+
+    validateWeekSelection(selectedWeek, workoutType) {
+        const warning = document.getElementById('week-validation-warning');
+        const adjustBtn = document.getElementById('adjust-week-btn');
+        const proceedBtn = document.getElementById('proceed-anyway-btn');
+        
+        // Get expected next week
+        const smartWeek = this.getSmartDefaultWeek(workoutType);
+        const weekDifference = Math.abs(selectedWeek - smartWeek);
+        
+        if (weekDifference > 1 && smartWeek > 1) {
+            // Show warning for significant week jumps
+            warning.style.display = 'flex';
+            
+            adjustBtn.onclick = () => {
+                document.getElementById('week-selector').value = smartWeek.toString();
+                warning.style.display = 'none';
+            };
+            
+            proceedBtn.onclick = () => {
+                warning.style.display = 'none';
+            };
+        } else {
+            warning.style.display = 'none';
+        }
+    }
+
+    setupWeekModalHandlers() {
+        const modal = document.getElementById('week-selection-modal');
+        const startBtn = document.getElementById('start-selected-workout');
+        const weekSelector = document.getElementById('week-selector');
+        
+        // Week selector change handler
+        weekSelector.addEventListener('change', (e) => {
+            const selectedWeek = parseInt(e.target.value);
+            this.validateWeekSelection(selectedWeek, this.selectedWorkoutType);
+        });
+        
+        // Start workout button
+        startBtn.addEventListener('click', () => {
+            const selectedWeek = parseInt(weekSelector.value);
+            this.startWorkoutWithWeek(this.selectedWorkoutType, selectedWeek);
+            modal.style.display = 'none';
+        });
+        
+        // Close modal on background click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
+
+    startWorkoutWithWeek(workoutType, week) {
+        console.log('Starting workout:', workoutType, 'Week:', week);
+        
+        // Store the selected week for this session
+        this.currentWeek = week;
+        this.currentWorkoutWeek = week;
+        
+        // Start the workout normally but with week context
+        this.startWorkout(workoutType);
+    }
+
+    getPhaseInfoFromWeek(week) {
+        if (!week) return '';
+        
+        if (week >= 1 && week <= 6) {
+            return ' (Phase 1)';
+        } else if (week >= 7 && week <= 10) {
+            return ' (Phase 2)';
+        } else if (week >= 11 && week <= 12) {
+            return ' (Phase 3)';
+        }
+        return '';
     }
 
     editMeasurement(item) {
@@ -1648,6 +1872,7 @@ class PPLTracker {
                 workoutName: this.currentWorkout.name,
                 workoutType: this.currentWorkoutType,
                 startTime: this.workoutStartTime.toISOString(),
+                week: this.currentWeek || 1,
                 exercises: {}
             };
         }
@@ -1892,6 +2117,9 @@ class PPLTracker {
     }
 
     saveWorkoutToHistory(session) {
+        // Add week information to session
+        session.week = this.currentWeek || 1;
+        
         const history = JSON.parse(localStorage.getItem('workoutHistory') || '[]');
         history.unshift(session);
         
@@ -1911,7 +2139,8 @@ class PPLTracker {
             exercises: Object.keys(session.exercises).length,
             duration: session.duration,
             timestamp: session.endTime,
-            exerciseData: session.exercises
+            exerciseData: session.exercises,
+            week: session.week
         });
         
         this.saveLogs();

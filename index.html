@@ -596,6 +596,59 @@
             </div>
         </div>
 
+        <!-- Week Selection Modal -->
+        <div id="week-selection-modal" class="modal" style="display: none;">
+            <div class="modal-content week-selection">
+                <div class="modal-header">
+                    <h1>Select Week</h1>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="week-context">
+                        <div class="selected-workout-title" id="selected-workout-title">Push #1</div>
+                        <div class="phase-info" id="selected-phase-info">Phase 1 - Base Hypertrophy</div>
+                    </div>
+                    
+                    <div class="week-picker-container">
+                        <label class="week-picker-label">Choose your current week:</label>
+                        <div class="week-picker">
+                            <select id="week-selector" class="week-select">
+                                <option value="1">Week 1</option>
+                                <option value="2">Week 2</option>
+                                <option value="3">Week 3</option>
+                                <option value="4">Week 4</option>
+                                <option value="5">Week 5</option>
+                                <option value="6">Week 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div id="week-validation-warning" class="week-warning" style="display: none;">
+                        <div class="warning-icon">⚠</div>
+                        <div class="warning-text">
+                            <div class="warning-title">Skipping weeks?</div>
+                            <div class="warning-message">Progress may not align with your previous workouts.</div>
+                        </div>
+                        <div class="warning-actions">
+                            <button class="warning-btn adjust" id="adjust-week-btn">Adjust</button>
+                            <button class="warning-btn proceed" id="proceed-anyway-btn">Proceed Anyway</button>
+                        </div>
+                    </div>
+                    
+                    <div class="week-progress-info">
+                        <div id="last-week-info" class="last-week-display" style="display: none;">
+                            <span class="info-label">Last completed:</span>
+                            <span class="info-value" id="last-week-value">Week 1 on Aug 19</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button id="start-selected-workout" class="modal-primary-btn">Start Workout</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Workout History Modal -->
         <div id="workout-history-modal" class="modal" style="display: none;">
             <div class="modal-content">

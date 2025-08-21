@@ -238,37 +238,50 @@ body {
 }
 
 .info-btn {
-    background: rgba(25, 118, 210, 0.1);
-    border: 1px solid rgba(25, 118, 210, 0.3);
-    color: var(--accent);
+    background: rgba(25, 118, 210, 0.2);
+    border: none;
+    color: #FFFFFF;
     border-radius: 50%;
-    width: 32px;
-    height: 32px;
+    width: 18px;
+    height: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s ease;
-    padding: 6px; /* Extra padding for 44x44px touch target */
-    margin: -6px; /* Negative margin to maintain visual size */
-    min-width: 44px;
-    min-height: 44px;
+    padding: 2px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    /* 44x44px touch target wrapper */
+    position: relative;
+}
+
+.info-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    z-index: -1;
 }
 
 .info-btn:hover {
-    background: rgba(25, 118, 210, 0.2);
-    border-color: rgba(25, 118, 210, 0.5);
-    transform: scale(1.05);
+    background: rgba(25, 118, 210, 0.3);
+    transform: scale(1.1);
 }
 
 .info-btn:active {
-    background: rgba(25, 118, 210, 0.3);
+    background: rgba(25, 118, 210, 0.4);
     transform: scale(0.95);
 }
 
 .info-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
+    stroke: #FFFFFF;
 }
 
 .arrow {
@@ -620,6 +633,56 @@ body {
     .modal-close-btn {
         padding: 10px 32px;
         font-size: 15px;
+    }
+    
+    /* Week Selection Modal Responsive */
+    .modal-content.week-selection {
+        width: 95%;
+        max-width: 380px;
+        max-height: 85vh;
+    }
+    
+    .week-context {
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    
+    .selected-workout-title {
+        font-size: 18px;
+    }
+    
+    .phase-info {
+        font-size: 13px;
+    }
+    
+    .week-picker-label {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .week-select {
+        padding: 10px 14px;
+        font-size: 15px;
+        min-width: 110px;
+    }
+    
+    .week-warning {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .warning-title {
+        font-size: 15px;
+    }
+    
+    .warning-message {
+        font-size: 13px;
+    }
+    
+    .modal-primary-btn {
+        padding: 12px 32px;
+        font-size: 15px;
+        min-height: 44px;
     }
     
     .exercise-list {
@@ -1081,7 +1144,6 @@ body {
 
 .exercise-title-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 8px;
 }
@@ -1631,4 +1693,229 @@ body {
 .history-empty-state p {
     font-size: 14px;
     line-height: 1.4;
+}
+
+/* Week Selection Modal */
+.modal-content.week-selection {
+    max-width: 400px;
+    max-height: 70vh;
+}
+
+.week-context {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: rgba(25, 118, 210, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(25, 118, 210, 0.1);
+}
+
+.selected-workout-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.phase-info {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.week-picker-container {
+    margin-bottom: 20px;
+}
+
+.week-picker-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.week-picker {
+    display: flex;
+    justify-content: center;
+}
+
+.week-select {
+    background: var(--primary);
+    color: var(--text-primary);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.week-select:focus {
+    outline: none;
+    border-color: var(--hover);
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+}
+
+.week-select option {
+    background: var(--primary);
+    color: var(--text-primary);
+    padding: 8px;
+}
+
+.week-warning {
+    background: rgba(255, 111, 97, 0.1);
+    border: 1px solid rgba(255, 111, 97, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.warning-icon {
+    font-size: 20px;
+    color: var(--error);
+    text-align: center;
+}
+
+.warning-text {
+    text-align: center;
+}
+
+.warning-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--error);
+    margin-bottom: 4px;
+}
+
+.warning-message {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.warning-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.warning-btn {
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    min-height: 36px;
+}
+
+.warning-btn.adjust {
+    background: var(--accent);
+    color: var(--text-primary);
+}
+
+.warning-btn.adjust:hover {
+    background: var(--hover);
+}
+
+.warning-btn.proceed {
+    background: var(--error);
+    color: var(--text-primary);
+}
+
+.warning-btn.proceed:hover {
+    background: rgba(255, 111, 97, 0.8);
+}
+
+.week-progress-info {
+    margin-bottom: 16px;
+}
+
+.last-week-display {
+    text-align: center;
+    padding: 12px;
+    background: rgba(255, 179, 0, 0.05);
+    border: 1px solid rgba(255, 179, 0, 0.2);
+    border-radius: 6px;
+}
+
+.info-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-right: 6px;
+}
+
+.info-value {
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.modal-primary-btn {
+    background: var(--accent);
+    color: var(--text-primary);
+    border: none;
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    width: 100%;
+    min-height: 48px;
+}
+
+.modal-primary-btn:hover {
+    background: var(--hover);
+}
+
+.modal-primary-btn:disabled {
+    background: var(--neutral);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+/* Exercise Info Modal */
+.modal-content.exercise-info {
+    max-width: 500px;
+    max-height: 80vh;
+}
+
+.exercise-info-section {
+    margin-bottom: 20px;
+}
+
+.exercise-info-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.exercise-info-section p {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.exercise-info-section ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.exercise-info-section li {
+    font-size: 14px;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin-bottom: 4px;
 }
