@@ -1,17 +1,30 @@
-/* CSS Variables - Optimized Color Scheme (No Green) */
+/* CSS Variables - Clean White Background + Black Text Theme */
 :root {
-    --primary: #1C2526;      /* Deep Charcoal - app background */
-    --accent: #1976D2;       /* Vibrant Blue - buttons, active states, actions */
-    --secondary: #FFB300;    /* Warm Amber - headers, highlights, progress */
-    --text-primary: #E0E0E0; /* Off-White - main text */
-    --text-secondary: #B0B0B0; /* Light Gray - subtle text, placeholders */
-    --neutral: #4A4A4A;      /* Slate - dividers, borders, inactive */
-    --error: #FF6F61;        /* Coral - alerts, warnings */
-    --success: #FFE082;      /* Light Amber - completed states */
-    --hover: #0D47A1;        /* Dark Blue - hover/active feedback */
+    --background: #FFFFFF;     /* Main app background */
+    --accent: #000000;         /* Primary interactive elements */
+    --accent-active: #333333;  /* Hover/checked state */
+    --secondary: #000000;      /* Headers, highlights */
+    --text-primary: #000000;   /* Main text */
+    --text-secondary: #000000; /* Secondary text */
+    --text-muted: #4A4A4A;     /* Muted text, timestamps */
+    --neutral: #000000;        /* Dividers, borders */
+    --success: #000000;        /* Completed status */
+    --error: #000000;          /* Alerts */
+    
+    /* Card backgrounds */
+    --card-bg: #FFFFFF;
+    
+    /* Button styles */
+    --button-bg: #000000;
+    --button-text: #FFFFFF;
+    
+    /* Icon styles */
+    --icon-bg: #000000;
+    --icon-text: #FFFFFF;
     
     /* Legacy aliases for compatibility */
-    --background: var(--primary);
+    --primary: var(--background);
+    --hover: var(--accent-active);
 }
 
 /* Reset and Base Styles */
@@ -22,7 +35,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: Inter, system-ui, sans-serif;
     background: var(--background);
     color: var(--text-primary);
     height: 100vh;
@@ -38,9 +51,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    border-radius: 40px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 0 30px rgba(255,255,255,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 /* Status Bar */
@@ -63,8 +76,8 @@ body {
 
 /* Phase Dividers */
 .phase-divider {
-    background: linear-gradient(135deg, var(--secondary), #E89F3C);
-    color: var(--background);
+    background: var(--button-bg);
+    color: var(--button-text);
     padding: 15px 20px;
     margin: 15px 0;
     text-align: center;
@@ -84,8 +97,8 @@ body {
 }
 
 .deload-notice {
-    background: rgba(244, 162, 97, 0.1);
-    border: 1px solid rgba(244, 162, 97, 0.3);
+    background: var(--card-bg);
+    border: 1px solid var(--neutral);
     padding: 12px 20px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -93,7 +106,7 @@ body {
 
 .deload-notice p {
     font-size: 14px;
-    color: var(--secondary);
+    color: var(--text-muted);
     text-align: center;
     margin: 0;
 }
@@ -110,6 +123,27 @@ body {
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 15px;
+}
+
+/* Workout Title Section */
+.workout-title-section {
+    margin-bottom: 15px;
+}
+
+#workout-main-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+#workout-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.3;
 }
 
 .red-line {
@@ -129,14 +163,14 @@ body {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid var(--neutral);
-    border-radius: 10px;
-    background: rgba(28, 37, 38, 0.8);
+    border-radius: 12px;
+    background: var(--card-bg);
     color: var(--text-primary);
     font-size: 17px;
 }
 
 .search-bar input::placeholder {
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .search-icon {
@@ -145,7 +179,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 /* Tab Content */
@@ -186,7 +220,7 @@ body {
 }
 
 .workout-item:hover {
-    background-color: rgba(25, 118, 210, 0.1);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .workout-icon {
@@ -217,13 +251,13 @@ body {
 
 .workout-info p {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     line-height: 1.4;
 }
 
 .share-btn {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     border-radius: 6px;
     padding: 6px 12px;
@@ -234,13 +268,13 @@ body {
 }
 
 .share-btn:hover {
-    background: var(--hover);
+    background: var(--accent-active);
 }
 
 .info-btn {
-    background: rgba(25, 118, 210, 0.2);
+    background: var(--icon-bg);
     border: none;
-    color: #FFFFFF;
+    color: var(--icon-text);
     border-radius: 50%;
     width: 18px;
     height: 18px;
@@ -250,7 +284,7 @@ body {
     cursor: pointer;
     transition: all 0.2s ease;
     padding: 2px;
-    margin-left: 6px;
+    margin-right: 6px;
     font-size: 12px;
     font-weight: 600;
     /* 44x44px touch target wrapper */
@@ -269,12 +303,12 @@ body {
 }
 
 .info-btn:hover {
-    background: rgba(25, 118, 210, 0.3);
+    background: var(--accent-active);
     transform: scale(1.1);
 }
 
 .info-btn:active {
-    background: rgba(25, 118, 210, 0.4);
+    background: var(--accent-active);
     transform: scale(0.95);
 }
 
@@ -343,7 +377,7 @@ body {
 
 .exercise-info p {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     line-height: 1.3;
 }
 
@@ -377,7 +411,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--secondary); /* Warm gold for section headers */
+    color: var(--secondary);
 }
 
 .measurement-item {
@@ -386,7 +420,7 @@ body {
     padding: 12px 16px;
     margin-bottom: 8px;
     border-radius: 12px;
-    background: linear-gradient(135deg, rgba(255, 224, 130, 0.05) 0%, rgba(28, 37, 38, 0.1) 100%);
+    background: var(--card-bg);
     border: 1px solid var(--neutral);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -394,12 +428,12 @@ body {
 }
 
 .measurement-item:hover {
-    background: linear-gradient(135deg, rgba(255, 224, 130, 0.1) 0%, rgba(28, 37, 38, 0.2) 100%);
-    border-color: rgba(255, 224, 130, 0.3);
+    background: linear-gradient(135deg, rgba(74, 74, 74, 0.05) 0%, rgba(0, 0, 0, 0.1) 100%);
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .measurement-item:active {
-    background: linear-gradient(135deg, rgba(28, 37, 38, 0.3) 0%, rgba(13, 17, 23, 0.3) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.15) 100%);
     transform: scale(0.98);
 }
 
@@ -410,9 +444,9 @@ body {
     width: 36px;
     height: 36px;
     margin-right: 16px;
-    color: var(--accent); /* Blue accent for icons */
+    color: var(--icon-text);
     border-radius: 8px;
-    background: rgba(25, 118, 210, 0.1);
+    background: var(--icon-bg);
 }
 
 .measurement-icon svg {
@@ -424,7 +458,7 @@ body {
     flex: 1;
     font-size: 17px;
     font-weight: 600;
-    color: var(--text-primary); /* Off-white for better readability */
+    color: var(--text-primary);
 }
 
 .measurement-sub {
@@ -440,27 +474,27 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 17px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-right: 12px;
     min-width: 24px;
     min-height: 24px;
 }
 
 .edit-icon {
-    color: var(--accent); /* Blue for interactive elements */
+    color: var(--accent);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .edit-icon:hover {
-    color: var(--hover);
+    color: var(--accent-active);
     transform: scale(1.1);
 }
 
 .measurement-display-value {
     margin-right: 8px;
     font-weight: 600;
-    color: var(--text-primary); /* Off-white for entered values */
+    color: var(--text-primary);
 }
 
 /* Settings Screen */
@@ -490,7 +524,7 @@ body {
 
 .setting-value {
     font-size: 17px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-right: 10px;
 }
 
@@ -502,11 +536,11 @@ body {
     transform: translateX(-50%);
     width: 100%;
     max-width: 414px;
-    background: rgba(28, 37, 38, 0.95);
+    background: var(--background);
     border-top: 1px solid var(--neutral);
     display: flex;
     padding: 8px 16px 20px 16px;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     gap: 16px;
     min-height: 80px;
     z-index: 1000;
@@ -522,17 +556,17 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    color: var(--text-secondary); /* Light gray for inactive */
+    color: var(--text-muted); /* Muted gray for inactive */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .nav-btn.active {
-    color: var(--accent); /* Blue for active tab */
+    color: var(--accent);
 }
 
 .nav-btn:not(.active) {
-    color: var(--text-secondary); /* Light gray for inactive */
+    color: var(--text-muted);
 }
 
 .nav-icon {
@@ -788,7 +822,7 @@ body {
 .progress-item-nav:active,
 .measurement-item:active,
 .setting-item:active {
-    background: rgba(25, 118, 210, 0.1);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 /* Time Update */
@@ -810,18 +844,18 @@ body {
 .slim-timer {
     font-size: 14px;
     font-weight: 600;
-    color: var(--success);
+    color: #FFFFFF;
     text-align: center;
 }
 
 /* Quick Start Button */
 .quick-start-btn {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -832,15 +866,15 @@ body {
 }
 
 .quick-start-btn:hover {
-    background: var(--hover);
+    background: var(--accent-active);
     transform: scale(1.1);
 }
 
 /* Pulse Animation */
 @keyframes pulse {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(25, 118, 210, 0.7); }
-    50% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(25, 118, 210, 0.3); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(25, 118, 210, 0); }
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 166, 154, 0.7); }
+    50% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.3); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(38, 166, 154, 0); }
 }
 
 .pulse-highlight {
@@ -867,9 +901,9 @@ body {
 }
 
 .in-progress-badge {
-    background: rgba(255, 224, 130, 0.1);
-    border: 1px solid rgba(255, 224, 130, 0.3);
-    color: var(--success);
+    background: var(--card-bg);
+    border: 1px solid var(--neutral);
+    color: var(--text-primary);
     font-size: 11px;
     padding: 2px 6px;
     border-radius: 10px;
@@ -879,9 +913,9 @@ body {
 
 /* Resume Badge */
 .resume-badge {
-    background: rgba(244, 162, 97, 0.1);
-    border: 1px solid rgba(244, 162, 97, 0.4);
-    color: var(--secondary);
+    background: var(--button-bg);
+    border: 1px solid var(--neutral);
+    color: var(--button-text);
     font-size: 11px;
     padding: 4px 8px;
     border-radius: 10px;
@@ -894,13 +928,13 @@ body {
 }
 
 .resume-badge:hover {
-    background: rgba(244, 162, 97, 0.2);
-    border-color: rgba(244, 162, 97, 0.6);
+    background: var(--accent-active);
+    border-color: var(--neutral);
     transform: scale(1.05);
 }
 
 .workout-item.has-resume {
-    border-left: 3px solid var(--secondary);
+    border-left: 3px solid var(--accent);
     padding-left: 17px;
 }
 
@@ -922,7 +956,7 @@ body {
 
 .summary-date {
     font-size: 16px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-bottom: 15px;
 }
 
@@ -931,9 +965,9 @@ body {
     gap: 20px;
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(255, 224, 130, 0.05);
+    background: var(--card-bg);
     border-radius: 12px;
-    border: 1px solid rgba(255, 224, 130, 0.1);
+    border: 1px solid var(--neutral);
 }
 
 .metric-item {
@@ -945,7 +979,7 @@ body {
 
 .metric-label {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-bottom: 4px;
 }
 
@@ -964,7 +998,7 @@ body {
 }
 
 .summary-card {
-    background: rgba(28, 37, 38, 0.8);
+    background: var(--card-bg);
     border: 1px solid var(--neutral);
     border-radius: 12px;
     padding: 20px;
@@ -993,7 +1027,7 @@ body {
 
 .stat-label {
     font-size: 12px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-bottom: 4px;
     text-align: center;
 }
@@ -1006,7 +1040,7 @@ body {
 
 .stat-details {
     font-size: 11px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-weight: 400;
     margin-top: 2px;
     display: block;
@@ -1021,7 +1055,7 @@ body {
 }
 
 .stat-value.neutral {
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .insights-section {
@@ -1036,17 +1070,17 @@ body {
 }
 
 .insight-card.success {
-    background: rgba(255, 224, 130, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     border-left-color: var(--success);
 }
 
 .insight-card.positive {
-    background: rgba(25, 118, 210, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     border-left-color: var(--accent);
 }
 
 .insight-card.celebration {
-    background: rgba(244, 162, 97, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     border-left-color: var(--secondary);
 }
 
@@ -1083,8 +1117,8 @@ body {
 }
 
 .end-session-btn {
-    background: var(--error);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
@@ -1102,8 +1136,8 @@ body {
 }
 
 .primary-btn {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
@@ -1114,7 +1148,7 @@ body {
 
 .timer {
     background: var(--neutral);
-    color: var(--text-primary);
+    color: #FFFFFF;
     padding: 8px 16px;
     border-radius: 20px;
     font-weight: 600;
@@ -1128,11 +1162,11 @@ body {
 }
 
 .exercise-card {
-    background: rgba(28, 37, 38, 0.8);
+    background: var(--card-bg);
     border-radius: 12px;
     margin-bottom: 20px;
     padding: 12px;
-    box-shadow: 0 2px 10px rgba(25, 118, 210, 0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     border: 1px solid var(--neutral);
 }
 
@@ -1150,9 +1184,9 @@ body {
 
 .exercise-title {
     font-size: 18px;
-    font-weight: 700; /* Bold for exercise titles */
+    font-weight: 700;
     margin: 0;
-    color: var(--text-primary);
+    color: var(--secondary); /* Use secondary color for exercise titles */
     flex: 1;
 }
 
@@ -1165,27 +1199,27 @@ body {
 .sets-info {
     font-size: 14px;
     font-weight: 400; /* Regular weight for meta info */
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .reps-rpe {
     font-size: 14px;
     font-weight: 400; /* Regular weight for meta info */
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .last-max {
     display: block;
     font-size: 12px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-top: 6px;
     padding: 4px 8px;
-    background: rgba(176, 176, 176, 0.1);
+    background: rgba(74, 74, 74, 0.1);
     border-radius: 6px;
     width: fit-content;
     line-height: 1.3;
     font-weight: 500;
-    border: 1px solid rgba(176, 176, 176, 0.2);
+    border: 1px solid rgba(74, 74, 74, 0.2);
     transition: background 0.5s ease;
 }
 
@@ -1208,7 +1242,7 @@ body {
 
 .detail-item .label {
     font-weight: 500;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .detail-item .value {
@@ -1227,7 +1261,7 @@ body {
     padding: 10px 3px;
     border-bottom: 2px solid var(--neutral);
     font-weight: 600;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-size: 13px;
 }
 
@@ -1245,7 +1279,7 @@ body {
 }
 
 .set-row.completed {
-    background: rgba(255, 224, 130, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     padding: 10px 3px;
 }
@@ -1253,7 +1287,7 @@ body {
 .set-label {
     font-weight: 600;
     text-align: center;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-size: 13px;
 }
 
@@ -1264,7 +1298,7 @@ body {
     border-radius: 4px;
     text-align: center;
     font-size: 13px;
-    background: rgba(28, 37, 38, 0.8);
+    background: var(--card-bg);
     color: var(--text-primary);
     width: 100%;
     box-sizing: border-box;
@@ -1275,7 +1309,7 @@ body {
 .reps-input:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+    box-shadow: 0 0 0 2px rgba(38, 166, 154, 0.2);
 }
 
 .set-complete {
@@ -1358,7 +1392,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 300px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-size: 18px;
 }
 
@@ -1368,7 +1402,7 @@ body {
     padding: 20px;
     border-top: 1px solid var(--neutral);
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 #progress-chart {
@@ -1392,7 +1426,7 @@ body {
 }
 
 .progress-item:hover {
-    background: rgba(25, 118, 210, 0.1);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .progress-item-info {
@@ -1408,7 +1442,7 @@ body {
 
 .progress-item-stats {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 /* Workout History Modal */
@@ -1427,7 +1461,7 @@ body {
 }
 
 .modal-content {
-    background: var(--primary);
+    background: var(--background);
     width: 90%;
     max-width: 500px;
     max-height: 80vh;
@@ -1460,15 +1494,15 @@ body {
     width: 100%;
     padding: 12px 40px 12px 15px;
     border: 1px solid var(--neutral);
-    border-radius: 10px;
-    background: rgba(28, 37, 38, 0.8);
+    border-radius: 12px;
+    background: var(--card-bg);
     color: var(--text-primary);
     font-size: 16px;
     box-sizing: border-box;
 }
 
 .history-search-bar input::placeholder {
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .history-search-bar .search-icon {
@@ -1476,7 +1510,7 @@ body {
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .history-sort-options {
@@ -1487,7 +1521,7 @@ body {
 
 .sort-btn {
     background: var(--neutral);
-    color: var(--text-secondary);
+    color: var(--button-text);
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -1499,13 +1533,13 @@ body {
 }
 
 .sort-btn.active {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
 }
 
 .sort-btn:hover:not(.active) {
-    background: var(--hover);
-    color: var(--text-primary);
+    background: var(--accent-active);
+    color: var(--button-text);
 }
 
 .modal-body {
@@ -1521,7 +1555,7 @@ body {
 }
 
 .workout-history-card {
-    background: var(--primary);
+    background: var(--background);
     border: 2px solid var(--neutral);
     border-radius: 12px;
     padding: 16px;
@@ -1532,7 +1566,7 @@ body {
 
 .workout-history-card:hover {
     border-color: var(--accent);
-    background: rgba(25, 118, 210, 0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 .history-card-header {
@@ -1570,7 +1604,7 @@ body {
 
 .history-duration {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
 }
 
 .history-status-dot {
@@ -1618,8 +1652,8 @@ body {
 }
 
 .modal-close-btn {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     padding: 12px 40px;
     border-radius: 8px;
@@ -1630,7 +1664,7 @@ body {
 }
 
 .modal-close-btn:hover {
-    background: var(--hover);
+    background: var(--accent-active);
 }
 
 /* Expandable Card Detail View */
@@ -1673,7 +1707,7 @@ body {
 }
 
 .view-progress-link:hover {
-    color: var(--hover);
+    color: var(--accent-active);
 }
 
 /* Empty State */
@@ -1705,9 +1739,9 @@ body {
     text-align: center;
     margin-bottom: 24px;
     padding: 16px;
-    background: rgba(25, 118, 210, 0.05);
+    background: var(--card-bg);
     border-radius: 8px;
-    border: 1px solid rgba(25, 118, 210, 0.1);
+    border: 1px solid var(--neutral);
 }
 
 .selected-workout-title {
@@ -1742,7 +1776,7 @@ body {
 }
 
 .week-select {
-    background: var(--primary);
+    background: var(--background);
     color: var(--text-primary);
     border: 2px solid var(--accent);
     border-radius: 8px;
@@ -1757,19 +1791,19 @@ body {
 
 .week-select:focus {
     outline: none;
-    border-color: var(--hover);
-    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.2);
+    border-color: var(--accent-active);
+    box-shadow: 0 0 0 3px rgba(38, 166, 154, 0.2);
 }
 
 .week-select option {
-    background: var(--primary);
+    background: var(--background);
     color: var(--text-primary);
     padding: 8px;
 }
 
 .week-warning {
-    background: rgba(255, 111, 97, 0.1);
-    border: 1px solid rgba(255, 111, 97, 0.3);
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--neutral);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
@@ -1780,7 +1814,7 @@ body {
 
 .warning-icon {
     font-size: 20px;
-    color: var(--error);
+    color: var(--text-primary);
     text-align: center;
 }
 
@@ -1791,13 +1825,13 @@ body {
 .warning-title {
     font-size: 16px;
     font-weight: 600;
-    color: var(--error);
+    color: var(--text-primary);
     margin-bottom: 4px;
 }
 
 .warning-message {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     line-height: 1.4;
 }
 
@@ -1820,20 +1854,20 @@ body {
 
 .warning-btn.adjust {
     background: var(--accent);
-    color: var(--text-primary);
+    color: #FFFFFF;
 }
 
 .warning-btn.adjust:hover {
-    background: var(--hover);
+    background: var(--accent-active);
 }
 
 .warning-btn.proceed {
-    background: var(--error);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
 }
 
 .warning-btn.proceed:hover {
-    background: rgba(255, 111, 97, 0.8);
+    background: var(--accent-active);
 }
 
 .week-progress-info {
@@ -1843,14 +1877,14 @@ body {
 .last-week-display {
     text-align: center;
     padding: 12px;
-    background: rgba(255, 179, 0, 0.05);
-    border: 1px solid rgba(255, 179, 0, 0.2);
+    background: var(--card-bg);
+    border: 1px solid var(--neutral);
     border-radius: 6px;
 }
 
 .info-label {
     font-size: 14px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-right: 6px;
 }
 
@@ -1861,8 +1895,8 @@ body {
 }
 
 .modal-primary-btn {
-    background: var(--accent);
-    color: var(--text-primary);
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
     padding: 14px 40px;
     border-radius: 8px;
@@ -1875,12 +1909,12 @@ body {
 }
 
 .modal-primary-btn:hover {
-    background: var(--hover);
+    background: var(--accent-active);
 }
 
 .modal-primary-btn:disabled {
     background: var(--neutral);
-    color: var(--text-secondary);
+    color: var(--text-muted);
     cursor: not-allowed;
 }
 
@@ -1918,4 +1952,421 @@ body {
     color: var(--text-primary);
     line-height: 1.5;
     margin-bottom: 4px;
+}
+
+/* ===== NEW WORKOUT CARDS DESIGN ===== */
+
+/* Continue Workout Banner */
+.continue-banner {
+    margin: 16px 20px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.continue-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.continue-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--button-text);
+    margin-bottom: 4px;
+}
+
+.continue-info p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.continue-btn {
+    background: var(--button-text);
+    color: var(--button-bg);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 44px;
+    transition: all 0.2s ease;
+}
+
+.continue-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+}
+
+/* Current Phase Header */
+.current-phase-header {
+    padding: 20px 20px 24px;
+    background: var(--background);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.phase-week-info h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.phase-week-info p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin: 0 0 16px 0;
+    font-weight: 500;
+}
+
+.week-progress {
+    display: none;
+}
+
+#week-progress-text {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* Workout Cards Container */
+.workout-cards-container {
+    padding: 16px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Phase Headers */
+.phase-header {
+    margin: 24px 0 16px 0;
+    padding: 0;
+}
+
+.phase-header:first-child {
+    margin-top: 8px;
+}
+
+.phase-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+}
+
+.phase-description {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Workout Card */
+.workout-card {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-height: 44px;
+}
+
+.workout-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.workout-card:active {
+    transform: translateY(0px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Workout Card Content */
+.workout-card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    background: var(--card-bg);
+    transition: transform 0.3s ease;
+}
+
+/* Swipe Animation Classes */
+.workout-card.swiping-right .workout-card-content {
+    transform: translateX(80px);
+}
+
+.workout-card.swiping-left .workout-card-content {
+    transform: translateX(-160px);
+}
+
+/* Workout Header */
+.workout-header {
+    margin-bottom: 12px;
+}
+
+.workout-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.target-muscles {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Workout Details */
+.workout-details {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.exercise-count,
+.duration {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.exercise-count::before {
+    content: "📋";
+    font-size: 12px;
+}
+
+.duration::before {
+    content: "⏱️";
+    font-size: 12px;
+}
+
+/* Workout Phase */
+.workout-phase {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Last Completed */
+.last-completed {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.completion-text {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Swipe Actions */
+.swipe-actions {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.right-actions {
+    left: 0;
+    padding-left: 20px;
+}
+
+.left-actions {
+    right: 0;
+    padding-right: 20px;
+    gap: 12px;
+}
+
+.workout-card.swiping-right .right-actions,
+.workout-card.swiping-left .left-actions {
+    opacity: 1;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    gap: 4px;
+    min-height: 44px;
+    min-width: 44px;
+}
+
+.action-btn svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+.start-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+
+.start-btn:hover {
+    background: var(--accent-active);
+    transform: scale(1.1);
+}
+
+.share-btn {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+.share-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.edit-btn {
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--text-primary);
+}
+
+.edit-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Swipe Indicators */
+.workout-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 32px;
+    background: var(--accent);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.workout-card.swiping-right::before {
+    left: 12px;
+    opacity: 1;
+}
+
+.workout-card.swiping-left::before {
+    right: 12px;
+    opacity: 1;
+}
+
+/* Touch Gestures */
+.workout-card.touch-feedback {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .current-phase-header {
+        padding: 16px 20px 20px;
+    }
+    
+    .phase-week-info h1 {
+        font-size: 24px;
+    }
+    
+    .phase-week-info p {
+        font-size: 14px;
+    }
+    
+    .workout-cards-container {
+        padding: 12px 16px 100px;
+        gap: 10px;
+    }
+    
+    .phase-header {
+        margin: 20px 0 12px 0;
+    }
+    
+    .phase-header:first-child {
+        margin-top: 6px;
+    }
+    
+    .phase-title {
+        font-size: 22px;
+    }
+    
+    .phase-description {
+        font-size: 14px;
+    }
+    
+    .workout-card-content {
+        padding: 16px;
+    }
+    
+    .workout-title {
+        font-size: 20px;
+    }
+    
+    .target-muscles {
+        font-size: 14px;
+    }
+    
+    .action-btn {
+        width: 56px;
+        height: 56px;
+        font-size: 10px;
+    }
+    
+    .action-btn svg {
+        width: 18px;
+        height: 18px;
+    }
 }

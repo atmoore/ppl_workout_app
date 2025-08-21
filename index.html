@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate PPL Tracker</title>
-    <meta name="theme-color" content="#007AFF">
+    <meta name="theme-color" content="#2E3338">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="PPL Tracker">
@@ -59,225 +59,35 @@
 
         <!-- Workouts Tab -->
         <div id="workouts" class="tab-content active">
-            <div class="page-header">
-                <h1>Workouts</h1>
-                <div class="red-line"></div>
-            </div>
-            
-            <!-- Phase 1 Section -->
-            <div class="phase-divider">
-                <h2>Phase 1 - Base Hypertrophy</h2>
-                <p class="phase-description">Moderate Volume, Moderate Intensity</p>
-            </div>
-            
-            <div class="week-section">
-                <h2>Week 1-6</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push">
-                        <div class="workout-info">
-                            <h3>Push #1</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                        </div>
-                        <button class="quick-start-btn" onclick="window.pplTracker.quickStartWorkout('push')" title="Quick Start">▶</button>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
+            <!-- Continue Workout Banner (shown if paused session exists) -->
+            <div id="continue-workout-banner" class="continue-banner" style="display: none;">
+                <div class="continue-content">
+                    <div class="continue-info">
+                        <h4 id="continue-workout-name">Push #1</h4>
+                        <p id="continue-workout-details">Paused 25 minutes ago</p>
                     </div>
-                    
-                    <div class="workout-item" data-workout="pull">
-                        <div class="workout-info">
-                            <h3>Pull #1</h3>
-                            <p>Back, Biceps<br>8 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs">
-                        <div class="workout-info">
-                            <h3>Legs #1</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper">
-                        <div class="workout-info">
-                            <h3>Upper #1</h3>
-                            <p>Full Upper Body<br>6 exercises • ~50-65 min<br>Phase 1 - Base Hypertrophy</p>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower">
-                        <div class="workout-info">
-                            <h3>Lower #1</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>7 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
+                    <button class="continue-btn" onclick="window.pplTracker.resumeWorkout()">Continue</button>
                 </div>
             </div>
 
-            <!-- Phase 2 Section -->
-            <div class="phase-divider">
-                <h2>Phase 2 - Maximum Effort</h2>
-                <p class="phase-description">Low Volume, High Intensity</p>
-            </div>
-            
-            <div class="week-section">
-                <h2>Week 7-10</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p2">
-                        <div class="workout-info">
-                            <h3>Push #1 (Maximum Effort)</h3>
-                            <p>Chest, Shoulders, Triceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • High-Incline Smith Machine Press 4-6 reps • Egyptian Cable Lateral Raise 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p2">
-                        <div class="workout-info">
-                            <h3>Pull #1 (Maximum Effort)</h3>
-                            <p>Back, Biceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Neutral-Grip Lat Pulldown 4-6 reps • Pendlay Row 4-6 reps • Reverse Pec Deck 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p2">
-                        <div class="workout-info">
-                            <h3>Legs #1 (Maximum Effort)</h3>
-                            <p>Squats, RDLs, Accessories<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Squat/Machine Squat 3-5 reps • Barbell RDL 4-6 reps • Leg Extension 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p2">
-                        <div class="workout-info">
-                            <h3>Upper #1 (Maximum Effort)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~55-70 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Wide-Grip Pull-Up 4-6 reps • Seated DB Shoulder Press 6-8 reps • Close-Grip Seated Cable Row 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p2">
-                        <div class="workout-info">
-                            <h3>Lower #1 (Maximum Effort)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Hack Squat 4-6 reps • Dumbbell Walking Lunge 4-6 reps • Seated Leg Curl 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
+            <!-- Current Phase & Week Header -->
+            <div class="current-phase-header">
+                <div class="phase-week-info">
+                    <h1 id="current-phase-title">Workout Plan</h1>
+                    <p id="current-phase-subtitle">Base Hypertrophy • Moderate Volume</p>
+                </div>
+                <div class="week-progress">
+                    <span id="week-progress-text">3 of 6 weeks</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
                     </div>
                 </div>
             </div>
-
-            <!-- Phase 3 Section -->
-            <div class="phase-divider">
-                <h2>Phase 3 - Supercompensation</h2>
-                <p class="phase-description">High Volume, Moderate Intensity</p>
-            </div>
             
-            <div class="week-section">
-                <h2>Week 11-12</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p3">
-                        <div class="workout-info">
-                            <h3>Push #1 (Supercompensation)</h3>
-                            <p>Chest, Shoulders, Triceps<br>7 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Low Incline DB Press 20 reps • Machine Shoulder Press 15 reps • Cable Crossover Ladder 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p3">
-                        <div class="workout-info">
-                            <h3>Pull #1 (Supercompensation)</h3>
-                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>1-Arm Half Kneeling Lat Pulldown 20 reps • Omni-Grip Lat Pulldown 20 reps • Machine Low Row 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p3">
-                        <div class="workout-info">
-                            <h3>Legs #1 (Supercompensation)</h3>
-                            <p>Squats, RDLs, Accessories<br>6 exercises • ~55-70 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Front Squat 15 reps • Dumbbell RDL 20 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p3">
-                        <div class="workout-info">
-                            <h3>Upper #1 (Supercompensation)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press (Top Set) 2-4 reps • Pull-Up 3 reps • Wide-Grip Cable Row 3 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p3">
-                        <div class="workout-info">
-                            <h3>Lower #1 (Supercompensation)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 8 reps • Leg Press 20 reps • Leg Extension 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
+            <!-- Workout Cards -->
+            <div class="workout-cards-container">
+                <!-- Cards will be dynamically generated from workout-data.js -->
             </div>
-
         </div>
 
         <!-- Workout Summary Tab -->
@@ -294,7 +104,10 @@
                     <button class="back-btn" onclick="window.pplTracker.switchTab('workouts')">← Back</button>
                     <button id="end-session-header-btn" class="end-session-btn" style="display: none;" onclick="window.pplTracker.endSession()">End Session</button>
                 </div>
-                <h1 id="workout-title">Push #1 - Week 1</h1>
+                <div class="workout-title-section">
+                    <h1 id="workout-main-title">Push #1</h1>
+                    <p id="workout-subtitle">Week 1 (Phase 1: Base Hypertrophy)</p>
+                </div>
                 <div class="workout-controls">
                     <button id="start-workout" class="primary-btn">Start Workout</button>
                     <div id="workout-timer" class="timer" style="display: none;">
@@ -304,10 +117,6 @@
                 <div class="red-line"></div>
             </div>
             
-            <!-- Slim Timer Bar -->
-            <div id="slim-timer-container" class="slim-timer-container" style="display: none;">
-                <div class="slim-timer">⏱ <span id="slim-timer">00:00</span></div>
-            </div>
             
             <div id="exercise-list" class="exercise-list">
                 <!-- Exercises will be dynamically loaded here -->
@@ -605,7 +414,7 @@
                 
                 <div class="modal-body">
                     <div class="week-context">
-                        <div class="selected-workout-title" id="selected-workout-title">Push #1</div>
+                        <div class="selected-workout-title" id="selected-workout-title">Push #123</div>
                         <div class="phase-info" id="selected-phase-info">Phase 1 - Base Hypertrophy</div>
                     </div>
                     

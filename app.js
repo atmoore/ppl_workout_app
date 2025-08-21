@@ -16,11 +16,14 @@ class PPLTracker {
         this.setupEventListeners();
         this.loadWorkoutData();
         this.checkForSavedSession();
+        this.setupSwipeGestures();
+        this.updateCurrentPhaseDisplay();
         
         // Show resume indicator after DOM is ready
         setTimeout(() => {
             if (this.currentWorkoutSession) {
                 this.addResumeIndicator();
+                this.showContinueWorkoutBanner();
             }
         }, 100);
     }
@@ -58,18 +61,24 @@ class PPLTracker {
         if (workoutType) {
             const workoutItem = document.querySelector(`[data-workout="${workoutType}"]`);
             if (workoutItem) {
-                // Add resume badge to workout info
-                const workoutInfo = workoutItem.querySelector('.workout-info');
-                const resumeBadge = document.createElement('span');
-                resumeBadge.className = 'resume-badge';
-                resumeBadge.textContent = 'Resume';
-                resumeBadge.onclick = (e) => {
-                    e.stopPropagation();
-                    this.resumeWorkout();
-                };
+                // Add resume badge to workout info - try multiple selectors
+                let workoutInfo = workoutItem.querySelector('.workout-info');
+                if (!workoutInfo) {
+                    workoutInfo = workoutItem.querySelector('.workout-card-content');
+                }
                 
-                workoutInfo.appendChild(resumeBadge);
-                workoutItem.classList.add('has-resume');
+                if (workoutInfo) {
+                    const resumeBadge = document.createElement('span');
+                    resumeBadge.className = 'resume-badge';
+                    resumeBadge.textContent = 'Resume';
+                    resumeBadge.onclick = (e) => {
+                        e.stopPropagation();
+                        this.resumeWorkout();
+                    };
+                    
+                    workoutInfo.appendChild(resumeBadge);
+                    workoutItem.classList.add('has-resume');
+                }
             }
         }
     }
@@ -96,10 +105,17 @@ class PPLTracker {
             // Switch to active workout
             this.switchTab('active-workout');
             
-            // Update title with week context
-            const weekContext = this.currentWeek ? ` - Week ${this.currentWeek}` : '';
-            const phaseInfo = this.getPhaseInfoFromWeek(this.currentWeek);
-            document.getElementById('workout-title').textContent = `${workout.name}${weekContext}${phaseInfo}`;
+            // Update title with new two-line format
+            const workoutMainTitle = document.getElementById('workout-main-title');
+            const workoutSubtitle = document.getElementById('workout-subtitle');
+            
+            if (workoutMainTitle && workoutSubtitle) {
+                workoutMainTitle.textContent = this.cleanWorkoutName(workout.name);
+                
+                const weekText = this.currentWeek ? `Week ${this.currentWeek}` : '';
+                const phaseText = this.getPhaseTextFromWeek(this.currentWeek);
+                workoutSubtitle.textContent = phaseText ? `${weekText} (${phaseText})` : weekText;
+            }
             
             // Render exercises
             this.renderWorkoutExercises();
@@ -196,13 +212,30 @@ class PPLTracker {
             this.saveCurrentSession();
         }
 
+        // Update workout completion status when switching to workouts tab
+        if (tabName === 'workouts') {
+            setTimeout(() => {
+                this.updateWorkoutCompletionStatus();
+            }, 100);
+        }
+
         this.currentTab = tabName;
     }
 
     setupEventListeners() {
-        // Use event delegation for workout items
+        // Use event delegation for workout items and workout cards
         document.addEventListener('click', (e) => {
-            // Handle workout item clicks
+            // Handle workout card clicks - make entire card tappable
+            if (e.target.closest('.workout-card-content')) {
+                const workoutCard = e.target.closest('.workout-card');
+                const workoutType = workoutCard.dataset.workout;
+                if (workoutType && !e.target.closest('.action-btn')) {
+                    this.showWeekSelectionModal(workoutType);
+                }
+                return;
+            }
+            
+            // Handle workout item clicks (legacy support)
             if (e.target.closest('.workout-item')) {
                 const workoutItem = e.target.closest('.workout-item');
                 const workoutType = workoutItem.dataset.workout;
@@ -239,49 +272,256 @@ class PPLTracker {
     loadWorkoutData() {
         // Use the workout data from workout-data.js
         if (typeof WORKOUT_DATA !== 'undefined') {
-            // Start with base Phase 1 workouts
-            this.workoutData = { ...WORKOUT_DATA.phase1.workouts };
+            this.workoutData = {};
             
-            // Add real Week 2 workouts from PDF
-            if (WORKOUT_DATA.phase1_week2) {
-                Object.keys(WORKOUT_DATA.phase1_week2.workouts).forEach(workoutType => {
-                    this.workoutData[`${workoutType}-w2`] = WORKOUT_DATA.phase1_week2.workouts[workoutType];
-                });
-            }
+            // Add all workout variants with proper keys
+            const allWorkouts = this.getAllWorkoutVariants();
+            allWorkouts.forEach(workoutInfo => {
+                this.workoutData[workoutInfo.key] = {
+                    ...workoutInfo.workout,
+                    phase: workoutInfo.phase,
+                    phaseNumber: workoutInfo.phaseNumber,
+                    description: workoutInfo.description
+                };
+            });
             
-            // Generate Week 3-6 with the same pattern as Week 2 for now 
-            // TODO: Add actual Week 3-6 data from PDF
-            for (let week = 3; week <= 6; week++) {
-                if (WORKOUT_DATA.phase1_week2) {
-                    Object.keys(WORKOUT_DATA.phase1_week2.workouts).forEach(workoutType => {
-                        const baseWorkout = WORKOUT_DATA.phase1_week2.workouts[workoutType];
-                        this.workoutData[`${workoutType}-w${week}`] = {
-                            ...baseWorkout,
-                            name: baseWorkout.name.replace('#2 - Week 2', `#${week} - Week ${week}`)
-                        };
-                    });
-                }
-            }
+            // Also maintain backward compatibility with original keys
+            Object.keys(WORKOUT_DATA.phase1.workouts).forEach(workoutType => {
+                this.workoutData[workoutType] = WORKOUT_DATA.phase1.workouts[workoutType];
+            });
             
-            // Add Phase 2 workouts from PDF data
-            if (WORKOUT_DATA.phase2) {
-                Object.keys(WORKOUT_DATA.phase2.workouts).forEach(workoutType => {
-                    this.workoutData[`${workoutType}-p2`] = WORKOUT_DATA.phase2.workouts[workoutType];
-                });
-            }
-            
-            // Add Phase 3 workouts from PDF data
-            if (WORKOUT_DATA.phase3 && WORKOUT_DATA.phase3.week1) {
-                Object.keys(WORKOUT_DATA.phase3.week1.workouts).forEach(workoutType => {
-                    this.workoutData[`${workoutType}-p3`] = WORKOUT_DATA.phase3.week1.workouts[workoutType];
-                });
-            }
+            // Generate workout cards after data is loaded
+            this.generateWorkoutCards();
             
         } else {
             console.error('WORKOUT_DATA not loaded');
             this.workoutData = {};
         }
         
+    }
+
+    generateWorkoutCards() {
+        const container = document.querySelector('.workout-cards-container');
+        if (!container) return;
+
+        // Clear existing cards
+        container.innerHTML = '';
+
+        // Collect all workout variants
+        const allWorkouts = this.getAllWorkoutVariants();
+
+        // Group workouts by phase
+        const phases = this.groupWorkoutsByPhase(allWorkouts);
+
+        // Generate phase sections with headers
+        ['Phase 1', 'Phase 2', 'Phase 3'].forEach(phaseName => {
+            if (phases[phaseName] && phases[phaseName].length > 0) {
+                // Add phase header
+                const phaseHeader = this.createPhaseHeader(phaseName);
+                container.appendChild(phaseHeader);
+
+                // Add workout cards for this phase
+                phases[phaseName].forEach(workoutInfo => {
+                    const card = this.createWorkoutCard(workoutInfo.key, workoutInfo.workout, workoutInfo);
+                    container.appendChild(card);
+                });
+            }
+        });
+
+        // Setup swipe gestures for newly created cards
+        setTimeout(() => {
+            this.setupSwipeGestures();
+        }, 100);
+    }
+
+    groupWorkoutsByPhase(workouts) {
+        const phases = {
+            'Phase 1': [],
+            'Phase 2': [],
+            'Phase 3': []
+        };
+
+        workouts.forEach(workout => {
+            if (phases[workout.phase]) {
+                phases[workout.phase].push(workout);
+            }
+        });
+
+        return phases;
+    }
+
+    createPhaseHeader(phaseName) {
+        const header = document.createElement('div');
+        header.className = 'phase-header';
+        
+        const phaseInfo = {
+            'Phase 1': {
+                title: 'Phase 1 (Week 1-6)',
+                description: 'Base Hypertrophy (Moderate Volume, Moderate Intensity)'
+            },
+            'Phase 2': {
+                title: 'Phase 2 (Week 7-10)',
+                description: 'Maximum Effort (Low Volume, High Intensity)'
+            },
+            'Phase 3': {
+                title: 'Phase 3 (Week 11-12)',
+                description: 'Supercompensation (High Volume, Moderate Intensity)'
+            }
+        };
+
+        const info = phaseInfo[phaseName];
+
+        header.innerHTML = `
+            <h2 class="phase-title">${info.title}</h2>
+            <p class="phase-description">${info.description}</p>
+        `;
+
+        return header;
+    }
+
+    getAllWorkoutVariants() {
+        const allWorkouts = [];
+
+        // Phase 1 - Week 1 only (removing redundant Week 2)
+        Object.keys(WORKOUT_DATA.phase1.workouts).forEach(workoutType => {
+            const workout = WORKOUT_DATA.phase1.workouts[workoutType];
+            allWorkouts.push({
+                key: `phase1_${workoutType}`,
+                workoutType,
+                workout,
+                phase: 'Phase 1',
+                phaseNumber: 1,
+                week: null,
+                description: 'Base Hypertrophy'
+            });
+        });
+
+        // Phase 2
+        if (WORKOUT_DATA.phase2) {
+            Object.keys(WORKOUT_DATA.phase2.workouts).forEach(workoutType => {
+                const workout = WORKOUT_DATA.phase2.workouts[workoutType];
+                allWorkouts.push({
+                    key: `phase2_${workoutType}`,
+                    workoutType,
+                    workout,
+                    phase: 'Phase 2',
+                    phaseNumber: 2,
+                    week: null,
+                    description: 'Maximum Effort'
+                });
+            });
+        }
+
+        // Phase 3
+        if (WORKOUT_DATA.phase3 && WORKOUT_DATA.phase3.week1) {
+            Object.keys(WORKOUT_DATA.phase3.week1.workouts).forEach(workoutType => {
+                const workout = WORKOUT_DATA.phase3.week1.workouts[workoutType];
+                allWorkouts.push({
+                    key: `phase3_${workoutType}`,
+                    workoutType,
+                    workout,
+                    phase: 'Phase 3',
+                    phaseNumber: 3,
+                    week: 1,
+                    description: 'Supercompensation'
+                });
+            });
+        }
+
+        return allWorkouts;
+    }
+
+    createWorkoutCard(workoutKey, workoutData, phaseInfo) {
+        const card = document.createElement('div');
+        card.className = 'workout-card';
+        card.setAttribute('data-workout', workoutKey);
+
+        const targetMuscles = this.getTargetMuscles(phaseInfo.workoutType);
+        const exerciseCount = workoutData.exercises.length;
+        const estimatedTime = this.estimateWorkoutDuration(workoutData);
+        const phaseDescription = this.formatPhaseDescription(phaseInfo);
+
+        card.innerHTML = `
+            <div class="workout-card-content">
+                <div class="workout-header">
+                    <h3 class="workout-title">${this.formatWorkoutName(workoutData.name)}</h3>
+                    <p class="target-muscles">${targetMuscles}</p>
+                </div>
+                <div class="workout-details">
+                    <span class="exercise-count">${exerciseCount} exercises</span>
+                    <span class="duration">${estimatedTime}</span>
+                </div>
+                <p class="workout-phase">${phaseDescription}</p>
+                <div class="last-completed" style="display: none;">
+                    <p class="completion-text">Last completed: 2 days ago</p>
+                </div>
+            </div>
+            <!-- Swipe Actions (hidden by default) -->
+            <div class="swipe-actions right-actions">
+                <button class="action-btn start-btn" onclick="window.pplTracker.startWorkout('${workoutKey}')">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Start
+                </button>
+            </div>
+            <div class="swipe-actions left-actions">
+                <button class="action-btn share-btn" onclick="window.pplTracker.shareWorkout('${workoutKey}')">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 16c-.8 0-1.5.3-2 .8L8.8 13.4c.1-.3.1-.6.1-.9s0-.6-.1-.9L14.2 8.2c.5.5 1.2.8 2 .8 1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3c0 .3 0 .6.1.9L8.8 10.2C8.3 9.7 7.6 9.4 6.8 9.4c-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.5-.3 2-.8l5.4 3.4c-.1.3-.1.6-.1.9 0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3z"/></svg>
+                    Share
+                </button>
+                <button class="action-btn edit-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+                    Edit
+                </button>
+            </div>
+        `;
+
+        return card;
+    }
+
+    getTargetMuscles(workoutType) {
+        const muscleMap = {
+            'push': 'Chest, Shoulders, Triceps',
+            'pull': 'Back, Biceps, Rear Delts',
+            'legs': 'Quadriceps, Hamstrings, Glutes, Calves',
+            'upper': 'Chest, Back, Shoulders, Arms',
+            'lower': 'Legs, Glutes, Posterior Chain'
+        };
+        return muscleMap[workoutType] || 'Full Body';
+    }
+
+    estimateWorkoutDuration(workoutData) {
+        if (!workoutData.exercises) return '45-60 min';
+        
+        const exerciseCount = workoutData.exercises.length;
+        let totalSets = 0;
+        
+        workoutData.exercises.forEach(exercise => {
+            const warmupSets = this.parseSetCount(exercise.warmup_sets);
+            const workingSets = exercise.working_sets || 0;
+            totalSets += warmupSets + workingSets;
+        });
+
+        // Estimate 2-3 minutes per set plus transitions
+        const minMinutes = Math.floor(totalSets * 2 + exerciseCount * 2);
+        const maxMinutes = Math.floor(totalSets * 3 + exerciseCount * 3);
+        
+        return `${minMinutes}-${maxMinutes} min`;
+    }
+
+    formatWorkoutName(name) {
+        // Extract just the workout name without week information
+        return name.split(' - ')[0] || name;
+    }
+
+    getCurrentPhaseDescription() {
+        const currentWeek = this.getCurrentWeek();
+        const phaseInfo = this.getPhaseInfo(currentWeek);
+        return `${phaseInfo.name} - ${phaseInfo.description}`;
+    }
+
+    formatPhaseDescription(phaseInfo) {
+        const weekText = phaseInfo.week ? ` Week ${phaseInfo.week}` : '';
+        return `${phaseInfo.phase}${weekText} - ${phaseInfo.description}`;
     }
 
     startWorkout(workoutType) {
@@ -296,10 +536,17 @@ class PPLTracker {
             // Switch to active workout tab
             this.switchTab('active-workout');
             
-            // Update title with week context
-            const weekContext = this.currentWeek ? ` - Week ${this.currentWeek}` : '';
-            const phaseInfo = this.getPhaseInfoFromWeek(this.currentWeek);
-            document.getElementById('workout-title').textContent = `${workout.name}${weekContext}${phaseInfo}`;
+            // Update title with new two-line format
+            const workoutMainTitle = document.getElementById('workout-main-title');
+            const workoutSubtitle = document.getElementById('workout-subtitle');
+            
+            if (workoutMainTitle && workoutSubtitle) {
+                workoutMainTitle.textContent = this.cleanWorkoutName(workout.name);
+                
+                const weekText = this.currentWeek ? `Week ${this.currentWeek}` : '';
+                const phaseText = this.getPhaseTextFromWeek(this.currentWeek);
+                workoutSubtitle.textContent = phaseText ? `${weekText} (${phaseText})` : weekText;
+            }
             
             // Render exercises
             this.renderWorkoutExercises();
@@ -1479,8 +1726,11 @@ class PPLTracker {
         const weekSelector = document.getElementById('week-selector');
         
         // Set workout information
-        workoutTitle.textContent = workout.title || workoutType;
-        phaseInfo.textContent = workout.phase || 'Phase 1 - Base Hypertrophy';
+        workoutTitle.textContent = this.cleanWorkoutName(workout.name || workout.title || workoutType);
+        phaseInfo.textContent = `${workout.phase} - ${workout.description}` || 'Phase 1 - Base Hypertrophy';
+        
+        // Populate week selector based on workout phase
+        this.populateWeekSelector(workout.phaseNumber || 1);
         
         // Get smart default week
         const smartWeek = this.getSmartDefaultWeek(workoutType);
@@ -1628,6 +1878,66 @@ class PPLTracker {
             return ' (Phase 3)';
         }
         return '';
+    }
+
+    getPhaseTextFromWeek(week) {
+        if (!week) return '';
+        
+        if (week >= 1 && week <= 6) {
+            return 'Phase 1: Base Hypertrophy';
+        } else if (week >= 7 && week <= 10) {
+            return 'Phase 2: Maximum Effort';
+        } else if (week >= 11 && week <= 12) {
+            return 'Phase 3: Supercompensation';
+        }
+        return '';
+    }
+
+    cleanWorkoutName(workoutName) {
+        if (!workoutName) return '';
+        
+        // Remove redundant week/phase information from workout names
+        return workoutName
+            .replace(/\s*-\s*Week\s+\d+-\d+/i, '')                    // Remove "- Week 1-6"
+            .replace(/\s*-\s*Phase\s+\d+\s*\([^)]+\)/i, '')           // Remove "- Phase 2 (Maximum Effort)"
+            .replace(/\s*-\s*Phase\s+\d+\s+Week\s+\d+\s*\([^)]+\)/i, '') // Remove "- Phase 3 Week 1 (Supercompensation)"
+            .trim();
+    }
+
+    populateWeekSelector(phaseNumber) {
+        const weekSelector = document.getElementById('week-selector');
+        if (!weekSelector) return;
+
+        // Clear existing options
+        weekSelector.innerHTML = '';
+
+        // Define week ranges for each phase
+        let startWeek, endWeek;
+        switch (phaseNumber) {
+            case 1:
+                startWeek = 1;
+                endWeek = 6;
+                break;
+            case 2:
+                startWeek = 7;
+                endWeek = 10;
+                break;
+            case 3:
+                startWeek = 11;
+                endWeek = 12;
+                break;
+            default:
+                startWeek = 1;
+                endWeek = 6;
+        }
+
+        // Populate with appropriate week options
+        for (let week = startWeek; week <= endWeek; week++) {
+            const option = document.createElement('option');
+            option.value = week.toString();
+            option.textContent = `Week ${week}`;
+            weekSelector.appendChild(option);
+        }
     }
 
     editMeasurement(item) {
@@ -2144,6 +2454,306 @@ class PPLTracker {
         });
         
         this.saveLogs();
+    }
+
+    // ===== NEW UX METHODS =====
+    
+    setupSwipeGestures() {
+        const workoutCards = document.querySelectorAll('.workout-card');
+        workoutCards.forEach(card => {
+            let startX = 0;
+            let currentX = 0;
+            let isDragging = false;
+            let hasHapticFeedback = false;
+
+            // Touch events
+            card.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+                isDragging = true;
+                hasHapticFeedback = false;
+                card.classList.add('touch-feedback');
+            });
+
+            card.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                
+                currentX = e.touches[0].clientX;
+                const diffX = currentX - startX;
+                const threshold = 50;
+
+                if (Math.abs(diffX) > threshold) {
+                    e.preventDefault(); // Prevent scrolling
+                    
+                    if (diffX > threshold) {
+                        // Swiping right - Start workout
+                        card.classList.add('swiping-right');
+                        card.classList.remove('swiping-left');
+                        
+                        if (!hasHapticFeedback) {
+                            this.triggerHapticFeedback('light');
+                            hasHapticFeedback = true;
+                        }
+                    } else if (diffX < -threshold) {
+                        // Swiping left - Show actions
+                        card.classList.add('swiping-left');
+                        card.classList.remove('swiping-right');
+                        
+                        if (!hasHapticFeedback) {
+                            this.triggerHapticFeedback('light');
+                            hasHapticFeedback = true;
+                        }
+                    }
+                }
+            });
+
+            card.addEventListener('touchend', (e) => {
+                if (!isDragging) return;
+                
+                const diffX = currentX - startX;
+                const threshold = 100;
+                
+                card.classList.remove('touch-feedback');
+                
+                if (diffX > threshold) {
+                    // Complete swipe right - Start workout
+                    this.triggerHapticFeedback('medium');
+                    const workoutType = card.dataset.workout;
+                    this.showWeekSelectionModal(workoutType);
+                } else if (diffX < -threshold) {
+                    // Complete swipe left - Keep actions visible temporarily
+                    this.triggerHapticFeedback('medium');
+                    setTimeout(() => {
+                        card.classList.remove('swiping-left');
+                    }, 2000);
+                } else {
+                    // Not enough swipe distance - reset
+                    card.classList.remove('swiping-right', 'swiping-left');
+                }
+                
+                isDragging = false;
+                startX = 0;
+                currentX = 0;
+            });
+
+            // Mouse events for desktop testing
+            card.addEventListener('mousedown', (e) => {
+                startX = e.clientX;
+                isDragging = true;
+                hasHapticFeedback = false;
+                card.classList.add('touch-feedback');
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                
+                currentX = e.clientX;
+                const diffX = currentX - startX;
+                const threshold = 50;
+
+                if (Math.abs(diffX) > threshold) {
+                    if (diffX > threshold) {
+                        card.classList.add('swiping-right');
+                        card.classList.remove('swiping-left');
+                    } else if (diffX < -threshold) {
+                        card.classList.add('swiping-left');
+                        card.classList.remove('swiping-right');
+                    }
+                }
+            });
+
+            document.addEventListener('mouseup', (e) => {
+                if (!isDragging) return;
+                
+                const diffX = currentX - startX;
+                const threshold = 100;
+                
+                card.classList.remove('touch-feedback');
+                
+                if (diffX > threshold) {
+                    const workoutType = card.dataset.workout;
+                    this.showWeekSelectionModal(workoutType);
+                } else if (diffX < -threshold) {
+                    setTimeout(() => {
+                        card.classList.remove('swiping-left');
+                    }, 2000);
+                } else {
+                    card.classList.remove('swiping-right', 'swiping-left');
+                }
+                
+                isDragging = false;
+                startX = 0;
+                currentX = 0;
+            });
+
+            // Click event for tapping the card
+            card.addEventListener('click', (e) => {
+                // Only trigger if not swiping and clicking on the main content area
+                if (!card.classList.contains('swiping-right') && 
+                    !card.classList.contains('swiping-left') &&
+                    !e.target.closest('.action-btn')) {
+                    const workoutType = card.dataset.workout;
+                    this.showWorkoutDetails(workoutType);
+                }
+            });
+        });
+    }
+
+    triggerHapticFeedback(intensity = 'light') {
+        if ('vibrate' in navigator) {
+            switch (intensity) {
+                case 'light':
+                    navigator.vibrate(10);
+                    break;
+                case 'medium':
+                    navigator.vibrate(25);
+                    break;
+                case 'heavy':
+                    navigator.vibrate([25, 10, 25]);
+                    break;
+            }
+        }
+    }
+
+    showWorkoutDetails(workoutType) {
+        // Show workout details modal or navigate to workout detail screen
+        console.log('Showing workout details for:', workoutType);
+        
+        // For now, just show the week selection modal
+        this.showWeekSelectionModal(workoutType);
+    }
+
+    updateCurrentPhaseDisplay() {
+        const currentPhaseTitle = document.getElementById('current-phase-title');
+        const currentPhaseSubtitle = document.getElementById('current-phase-subtitle');
+        const weekProgressText = document.getElementById('week-progress-text');
+        const progressFill = document.querySelector('.progress-fill');
+
+        if (currentPhaseTitle && currentPhaseSubtitle) {
+            // Get current phase and week (this would be dynamic based on user progress)
+            const currentWeek = this.getCurrentWeek();
+            const phaseInfo = this.getPhaseInfo(currentWeek);
+            
+            currentPhaseTitle.textContent = 'Workout Plan';
+            currentPhaseSubtitle.textContent = '';
+            
+            if (weekProgressText && progressFill) {
+                const weekProgress = ((currentWeek - phaseInfo.startWeek) / (phaseInfo.endWeek - phaseInfo.startWeek)) * 100;
+                weekProgressText.textContent = '';
+                progressFill.style.width = '0%';
+            }
+        }
+    }
+
+    getCurrentWeek() {
+        // This would normally be based on user's actual progress
+        // For demo purposes, return week 3
+        return 3;
+    }
+
+    getPhaseInfo(week) {
+        if (week >= 1 && week <= 6) {
+            return {
+                name: 'Phase 1',
+                description: 'Base Hypertrophy',
+                intensity: 'Moderate Volume',
+                startWeek: 1,
+                endWeek: 6
+            };
+        } else if (week >= 7 && week <= 10) {
+            return {
+                name: 'Phase 2',
+                description: 'Maximum Effort',
+                intensity: 'Low Volume, High Intensity',
+                startWeek: 7,
+                endWeek: 10
+            };
+        } else if (week >= 11 && week <= 12) {
+            return {
+                name: 'Phase 3',
+                description: 'Supercompensation',
+                intensity: 'High Volume',
+                startWeek: 11,
+                endWeek: 12
+            };
+        }
+        return {
+            name: 'Phase 1',
+            description: 'Base Hypertrophy',
+            intensity: 'Moderate Volume',
+            startWeek: 1,
+            endWeek: 6
+        };
+    }
+
+    showContinueWorkoutBanner() {
+        const banner = document.getElementById('continue-workout-banner');
+        const workoutName = document.getElementById('continue-workout-name');
+        const workoutDetails = document.getElementById('continue-workout-details');
+        
+        if (this.currentWorkoutSession && banner) {
+            const timeElapsed = Date.now() - new Date(this.currentWorkoutSession.startTime).getTime();
+            const minutes = Math.floor(timeElapsed / (1000 * 60));
+            
+            workoutName.textContent = this.currentWorkoutSession.workoutName || 'Workout';
+            workoutDetails.textContent = `Paused ${minutes} minutes ago`;
+            banner.style.display = 'block';
+        }
+    }
+
+    hideContinueWorkoutBanner() {
+        const banner = document.getElementById('continue-workout-banner');
+        if (banner) {
+            banner.style.display = 'none';
+        }
+    }
+
+    updateWorkoutCompletionStatus() {
+        // Update last completed status for each workout card
+        const workoutCards = document.querySelectorAll('.workout-card');
+        workoutCards.forEach(card => {
+            const workoutType = card.dataset.workout;
+            const lastCompleted = card.querySelector('.last-completed');
+            const completionText = card.querySelector('.completion-text');
+            
+            if (lastCompleted && completionText) {
+                const lastSession = this.getLastCompletedSession(workoutType);
+                if (lastSession) {
+                    const date = new Date(lastSession.timestamp || lastSession.date);
+                    const timeAgo = this.getTimeAgo(date);
+                    completionText.textContent = `Last completed: ${timeAgo}`;
+                    lastCompleted.style.display = 'block';
+                } else {
+                    lastCompleted.style.display = 'none';
+                }
+            }
+        });
+    }
+
+    getLastCompletedSession(workoutType) {
+        return this.logs.find(log => 
+            (log.workoutType === workoutType || log.workout.toLowerCase().includes(workoutType)) && 
+            log.duration > 0
+        );
+    }
+
+    getTimeAgo(date) {
+        const now = new Date();
+        const diffTime = Math.abs(now - date);
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        
+        if (diffDays === 0) {
+            return 'Today';
+        } else if (diffDays === 1) {
+            return 'Yesterday';
+        } else if (diffDays < 7) {
+            return `${diffDays} days ago`;
+        } else if (diffDays < 30) {
+            const weeks = Math.floor(diffDays / 7);
+            return weeks === 1 ? '1 week ago' : `${weeks} weeks ago`;
+        } else {
+            const months = Math.floor(diffDays / 30);
+            return months === 1 ? '1 month ago' : `${months} months ago`;
+        }
     }
 }
 
