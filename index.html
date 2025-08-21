@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate PPL Tracker</title>
     <meta name="theme-color" content="#007AFF">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="PPL Tracker">
     <link rel="apple-touch-icon" href="icon-192x192.png">
@@ -15,26 +15,44 @@
 <body>
     <div class="app-container">
         <div class="status-bar">
-            <span class="time" id="current-time">12:13</span>
-            <div class="status-icons">
-                <span class="signal">●●●</span>
-                <span class="wifi">|||</span>
-                <span class="battery">■■■</span>
-            </div>
         </div>
 
         <!-- Tab Navigation (Bottom) -->
         <nav class="bottom-nav">
             <button class="nav-btn active" data-tab="workouts">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="6" y="6" width="12" height="4"></rect>
+                    <circle cx="6" cy="8" r="2"></circle>
+                    <circle cx="18" cy="8" r="2"></circle>
+                    <rect x="8" y="14" width="8" height="2"></rect>
+                </svg>
                 <span class="nav-label">Workouts</span>
             </button>
             <button class="nav-btn" data-tab="logs">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                </svg>
                 <span class="nav-label">Progress</span>
             </button>
             <button class="nav-btn" data-tab="measurements">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 14H3l18-5v9zM21 9H3"></path>
+                    <line x1="12" y1="2" x2="12" y2="22"></line>
+                </svg>
                 <span class="nav-label">Measurements</span>
             </button>
             <button class="nav-btn" data-tab="settings">
+                <svg class="nav-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 1v6"></path>
+                    <path d="M12 17v6"></path>
+                    <path d="m4.22 4.22 4.24 4.24"></path>
+                    <path d="m15.54 15.54 4.24 4.24"></path>
+                    <path d="M1 12h6"></path>
+                    <path d="M17 12h6"></path>
+                    <path d="m4.22 19.78 4.24-4.24"></path>
+                    <path d="m15.54 8.46 4.24-4.24"></path>
+                </svg>
                 <span class="nav-label">Settings</span>
             </button>
         </nav>
@@ -53,13 +71,14 @@
             </div>
             
             <div class="week-section">
-                <h2>Week 1</h2>
+                <h2>Week 1-6</h2>
                 <div class="workout-list">
                     <div class="workout-item" data-workout="push">
                         <div class="workout-info">
                             <h3>Push #1</h3>
                             <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
                         </div>
+                        <button class="quick-start-btn" onclick="window.pplTracker.quickStartWorkout('push')" title="Quick Start">▶</button>
                         <button class="share-btn" onclick="window.pplTracker.shareWorkout('push')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
@@ -107,375 +126,16 @@
                 </div>
             </div>
 
-            <!-- Week 2 -->
-            <div class="week-section">
-                <h2>Week 2</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-w2">
-                        <div class="workout-info">
-                            <h3>Push #2</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • Larsen Press 10 reps • Arnold Press 8-10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-w2">
-                        <div class="workout-info">
-                            <h3>Pull #2</h3>
-                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Lat Pulldown (Feeder Sets) • Face Pull 12-15 reps • EZ-Bar Curl 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-w2">
-                        <div class="workout-info">
-                            <h3>Legs #2</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Squat 3-5 reps • Pause Squat 5 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-w2">
-                        <div class="workout-info">
-                            <h3>Upper #2</h3>
-                            <p>Full Upper Body<br>6 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Pull-Up 8-10 reps • Close-Grip Incline Press 8,5,12 reps • Kroc Row 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-w2">
-                        <div class="workout-info">
-                            <h3>Lower #2</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 4 reps • Stiff-Leg Deadlift 8 reps • Leg Press 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 3 -->
-            <div class="week-section">
-                <h2>Week 3</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-w3">
-                        <div class="workout-info">
-                            <h3>Push #3</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 2-4 reps • Larsen Press 10 reps • Arnold Press 8-10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-w3">
-                        <div class="workout-info">
-                            <h3>Pull #3</h3>
-                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Lat Pulldown (Feeder Sets) • Face Pull 12-15 reps • EZ-Bar Curl 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-w3">
-                        <div class="workout-info">
-                            <h3>Legs #3</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Squat 4-6 reps • Pause Squat 5 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-w3">
-                        <div class="workout-info">
-                            <h3>Upper #3</h3>
-                            <p>Full Upper Body<br>6 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Pull-Up 8-10 reps • Close-Grip Incline Press 8,5,12 reps • Kroc Row 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-w3">
-                        <div class="workout-info">
-                            <h3>Lower #3</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 3 reps • Stiff-Leg Deadlift 8 reps • Leg Press 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 4 -->
-            <div class="week-section">
-                <h2>Week 4</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-w4">
-                        <div class="workout-info">
-                            <h3>Push #4</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 2-4 reps • Larsen Press 10 reps • Arnold Press 8-10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-w4">
-                        <div class="workout-info">
-                            <h3>Pull #4</h3>
-                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Lat Pulldown (Feeder Sets) • Face Pull 12-15 reps • EZ-Bar Curl 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-w4">
-                        <div class="workout-info">
-                            <h3>Legs #4</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Squat 3-5 reps • Pause Squat 5 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-w4">
-                        <div class="workout-info">
-                            <h3>Upper #4</h3>
-                            <p>Full Upper Body<br>6 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Pull-Up 8-10 reps • Close-Grip Incline Press 8,5,12 reps • Kroc Row 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-w4">
-                        <div class="workout-info">
-                            <h3>Lower #4</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 2 reps • Stiff-Leg Deadlift 8 reps • Leg Press 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 5 -->
-            <div class="week-section">
-                <h2>Week 5</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-w5">
-                        <div class="workout-info">
-                            <h3>Push #5</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • Larsen Press 10 reps • Arnold Press 8-10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-w5')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-w5">
-                        <div class="workout-info">
-                            <h3>Pull #5</h3>
-                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Lat Pulldown (Feeder Sets) • Face Pull 12-15 reps • EZ-Bar Curl 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-w5')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-w5">
-                        <div class="workout-info">
-                            <h3>Legs #5</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Squat 2-4 reps • Pause Squat 5 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-w5')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-w5">
-                        <div class="workout-info">
-                            <h3>Upper #5</h3>
-                            <p>Full Upper Body<br>6 exercises • ~55-70 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Pull-Up 8-10 reps • Close-Grip Incline Press 8,5,12 reps • Kroc Row 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-w5')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-w5">
-                        <div class="workout-info">
-                            <h3>Lower #5</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 1 - Base Hypertrophy</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 1 rep • Stiff-Leg Deadlift 8 reps • Leg Press 10-12 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-w5')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 6 (Deload) -->
-            <div class="week-section">
-                <h2>Week 6 - Deload</h2>
-                <div class="deload-notice">
-                    <p><strong>Semi-Deload Week:</strong> Avoid failure and train lighter this week to promote recovery and prepare for the next 6 weeks!</p>
-                </div>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-w6">
-                        <div class="workout-info">
-                            <h3>Push #6 (Deload)</h3>
-                            <p>Chest, Shoulders, Triceps<br>8 exercises • ~50-65 min<br>Phase 1 - Base Hypertrophy (Deload)</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps (RPE 7) • Larsen Press 10 reps (RPE 7) • Arnold Press 8-10 reps (RPE 7-8)</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-w6')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-w6">
-                        <div class="workout-info">
-                            <h3>Pull #6 (Deload)</h3>
-                            <p>Back, Biceps<br>8 exercises • ~50-65 min<br>Phase 1 - Base Hypertrophy (Deload)</p>
-                            <div class="exercise-preview">
-                                <small>Lat Pulldown (Feeder Sets) • Face Pull 12-15 reps (RPE 8) • EZ-Bar Curl 6-8 reps (RPE 8)</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-w6')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-w6">
-                        <div class="workout-info">
-                            <h3>Legs #6 (Deload)</h3>
-                            <p>Squats, RDLs, Accessories<br>7 exercises • ~45-60 min<br>Phase 1 - Base Hypertrophy (Deload)</p>
-                            <div class="exercise-preview">
-                                <small>Squat 1-3 reps (RPE 7) • Pause Squat 5 reps (RPE 7) • Walking Lunge 10 reps (RPE 7)</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-w6')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-w6">
-                        <div class="workout-info">
-                            <h3>Upper #6 (Deload)</h3>
-                            <p>Full Upper Body<br>6 exercises • ~45-60 min<br>Phase 1 - Base Hypertrophy (Deload)</p>
-                            <div class="exercise-preview">
-                                <small>Pull-Up 8-10 reps (RPE 7) • Close-Grip Incline Press 8,5 reps (RPE 7) • Kroc Row 10-12 reps (RPE 7)</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-w6')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-w6">
-                        <div class="workout-info">
-                            <h3>Lower #6 (Deload)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~45-60 min<br>Phase 1 - Base Hypertrophy (Deload)</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 4 reps (RPE 7) • Stiff-Leg Deadlift 8 reps (RPE 7) • Leg Press 10-12 reps (RPE 7)</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-w6')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
             <!-- Phase 2 Section -->
             <div class="phase-divider">
                 <h2>Phase 2 - Maximum Effort</h2>
                 <p class="phase-description">Low Volume, High Intensity</p>
             </div>
-
-            <!-- Week 7 (Phase 2 Week 1) -->
+            
             <div class="week-section">
-                <h2>Week 7 (Phase 2 - Week 1)</h2>
+                <h2>Week 7-10</h2>
                 <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p2w1">
+                    <div class="workout-item" data-workout="push-p2">
                         <div class="workout-info">
                             <h3>Push #1 (Maximum Effort)</h3>
                             <p>Chest, Shoulders, Triceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
@@ -483,12 +143,12 @@
                                 <small>Bench Press 3-5 reps • High-Incline Smith Machine Press 4-6 reps • Egyptian Cable Lateral Raise 6-8 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="pull-p2w1">
+                    <div class="workout-item" data-workout="pull-p2">
                         <div class="workout-info">
                             <h3>Pull #1 (Maximum Effort)</h3>
                             <p>Back, Biceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
@@ -496,12 +156,12 @@
                                 <small>Neutral-Grip Lat Pulldown 4-6 reps • Pendlay Row 4-6 reps • Reverse Pec Deck 6-8 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="legs-p2w1">
+                    <div class="workout-item" data-workout="legs-p2">
                         <div class="workout-info">
                             <h3>Legs #1 (Maximum Effort)</h3>
                             <p>Squats, RDLs, Accessories<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
@@ -509,12 +169,12 @@
                                 <small>Squat/Machine Squat 3-5 reps • Barbell RDL 4-6 reps • Leg Extension 6-8 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="upper-p2w1">
+                    <div class="workout-item" data-workout="upper-p2">
                         <div class="workout-info">
                             <h3>Upper #1 (Maximum Effort)</h3>
                             <p>Full Upper Body<br>7 exercises • ~55-70 min<br>Phase 2 - Maximum Effort</p>
@@ -522,12 +182,12 @@
                                 <small>Wide-Grip Pull-Up 4-6 reps • Seated DB Shoulder Press 6-8 reps • Close-Grip Seated Cable Row 4-6 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="lower-p2w1">
+                    <div class="workout-item" data-workout="lower-p2">
                         <div class="workout-info">
                             <h3>Lower #1 (Maximum Effort)</h3>
                             <p>Legs, Glutes, Posterior Chain<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
@@ -535,220 +195,7 @@
                                 <small>Hack Squat 4-6 reps • Dumbbell Walking Lunge 4-6 reps • Seated Leg Curl 4-6 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2w1')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 8 (Phase 2 Week 2) -->
-            <div class="week-section">
-                <h2>Week 8 (Phase 2 - Week 2)</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p2w2">
-                        <div class="workout-info">
-                            <h3>Push #2 (Maximum Effort)</h3>
-                            <p>Chest, Shoulders, Triceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • High-Incline Smith Machine Press 4-6 reps • Egyptian Cable Lateral Raise 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p2w2">
-                        <div class="workout-info">
-                            <h3>Pull #2 (Maximum Effort)</h3>
-                            <p>Back, Biceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Neutral-Grip Lat Pulldown 4-6 reps • Pendlay Row 4-6 reps • Reverse Pec Deck 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p2w2">
-                        <div class="workout-info">
-                            <h3>Legs #2 (Maximum Effort)</h3>
-                            <p>Squats, RDLs, Accessories<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Squat/Machine Squat 3-5 reps • Barbell RDL 4-6 reps • Leg Extension 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p2w2">
-                        <div class="workout-info">
-                            <h3>Upper #2 (Maximum Effort)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~55-70 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Wide-Grip Pull-Up 4-6 reps • Seated DB Shoulder Press 6-8 reps • Close-Grip Seated Cable Row 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p2w2">
-                        <div class="workout-info">
-                            <h3>Lower #2 (Maximum Effort)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 4-6 reps • Dumbbell Walking Lunge 4-6 reps • Seated Leg Curl 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 9 (Phase 2 Week 3) -->
-            <div class="week-section">
-                <h2>Week 9 (Phase 2 - Week 3)</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p2w3">
-                        <div class="workout-info">
-                            <h3>Push #3 (Maximum Effort)</h3>
-                            <p>Chest, Shoulders, Triceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • High-Incline Smith Machine Press 4-6 reps • Egyptian Cable Lateral Raise 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p2w3">
-                        <div class="workout-info">
-                            <h3>Pull #3 (Maximum Effort)</h3>
-                            <p>Back, Biceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Neutral-Grip Lat Pulldown 4-6 reps • Pendlay Row 4-6 reps • Reverse Pec Deck 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p2w3">
-                        <div class="workout-info">
-                            <h3>Legs #3 (Maximum Effort)</h3>
-                            <p>Squats, RDLs, Accessories<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Squat/Machine Squat 3-5 reps • Barbell RDL 4-6 reps • Leg Extension 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p2w3">
-                        <div class="workout-info">
-                            <h3>Upper #3 (Maximum Effort)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~55-70 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Wide-Grip Pull-Up 4-6 reps • Seated DB Shoulder Press 6-8 reps • Close-Grip Seated Cable Row 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p2w3">
-                        <div class="workout-info">
-                            <h3>Lower #3 (Maximum Effort)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Hack Squat 4-6 reps • Dumbbell Walking Lunge 4-6 reps • Seated Leg Curl 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2w3')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 10 (Phase 2 Week 4) -->
-            <div class="week-section">
-                <h2>Week 10 (Phase 2 - Week 4)</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p2w4">
-                        <div class="workout-info">
-                            <h3>Push #4 (Maximum Effort)</h3>
-                            <p>Chest, Shoulders, Triceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press 3-5 reps • High-Incline Smith Machine Press 4-6 reps • Egyptian Cable Lateral Raise 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p2w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p2w4">
-                        <div class="workout-info">
-                            <h3>Pull #4 (Maximum Effort)</h3>
-                            <p>Back, Biceps<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Neutral-Grip Lat Pulldown 4-6 reps • Pendlay Row 4-6 reps • Reverse Pec Deck 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p2w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p2w4">
-                        <div class="workout-info">
-                            <h3>Legs #4 (Maximum Effort)</h3>
-                            <p>Squats, RDLs, Accessories<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Squat/Machine Squat 3-5 reps • Barbell RDL 4-6 reps • Leg Extension 6-8 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p2w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p2w4">
-                        <div class="workout-info">
-                            <h3>Upper #4 (Maximum Effort)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~55-70 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Wide-Grip Pull-Up 4-6 reps • Seated DB Shoulder Press 6-8 reps • Close-Grip Seated Cable Row 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p2w4')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p2w4">
-                        <div class="workout-info">
-                            <h3>Lower #4 (Maximum Effort)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>5 exercises • ~45-60 min<br>Phase 2 - Maximum Effort</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 4-6 reps • Dumbbell Walking Lunge 4-6 reps • Seated Leg Curl 4-6 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2w4')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p2')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
@@ -761,146 +208,82 @@
                 <p class="phase-description">High Volume, Moderate Intensity</p>
             </div>
             
-            <!-- Week 11 (Phase 3 Week 1) -->
             <div class="week-section">
-                <h2>Week 11 (Phase 3 - Week 1)</h2>
+                <h2>Week 11-12</h2>
                 <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p3w1">
+                    <div class="workout-item" data-workout="push-p3">
                         <div class="workout-info">
                             <h3>Push #1 (Supercompensation)</h3>
-                            <p>Chest, Shoulders, Triceps<br>7 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
+                            <p>Chest, Shoulders, Triceps<br>7 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
                             <div class="exercise-preview">
                                 <small>Low Incline DB Press 20 reps • Machine Shoulder Press 15 reps • Cable Crossover Ladder 20 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p3w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p3')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="pull-p3w1">
+                    <div class="workout-item" data-workout="pull-p3">
                         <div class="workout-info">
                             <h3>Pull #1 (Supercompensation)</h3>
-                            <p>Back, Biceps<br>8 exercises • ~70-85 min<br>Phase 3 - Supercompensation</p>
+                            <p>Back, Biceps<br>8 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
                             <div class="exercise-preview">
                                 <small>1-Arm Half Kneeling Lat Pulldown 20 reps • Omni-Grip Lat Pulldown 20 reps • Machine Low Row 20 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p3w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p3')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="legs-p3w1">
+                    <div class="workout-item" data-workout="legs-p3">
                         <div class="workout-info">
                             <h3>Legs #1 (Supercompensation)</h3>
-                            <p>Squats, RDLs, Accessories<br>6 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
+                            <p>Squats, RDLs, Accessories<br>6 exercises • ~55-70 min<br>Phase 3 - Supercompensation</p>
                             <div class="exercise-preview">
                                 <small>Front Squat 15 reps • Dumbbell RDL 20 reps • Walking Lunge 10 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p3w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p3')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="upper-p3w1">
+                    <div class="workout-item" data-workout="upper-p3">
                         <div class="workout-info">
                             <h3>Upper #1 (Supercompensation)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~75-90 min<br>Phase 3 - Supercompensation</p>
+                            <p>Full Upper Body<br>7 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
                             <div class="exercise-preview">
-                                <small>Bench Press (Top Set) 2-4 reps • Bench Press (Back Off AMRAP) • Pull-Up 6x3 cluster sets</small>
+                                <small>Bench Press (Top Set) 2-4 reps • Pull-Up 3 reps • Wide-Grip Cable Row 3 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p3w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p3')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                     
-                    <div class="workout-item" data-workout="lower-p3w1">
+                    <div class="workout-item" data-workout="lower-p3">
                         <div class="workout-info">
                             <h3>Lower #1 (Supercompensation)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
+                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
                             <div class="exercise-preview">
                                 <small>Deadlift 8 reps • Leg Press 20 reps • Leg Extension 20 reps</small>
                             </div>
                         </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p3w1')">Share</button>
+                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p3')">Share</button>
                         <button class="info-btn">i</button>
                         <span class="arrow">›</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Week 12 (Phase 3 Week 2) -->
-            <div class="week-section">
-                <h2>Week 12 (Phase 3 - Week 2)</h2>
-                <div class="workout-list">
-                    <div class="workout-item" data-workout="push-p3w2">
-                        <div class="workout-info">
-                            <h3>Push #2 (Supercompensation)</h3>
-                            <p>Chest, Shoulders, Triceps<br>7 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Low Incline DB Press 20 reps • Machine Shoulder Press 15 reps • Cable Crossover Ladder 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('push-p3w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="pull-p3w2">
-                        <div class="workout-info">
-                            <h3>Pull #2 (Supercompensation)</h3>
-                            <p>Back, Biceps<br>8 exercises • ~70-85 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>1-Arm Half Kneeling Lat Pulldown 20 reps • Omni-Grip Lat Pulldown 20 reps • Machine Low Row 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('pull-p3w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="legs-p3w2">
-                        <div class="workout-info">
-                            <h3>Legs #2 (Supercompensation)</h3>
-                            <p>Squats, RDLs, Accessories<br>6 exercises • ~60-75 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Front Squat 15 reps • Dumbbell RDL 20 reps • Walking Lunge 10 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('legs-p3w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="upper-p3w2">
-                        <div class="workout-info">
-                            <h3>Upper #2 (Supercompensation)</h3>
-                            <p>Full Upper Body<br>7 exercises • ~75-90 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Bench Press (Top Set) 2-4 reps • Bench Press (Back Off AMRAP) • Pull-Up 6x3 cluster sets</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('upper-p3w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                    
-                    <div class="workout-item" data-workout="lower-p3w2">
-                        <div class="workout-info">
-                            <h3>Lower #2 (Supercompensation)</h3>
-                            <p>Legs, Glutes, Posterior Chain<br>6 exercises • ~65-80 min<br>Phase 3 - Supercompensation</p>
-                            <div class="exercise-preview">
-                                <small>Deadlift 8 reps • Leg Press 20 reps • Leg Extension 20 reps</small>
-                            </div>
-                        </div>
-                        <button class="share-btn" onclick="window.pplTracker.shareWorkout('lower-p3w2')">Share</button>
-                        <button class="info-btn">i</button>
-                        <span class="arrow">›</span>
-                    </div>
-                </div>
+        </div>
+
+        <!-- Workout Summary Tab -->
+        <div id="workout-summary" class="tab-content">
+            <div id="workout-summary-content" class="summary-content">
+                <!-- Summary content will be dynamically loaded here -->
             </div>
         </div>
 
@@ -919,6 +302,11 @@
                     </div>
                 </div>
                 <div class="red-line"></div>
+            </div>
+            
+            <!-- Slim Timer Bar -->
+            <div id="slim-timer-container" class="slim-timer-container" style="display: none;">
+                <div class="slim-timer">⏱ <span id="slim-timer">00:00</span></div>
             </div>
             
             <div id="exercise-list" class="exercise-list">
@@ -1021,37 +409,93 @@
                 <h2>Basic information</h2>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">W</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v18"></path>
+                            <path d="M5 21h14"></path>
+                            <path d="M5 3h14"></path>
+                            <path d="M7 12h10"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Weight</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">H</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12h18"></path>
+                            <path d="M3 6h18"></path>
+                            <path d="M3 18h18"></path>
+                            <path d="M8 6v12"></path>
+                            <path d="M16 6v12"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Height</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">%</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+                            <path d="M8.5 8.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Body fat</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">~</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12c.6-2.4 2.4-4.8 5-6 2.6-1.2 5.4-.6 7 1 1.6 1.6 2.2 4.4 1 7-1.2 2.6-3.6 4.4-6 5"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Body water</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">M</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2v6h6l5-5-6-6z"></path>
+                            <path d="M16 6l1.5 1.5"></path>
+                            <path d="M21 11.5V21a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9.5"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Muscle mass</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
             </div>
@@ -1060,40 +504,129 @@
                 <h2>Circumferences</h2>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">N</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M8 11a4 4 0 1 0 8 0"></path>
+                            <path d="M12 19v4"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Neck</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">S</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 12a4 4 0 1 0 8 0v-1a3 3 0 0 0-6 0v1"></path>
+                            <path d="M12 8V6"></path>
+                            <path d="M4 12h2"></path>
+                            <path d="M18 12h2"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Shoulders</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">C</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                            <path d="M12 12v9"></path>
+                            <path d="M8 17l4-4 4 4"></path>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Chest</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">L</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 11V6a4 4 0 0 0-8 0v5H8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2z"></path>
+                            <circle cx="12" cy="16" r="1"></circle>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Upper arm</span>
                     <span class="measurement-sub">Left</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
                 </div>
                 
                 <div class="measurement-item">
-                    <div class="measurement-icon">R</div>
+                    <div class="measurement-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 11V6a4 4 0 0 0-8 0v5H8a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2z"></path>
+                            <circle cx="12" cy="16" r="1"></circle>
+                        </svg>
+                    </div>
                     <span class="measurement-text">Upper arm</span>
                     <span class="measurement-sub">Right</span>
-                    <span class="measurement-value">-</span>
+                    <span class="measurement-value">
+                        <svg class="edit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </span>
                     <span class="arrow">›</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workout History Modal -->
+        <div id="workout-history-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Workout History</h1>
+                    
+                    <!-- Search Bar -->
+                    <div class="history-search-bar">
+                        <input type="text" id="history-search" placeholder="Search workouts..." />
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    
+                    <!-- Sort Options -->
+                    <div class="history-sort-options">
+                        <button class="sort-btn active" data-sort="date">Recent</button>
+                        <button class="sort-btn" data-sort="duration">Duration</button>
+                        <button class="sort-btn" data-sort="workout">Workout</button>
+                    </div>
+                </div>
+                
+                <div class="modal-body">
+                    <div id="workout-history-cards" class="history-cards-container">
+                        <!-- Workout history cards will be dynamically loaded here -->
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button id="close-history-modal" class="modal-close-btn">OK</button>
                 </div>
             </div>
         </div>
@@ -1106,18 +639,6 @@
             </div>
             
             <div class="settings-list">
-                <div class="setting-item">
-                    <span class="setting-text">Units</span>
-                    <span class="setting-value">Imperial</span>
-                    <span class="arrow">›</span>
-                </div>
-                
-                <div class="setting-item">
-                    <span class="setting-text">Default Rest Timer</span>
-                    <span class="setting-value">2:00</span>
-                    <span class="arrow">›</span>
-                </div>
-                
                 <div class="setting-item">
                     <span class="setting-text">Backup & Sync</span>
                     <span class="arrow">›</span>
