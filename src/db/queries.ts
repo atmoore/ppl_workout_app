@@ -176,6 +176,51 @@ export async function advanceDay(): Promise<void> {
     .where(eq(userProfile.id, profile.id));
 }
 
+export async function getWeekWorkouts() {
+  const profile = await getUserProfile();
+  if (!profile?.currentProgramId || !profile.currentPhaseId) return null;
+
+  // Find current week
+  const currentWeeks = await db
+    .select()
+    .from(weeks)
+    .where(eq(weeks.phaseId, profile.currentPhaseId));
+
+  const currentWeek = currentWeeks.find(w => w.weekNumber === profile.currentWeekNumber);
+  if (!currentWeek) return null;
+
+  // Get ALL workouts for this week with their exercises
+  const workoutRows = await db
+    .select()
+    .from(workoutTemplates)
+    .where(eq(workoutTemplates.weekId, currentWeek.id))
+    .orderBy(workoutTemplates.dayNumber);
+
+  const workoutsWithExercises = await Promise.all(
+    workoutRows.map(async (workout) => {
+      const exercisesRaw = await db
+        .select()
+        .from(exerciseTemplates)
+        .where(eq(exerciseTemplates.workoutTemplateId, workout.id))
+        .orderBy(exerciseTemplates.order);
+      return { ...workout, exercises: exercisesRaw };
+    })
+  );
+
+  // Get program and phase for context
+  const [program] = await db.select().from(programs).where(eq(programs.id, profile.currentProgramId!));
+  const [phase] = await db.select().from(phases).where(eq(phases.id, profile.currentPhaseId!));
+
+  return {
+    profile,
+    program,
+    phase,
+    weekNumber: currentWeek.weekNumber,
+    workouts: workoutsWithExercises,
+    currentDayNumber: profile.currentDayNumber ?? 1,
+  };
+}
+
 export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
   const logs = await db
     .select({
