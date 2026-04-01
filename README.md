@@ -1,67 +1,36 @@
-# Ultimate PPL Tracker
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A Progressive Web App (PWA) for tracking Push/Pull/Legs workouts, measurements, and fitness progress.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- ✅ **Workout Tracking**: Complete PPL workout routines with exercise details
-- ✅ **Progress Charts**: Visual progress tracking for exercises and measurements  
-- ✅ **Session Management**: Save and resume workout sessions
-- ✅ **Workout Sharing**: Share workouts via text message
-- ✅ **Offline Support**: Works without internet connection
-- ✅ **Installable**: Add to home screen as native app
-
-## Installation as PWA
-
-### iOS (Safari)
-1. Open the app in Safari
-2. Tap the Share button (square with arrow)
-3. Scroll down and tap "Add to Home Screen"
-4. Tap "Add" to install
-
-### Android (Chrome)
-1. Open the app in Chrome
-2. Tap the menu (3 dots)
-3. Tap "Add to Home screen"
-4. Tap "Add" to install
-
-## Hosting Options
-
-### Option 1: GitHub Pages (Free)
-1. Create GitHub repository
-2. Upload all files
-3. Enable GitHub Pages in repository settings
-4. Access via: https://yourusername.github.io/repository-name
-
-### Option 2: Netlify (Free)
-1. Go to netlify.com
-2. Drag & drop the entire folder
-3. Get instant URL
-
-### Option 3: Local Network
 ```bash
-cd /Users/austinmoore/Desktop/ultimate-ppl-tracker
-python -m http.server 8000
-# Then access from phone using your computer's IP:8000
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Files Structure
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- index.html - Main app interface
-- styles.css - App styling (dark theme with blue accents)
-- app.js - Core app functionality
-- workout-data.js - PPL workout exercise data
-- manifest.json - PWA configuration
-- sw.js - Service worker for offline support
-- icon-*.png - App icons for installation
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Workout Data
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Includes complete Ultimate PPL System Week 1:
-- **Push #1**: Chest, Shoulders, Triceps (8 exercises)
-- **Pull #1**: Back, Biceps (8 exercises)  
-- **Legs #1**: Squats, RDLs, Accessories (7 exercises)
-- **Upper #1**: Full Upper Body (6 exercises)
-- **Lower #1**: Legs, Glutes, Posterior Chain (7 exercises)
+## Learn More
 
-Each exercise includes sets, reps, RPE, rest periods, and coaching notes.
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
