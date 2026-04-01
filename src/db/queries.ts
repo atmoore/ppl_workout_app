@@ -7,8 +7,10 @@ import {
   workoutTemplates,
   exerciseTemplates,
   substitutions,
+  setLogs,
+  workoutSessions,
 } from "./schema";
-import { eq } from "drizzle-orm";
+import { eq, desc } from "drizzle-orm";
 
 export type UserProfile = typeof userProfile.$inferSelect;
 export type Program = typeof programs.$inferSelect;
@@ -172,4 +174,28 @@ export async function advanceDay(): Promise<void> {
       currentPhaseId: nextPhaseId,
     })
     .where(eq(userProfile.id, profile.id));
+}
+
+export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
+  const logs = await db
+    .select({
+      date: workoutSessions.date,
+      weight: setLogs.weight,
+      reps: setLogs.reps,
+      setNumber: setLogs.setNumber,
+      sessionId: setLogs.sessionId,
+    })
+    .from(setLogs)
+    .innerJoin(workoutSessions, eq(setLogs.sessionId, workoutSessions.id))
+    .where(eq(setLogs.exerciseName, exerciseName))
+    .orderBy(desc(workoutSessions.date), setLogs.setNumber);
+
+  const sessions = new Map<number, { date: string; sets: Array<{ weight: string | null; reps: number | null }> }>();
+  for (const log of logs) {
+    if (!sessions.has(log.sessionId)) {
+      sessions.set(log.sessionId, { date: log.date || "", sets: [] });
+    }
+    sessions.get(log.sessionId)!.sets.push({ weight: log.weight, reps: log.reps });
+  }
+  return Array.from(sessions.values()).slice(0, limit);
 }
