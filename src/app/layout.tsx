@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { BottomNav } from "@/components/bottom-nav";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("dark", GeistSans.variable, GeistMono.variable, "font-sans", geist.variable)}>
       <body className="font-sans antialiased bg-zinc-950 text-zinc-50">
-        {children}
+        <main className="mx-auto max-w-md pb-20">
+          {children}
+        </main>
+        <BottomNav />
       </body>
     </html>
   );
