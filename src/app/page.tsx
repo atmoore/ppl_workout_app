@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getCurrentWorkout } from "@/db/queries";
 import { WorkoutCard } from "@/components/workout-card";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const data = await getCurrentWorkout();
 
