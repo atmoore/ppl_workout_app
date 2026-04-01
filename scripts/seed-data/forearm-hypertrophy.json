@@ -1,0 +1,311 @@
+{
+  "name": "Forearm Hypertrophy",
+  "slug": "forearm-hypertrophy",
+  "frequency": 3,
+  "description": "Jeff Nippard's Forearm Hypertrophy Program - 8 weeks, 2 blocks, 3 days per week focusing on strength, hypertrophy, and metabolic stress",
+  "source_file": "Jeff Nippard_s Forearm Hypertrophy Program.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1",
+      "description": "Weeks 1-4, progressive volume increase",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "8", "rest": "40 sec", "notes": "Hold 20 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 2, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] },
+                { "order": 3, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails (increase weight by 40-50 total strides)", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Reverse Grip Peacher EZ Bar Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Rest back of arms on preacher machine", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "8", "rest": "40 sec", "notes": "Hold 20 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 2, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] },
+                { "order": 3, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Reverse Grip Peacher EZ Bar Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Rest back of arms on preacher machine", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "8", "rest": "40 sec", "notes": "Hold 20 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] },
+                { "order": 3, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Reverse Grip Peacher EZ Bar Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Rest back of arms on preacher machine", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "8", "rest": "40 sec", "notes": "Hold 20 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] },
+                { "order": 3, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Reverse Grip Peacher EZ Bar Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Rest back of arms on preacher machine", "substitutions": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Block 2",
+      "description": "Weeks 5-8, increased intensity and volume",
+      "weeks": [
+        {
+          "week_number": 5,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "30 sec", "notes": "Hold 30 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] },
+                { "order": 2, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 3, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Hammer Dumbbell Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Perform both arms at once", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "30 sec", "notes": "Hold 30 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] },
+                { "order": 2, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 3, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Hammer Dumbbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Perform both arms at once", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "30 sec", "notes": "Hold 30 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] },
+                { "order": 2, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 3, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Hammer Dumbbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Perform both arms at once", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            {
+              "name": "Strength Focus",
+              "type": "upper",
+              "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Heavy Barbell Holds", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "30 sec", "notes": "Hold 30 sec. Choose heavy weight that nearly fails at time given, use chalk if needed", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Standing Dumbbell Wrist Extension", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "30 sec", "notes": "Hold dumbbells at sides, and rotate the wrists 'out', avoid momentum", "substitutions": [] },
+                { "order": 4, "name": "Reverse Grip Barbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "10+5", "rpe": "9", "rest": "1 min", "notes": "Use thumbless grip. Do 10 full ROM, 5 top half ROM to finish each set", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Plate Pinch", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "10", "rest": "1 min", "notes": "Pinch 1-2 10 lb plates for as long as possible for a max hold of up to 1 minute, add a 3rd plate once 1 minute is reached with 2", "substitutions": [] },
+                { "order": 2, "name": "Behind-the-Back Dumbbell Wrist Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "8", "rest": "1 min", "notes": "Place barbell behind your back and perform curls with the palms facing behind you", "substitutions": [] },
+                { "order": 3, "name": "Dumbbell Bench-Braced Wrist Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Short range of motion, mind muscle connection with posterior forearm", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "10", "rest": "1.5 min", "notes": "Hold 1 heavy dumbbell in each hand and perform max strides until grip fails", "substitutions": [] },
+                { "order": 2, "name": "Dumbbell Bench-Braced Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Allow dumbbell to 'roll' out into fingers and curl it back", "substitutions": [] },
+                { "order": 3, "name": "Hammer Dumbbell Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "1 min", "notes": "Use thumbless grip. Perform both arms at once", "substitutions": [] }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

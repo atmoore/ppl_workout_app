@@ -1,0 +1,216 @@
+{
+  "name": "Neck and Trap Hypertrophy",
+  "slug": "neck-trap",
+  "frequency": 3,
+  "description": "Jeff Nippard's Neck and Trap Hypertrophy Guide - 8 weeks, 2 blocks, 3 days per week focusing on strength, hypertrophy, and metabolic stress",
+  "source_file": "Jeff Nippard_s Neck and Trap Guide.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1",
+      "description": "Weeks 1-4, progressive volume increase",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "name": "Strength Focus", "type": "upper", "day_number": 1,
+              "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height, use straps and a belt as needed", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows, shrug up and slightly back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead, curl with careful controlled cadence", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward and perform controlled extensions", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Hypertrophy Focus", "type": "upper", "day_number": 2,
+              "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip and prevent elbows from exceeding shoulder height", "substitutions": [] },
+                { "order": 2, "name": "Monkey Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slide dumbbells up your sides to about waist height so your elbows are bent and perform shrugs", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 1, smooth and controlled reps using neck only", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench with shoulders at edge, load plate on back of head and perform extensions", "substitutions": [] }
+              ]
+            },
+            {
+              "name": "Metabolic Focus", "type": "upper", "day_number": 3,
+              "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width and lean slightly forward, shrug straight up and squeeze each rep", "substitutions": [] },
+                { "order": 2, "name": "Rope Lying Shrug", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead, get as close to cable upright as possible and shrug down and back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 2, smooth and controlled reps using neck only", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 2, smooth and controlled reps using neck only", "substitutions": [] }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height, use straps and a belt as needed", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows, shrug up and slightly back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead, curl with careful controlled cadence", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward and perform controlled extensions", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip and prevent elbows from exceeding shoulder height", "substitutions": [] },
+                { "order": 2, "name": "Monkey Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slide dumbbells up your sides to about waist height so your elbows are bent and perform shrugs", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 1, smooth and controlled reps using neck only", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench with shoulders at edge, load plate on back of head", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width and lean slightly forward", "substitutions": [] },
+                { "order": 2, "name": "Rope Lying Shrug", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead, get as close to cable upright as possible and shrug down and back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight, smooth and controlled reps using neck only", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight, smooth and controlled reps using neck only", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height, use straps and a belt as needed", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows, shrug up and slightly back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward and perform controlled extensions", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Monkey Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slide dumbbells up your sides to about waist height", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 1", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench with shoulders at edge", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Lying Shrug", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead, shrug down and back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Monkey Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slide dumbbells up your sides", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Slightly lighter weight than Day 1", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Lying Shrug", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Shrug down and back", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Block 2",
+      "description": "Weeks 5-8, lateral neck curls replace monkey shrugs, rope facepull replaces rope lying shrug",
+      "weeks": [
+        {
+          "week_number": 5,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Lateral Raise", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Squeeze traps at the top of each movement", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Lateral Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Light weight, smooth and controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Facepull", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead, get as close to cable upright as possible", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Lateral Raise", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Squeeze traps at the top of each movement", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Lateral Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Light weight, smooth and controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Facepull", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Lateral Raise", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Squeeze traps at the top", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Lateral Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Light weight, smooth and controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Facepull", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            { "name": "Strength Focus", "type": "upper", "day_number": 1, "exercises": [
+                { "order": 1, "name": "Rack Pulls", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "3.0 min", "notes": "Set up barbell at just below knee height", "substitutions": [] },
+                { "order": 2, "name": "Overhead Shrug", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Palms face one another, slight bend in elbows", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "1.0 min", "notes": "Place shoulders on edge of bench, plate on forehead", "substitutions": [] },
+                { "order": 4, "name": "Harness Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Sit on edge of bench, lean slightly forward", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "upper", "day_number": 2, "exercises": [
+                { "order": 1, "name": "Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "2.0 min", "notes": "Use a 2x shoulder width grip", "substitutions": [] },
+                { "order": 2, "name": "Lateral Raise", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Squeeze traps at the top", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Lateral Neck Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Light weight, smooth and controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Lie face down on bench", "substitutions": [] }
+            ] },
+            { "name": "Metabolic Focus", "type": "upper", "day_number": 3, "exercises": [
+                { "order": 1, "name": "Wide Grip Barbell Shrug", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "3.0 min", "notes": "Grip barbell at 1.5x shoulder width", "substitutions": [] },
+                { "order": 2, "name": "Rope Facepull", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Place rope overhead", "substitutions": [] },
+                { "order": 3, "name": "Plate Loaded Forward Neck Curl", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] },
+                { "order": 4, "name": "Plate Loaded Neck Extension", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Lighter weight, controlled reps", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    }
+  ]
+}

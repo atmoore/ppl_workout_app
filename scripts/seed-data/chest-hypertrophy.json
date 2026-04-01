@@ -1,0 +1,144 @@
+{
+  "name": "Chest Hypertrophy",
+  "slug": "chest-hypertrophy",
+  "frequency": 2,
+  "description": "Jeff Nippard's 8-Week Chest Hypertrophy Program - 2 days per week, progressive overload with bench press focus",
+  "source_file": "Jeff Nippard_s Chest Hypertrophy Program.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Main Program",
+      "description": "8-week progressive chest hypertrophy program with volume and intensity increases",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 3, "reps": "6", "rpe": "8", "rest": "4.0 min", "notes": "75-80% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 2, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 4, "reps": "6", "rpe": "8", "rest": "4.0 min", "notes": "75-80% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 2, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 3, "reps": "6", "rpe": "8", "rest": "4.0 min", "notes": "77-82% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 2, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 4, "reps": "6", "rpe": "8", "rest": "4.0 min", "notes": "77-82% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 2, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 2, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 5,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 3, "reps": "7", "rpe": "8", "rest": "4.0 min", "notes": "75-80% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 3, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 4, "reps": "7", "rpe": "8", "rest": "4.0 min", "notes": "75-80% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 3, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 3, "reps": "7", "rpe": "8", "rest": "4.0 min", "notes": "77-82% 1RM. Wider grip, bigger arch, slight pause on chest for each rep", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 3, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            { "name": "Chest Day 1", "type": "push", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Bench Press", "warmup_sets": "3", "working_sets": 1, "reps": "AMRAP", "rpe": "9.5", "rest": "4.0 min", "notes": "90% 1RM. As many reps as possible - use spotter - determine new 1RM", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Press", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "3.0 min", "notes": "30-45 degree bench angle, retract shoulder blades, flare elbows", "substitutions": [] },
+              { "order": 3, "name": "Banded Pushup", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Squeeze pecs at the top of each rep. Full ROM: touch nose to floor", "substitutions": [] },
+              { "order": 4, "name": "Flat Dumbbell Static Hold", "warmup_sets": null, "working_sets": 3, "reps": "HOLD", "rpe": "9", "rest": "1.0 min", "notes": "40% 1RM. Hold DBs in stretched position for 60 seconds, add time each week", "substitutions": [] }
+            ] },
+            { "name": "Chest Day 2", "type": "push", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Shoulder width grip, less arch, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Flye", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Cables high at shoulder height, perform seated, palms face down", "substitutions": [] },
+              { "order": 3, "name": "Bodyweight Dip", "warmup_sets": null, "working_sets": 3, "reps": "AMRAP", "rpe": "10", "rest": "1.0 min", "notes": "3 second negative on each rep, lean slightly forward", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    }
+  ]
+}
