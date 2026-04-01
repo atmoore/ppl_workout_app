@@ -1,0 +1,2961 @@
+{
+  "name": "Powerbuilding 3.0 5x",
+  "slug": "powerbuilding-3-5x",
+  "frequency": 5,
+  "description": "Jeff Nippard's Powerbuilding System 3.0 - 5x/week",
+  "source_file": "PowerBuilding 3.0.xlsx",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "5x",
+      "description": null,
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~6-8",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-8",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "EZ-Bar Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "10",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Stance Back Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "This is a pin squat that starts and ends with the bar on the pins. At the bottom you're just above parallel. Get tight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Close Grip Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Shoulder width grip, tuck your elbows in closer to your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Tricep Pushdown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "4",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Rear Delt Fly",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 4,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 4,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bicep Grip Lat Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~6-8",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-8",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "EZ-Bar Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Sissy Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Sit fully back on to the box, release tension in thighs, minimize rocking while seated",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Pin Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Set the pins just above chest height, release tension while the bar is on the pins, then explode up. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Overhead Tricep Extension",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "2",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Touch-And-Go Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "Don't bounce the plates off the floor, just a light tap. Allow some momentum and get in a good groove. Breathe/brace at the top.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Face Pulls",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Pullovers",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bent Over Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "2",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "EZ-Bar Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Stance Back Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "This is a pin squat that starts and ends with the bar on the pins. At the bottom you're just above parallel. Get tight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Close Grip Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Shoulder width grip, tuck your elbows in closer to your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Dumbell Shrugs",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "2-4",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Rear Delt Flys",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Cable Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "2",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Incline Dumbell Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Sissy Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Sit fully back on to the box, release tension in thighs, minimize rocking while seated",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Set the pins just above chest height, release tension while the bar is on the pins, then explode up. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Cable Chest Flys",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": null,
+                  "rest": null,
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Tricep Pushdown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Touch-And-Go Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Band Pull-Apart",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bent Over Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 5,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "~5-7",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Stance Back Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "This is a pin squat that starts and ends with the bar on the pins. At the bottom you're just above parallel. Get tight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Close Grip Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Shoulder width grip, tuck your elbows in closer to your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Dumbell Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "3",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Face Pulls",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Overhead Tricep Extension",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Good Morning",
+                  "warmup_sets": "2.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-9",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "2",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell (or EZ-Bar) Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Seated Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hanging Leg Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Stance Back Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Sit fully back on to the box, release tension in thighs, minimize rocking while seated",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Pin Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Set the pins just above chest height, release tension while the bar is on the pins, then explode up. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Dumbbell Skull Crusher",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "2",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Touch-And-Go Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Band Pull-Apart",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Dumbell Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~8-9",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "3",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Good Mornings",
+                  "warmup_sets": "2.0",
+                  "working_sets": 1,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": null,
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~8-9",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "1",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hanging Leg Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Banded Pull Ups",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Close Grip Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Shoulder width grip, tuck your elbows in closer to your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Dumbbell Skull Crusher",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "3",
+                  "rpe": "~9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Cable Rear Delt Flys",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Dumbell Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bent Over Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat (Top Single)",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~8-9",
+                  "rest": "3-5min",
+                  "notes": "Top set. Focus on technique and explosive power.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "0.0",
+                  "working_sets": 1,
+                  "reps": "3",
+                  "rpe": "8-9",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Good Mornings",
+                  "warmup_sets": "2.0",
+                  "working_sets": 1,
+                  "reps": "8-10",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "Set the pins high, short ROM, use low bar position, set hips back and keep shins vertical",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~9",
+                  "rest": "3-5min",
+                  "notes": "Strict 1 second pause on chest. Execute the set up and rep as perfectly as possible. Don't overhype. Focus.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 1,
+                  "reps": "2",
+                  "rpe": "~9",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell (or EZ-Bar) Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Push these all very hard. Go to true failure.",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hanging Leg Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Hack Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Sit fully back on to the box, release tension in thighs, minimize rocking while seated",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Pin Bench Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-4min",
+                  "notes": "Set the pins just above chest height, release tension while the bar is on the pins, then explode up. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Neutral Grip Pulldown",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9.0",
+                  "rest": "2-3min",
+                  "notes": "Pull your elbows down against your sides",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell Skull Crusher",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~9",
+                  "rest": "3-5min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Touch-And-Go Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "7.0",
+                  "rest": "2-4min",
+                  "notes": "1 second pause right after plates leave the floor",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Cable Rear Delt Fly",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Mind-muscle connection with rear delts",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Dumbell Pullover",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2min",
+                  "notes": "Use bands if no cables. Keep constant tension on the lats. Big stretch at the top by leaning slightly forward.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hammer Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9.0",
+                  "rest": "1-2min",
+                  "notes": "Keep elbows locked in place, squeeze the dumbbell handle hard!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "7-8",
+                  "rest": "3-5min",
+                  "notes": "Set up a comfortable arch, quick pause on chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8.0",
+                  "rest": "2-3min",
+                  "notes": "Be mindful of lower back fatgiue, stay light and minimize cheating",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Hip Abduction",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Machine, band or weighted, squeeze and hold for 1 second at the top of each rep",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-8",
+                  "rest": "3-5min",
+                  "notes": "Try to move the bar as explosively as possible on the positive. Approach with confidence. Technique locked. Don't overhype.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "4",
+                  "rpe": "5-6",
+                  "rest": "3-5min",
+                  "notes": "Make every rep look exactly the same. 1 second pause on each rep.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Reset Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "3",
+                  "rpe": "4-5",
+                  "rest": "3-5min",
+                  "notes": "Stand up and set up again in between each rep. Think of each set as 3 separate singles.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~7-8",
+                  "rest": "3-5min",
+                  "notes": "Try to move the bar as explosively as possible on the positive. Approach with confidence. Technique locked. Don't overhype.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6.0",
+                  "rest": "2-3min",
+                  "notes": "These are intentionally light for shoulder stability and balance. Don't push these hard. Big bench day tomorrow.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Anderson Squat",
+                  "warmup_sets": "3.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "5.0",
+                  "rest": "2-4min",
+                  "notes": "This is a pin squat that starts and ends with the bar on the pins. At the bottom you're just above parallel. Get tight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell (or EZ-Bar) Strict Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "6.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Strict Bench Press",
+                  "warmup_sets": "4.0",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "~8-9",
+                  "rest": "3-5min",
+                  "notes": "Try to move the bar as explosively as possible on the positive. Approach with confidence. Technique locked. Don't overhype.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Back Squat",
+                  "warmup_sets": "4.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "5-6",
+                  "rest": "3-5min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated Face Pull",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "workouts": [
+            {
+              "name": "SQUAT TEST",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "5.0",
+                  "working_sets": "1+",
+                  "reps": "1",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "Aim for a new PR. Start with 100% and increase by ~2.5% every attempt until you hit a 9.5-10 RPE. Use a spotter and good form!",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Can be seated or lying. Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight, don't let form get sloppy toward the end of the set!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "BENCH TEST",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "5.0",
+                  "working_sets": "1+",
+                  "reps": "1",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "Aim for a new PR. Start with 100% and increase by ~2.5% every attempt until you hit a 9.5-10 RPE. Use a spotter and good form!",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell (or EZ-Bar) Strict Curl",
+                  "warmup_sets": "3.0",
+                  "working_sets": 1,
+                  "reps": "3",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "7.0",
+                  "rest": "2-3min",
+                  "notes": "Press up and back overhead, slight pause on the chest on each rep",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "DEADLIFT TEST",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "5.0",
+                  "working_sets": "1+",
+                  "reps": "1",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "Aim for a new PR. Start with 100% and increase by ~2.5% every attempt until you hit a 9.5-10 RPE. Use a spotter and good form!",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Skull Crusher",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "SQUAT TEST",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back Squat",
+                  "warmup_sets": "5.0",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "As many reps as possible. Always use a spotter and good form. Aim to hit 3-5 reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "10",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Can be seated or lying. Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Lateral Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Focus on contracting your delts to move the weight",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "BENCH TEST",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell Bench Press",
+                  "warmup_sets": "5.0",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "As many reps as possible. Always use a spotter and good form. Aim to hit 3-5 reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell (or EZ-Bar) Strict Curl",
+                  "warmup_sets": "3.0",
+                  "working_sets": 1,
+                  "reps": "3",
+                  "rpe": "10.0",
+                  "rest": "1-2min",
+                  "notes": "Lean against wall and maintain wall contact with head, hips and back. Keep elbows pinned at sides. Control the weight.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell Overhead Press",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "7.0",
+                  "rest": "2-3min",
+                  "notes": "Press up and back overhead, slight pause on the chest on each rep",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "DEADLIFT TEST",
+              "type": "full",
+              "day_number": 6,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "5.0",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "9.5-10",
+                  "rest": "4-6min",
+                  "notes": "As many reps as possible. Always use a spotter and good form. Aim to hit 3-5 reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Chest-Supported Row",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Can use machine or brace against bench. Minimize cheating.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Dumbbell Skull Crusher",
+                  "warmup_sets": "1.0",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "7.0",
+                  "rest": "1-2min",
+                  "notes": "Arc the dummbells behind your head. Constant tension on triceps",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

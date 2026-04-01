@@ -1,0 +1,4137 @@
+{
+  "name": "Powerbuilding 2.0 4x",
+  "slug": "powerbuilding-2-4x",
+  "frequency": 4,
+  "description": "Jeff Nippard's Powerbuilding 2.0 - 4x/week",
+  "source_file": "POWERBUILDING 2.0 SPREADSHEET 4x.xlsx",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "PB 4x",
+      "description": null,
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "2",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Front squat [or box squat]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "If you low bar squat, do front squat. If you high bar squat, do barbell box squat",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "4",
+                  "rpe": "8.5",
+                  "rest": "3-4min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Submaximal bench press, be hypercritical of form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "7",
+                  "rest": "3-5 min",
+                  "notes": "Technique work, avoid turning these into touch-and-go reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bulgarian split squat",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Start with your weaker leg working. Squat deep",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Meadows row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Brace with your other hand, stay light, emphasize form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Use minimal momentum, control the eccentric phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Pec flye",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Perform with cables, bands, or dumbbells. Use full ROM. Stretch your pecs at the bottom",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "6",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pin squat",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to around parallel. Dead stop on the pins, don't bounce and go",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Working top set, build confidence with heavier loads",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Focus on perfecting technique, slight pause on the chest",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "10",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Try to stay fluid with these, think of them as \"pause-and-go\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Chin-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "\"AMRAP\"",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "As many reps as possible, but stop at RPE8",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep your chin tucked down and squeeze your glutes to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Cable reverse flye",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep elbows locked in place, squeeze the cable handles hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 9,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "6\" Block pull",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "9",
+                  "rest": "4-6 min",
+                  "notes": "Get very tight prior to pulling, use 85% if you're not experienced with block pulls. Use standard Deadlift 1RM for 1RM %s.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause db incline press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "3-second pause. Sink the dumbbells as low as you comfortably can",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Rope overhead triceps extension",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on stretching the triceps at the bottom",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Lean away from the cable. Focus on squeezing your delts.",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "7",
+                  "rest": "3-5 min",
+                  "notes": "Submaximal sets, approach these sets with confidence. Focus on technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "6",
+                  "rest": "2-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Unilateral leg press",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "High and wide foot positioning, start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Eccentric-accentuated leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "4-second lowering phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10/15",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "Dropset: do 10 reps, lower the weight ~30-50%, do another 15 reps. Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Weighted crunch",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "0min",
+                  "notes": "Hold a plate or DB to your chest and crunch hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Long-lever plank (Optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes and position your elbows under your eyes to make the plank more difficult",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Submaximal sets, focus on form",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10(+4+4)",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Do 8-10 reps to failure. Rest 3-4 seconds. Do another 4 reps. Rest 2-3 seconds. Do another 4 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Constant-tension cable triceps kickback",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "10",
+                  "rest": "1-2min",
+                  "notes": "Maintain a consistent pace of 1 second up and 1 second down",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hammer \"cheat\" curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Reset deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "Stand up between each rep to work on technqiue",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "2",
+                  "working_sets": "2each",
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Contract your glutes hard at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A1: Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "0min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "A2: Prisoner back extension",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Place your hands behind your head and squeeze your glutes to straighen your hips",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-20 sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Omni-grip lat pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "1 set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Close-grip bench press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Tuck your elbows against your sides more than you would on standard grip bench press",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Mind muscle connection with rear delts on set 1 (sweep the weight out). Mind muscle connection with mid-traps on set 2 (squeeze shoulder blades hard).",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Dumbbell lateral raise 21s",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "7/7/7",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: top half of ROM, middle 7 reps: full ROM, last 7 reps: bottom half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Incline dumbbell curl",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Keep your elbows locked in place to maintain a stretch on the biceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Neck flexion/extension (optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10/10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "10 reps flexion (front of neck), 10 reps extension (back of neck)",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "4",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Front squat [or box squat]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "If you low bar squat, do front squat. If you high bar squat, do barbell box squat",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "2",
+                  "rpe": "8.5",
+                  "rest": "3-4min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Submaximal bench press, be critical of form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "7",
+                  "rest": "3-5 min",
+                  "notes": "Technique work, avoid turning these into touch-and-go reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bulgarian split squat",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Start with your weaker leg working. Squat deep",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Meadows row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Brace with your other hand, stay light, emphasize form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Use minimal momentum, control the eccentric phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Pec flye",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Perform with cables, bands, or dumbbells. Use full ROM. Stretch your pecs at the bottom",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pin squat",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to around parallel. Dead stop on the pins, don't bounce and go",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Working top set, build confidence with heavier loads",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Focus on perfecting technique, slight pause on the chest",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Try to stay fluid with these, think of them as \"pause-and-go\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Chin-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "\"AMRAP\"",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "As many reps as possible, but stop at RPE8",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep your chin tucked down and squeeze your glutes to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Cable reverse flye",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep elbows locked in place, squeeze the cable handles hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 9,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "4\" Block pull",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "9",
+                  "rest": "4-6 min",
+                  "notes": "Get very tight prior to pulling, use 85% if you're not experienced with block pulls. Use standard Deadlift 1RM for 1RM %s.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause db incline press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "3-second pause. Sink the dumbbells as low as you comfortably can",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Rope overhead triceps extension",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on stretching the triceps at the bottom",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Lean away from the cable. Focus on squeezing your delts.",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "Submaximal sets, approach these sets with confidence. Focus on technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "7",
+                  "rest": "2-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Unilateral leg press",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "High and wide foot positioning, start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Eccentric-accentuated leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "4-second lowering phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10/15",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "Dropset: do 10 reps, lower the weight ~30-50%, do another 15 reps. Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Weighted crunch",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "0min",
+                  "notes": "Hold a plate or DB to your chest and crunch hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Long-lever plank (Optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes and position your elbows under your eyes to make the plank more difficult",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Submaximal sets, focus on form",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10(+4+4)",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Do 8-10 reps to failure. Rest 3-4 seconds. Do another 4 reps. Rest 2-3 seconds. Do another 4 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Constant-tension cable triceps kickback",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "10",
+                  "rest": "1-2min",
+                  "notes": "Maintain a consistent pace of 1 second up and 1 second down",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hammer \"cheat\" curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Reset deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "Stand up between each rep to work on technqiue",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "2",
+                  "working_sets": "2each",
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Contract your glutes hard at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A1: Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "0min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "A2: Prisoner back extension",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Place your hands behind your head and squeeze your glutes to straighen your hips",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-25 sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Omni-grip lat pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "1 set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Close-grip bench press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "11",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Tuck your elbows against your sides more than you would on standard grip bench press",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Mind muscle connection with rear delts on set 1 (sweep the weight out). Mind muscle connection with mid-traps on set 2 (squeeze shoulder blades hard).",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Dumbbell lateral raise 21s",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "7/7/7",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: top half of ROM, middle 7 reps: full ROM, last 7 reps: bottom half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Incline dumbbell curl",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Keep your elbows locked in place to maintain a stretch on the biceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Neck flexion/extension (optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10/10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "10 reps flexion (front of neck), 10 reps extension (back of neck)",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 5,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Front squat [or box squat]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "If you low bar squat, do front squat. If you high bar squat, do barbell box squat",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8.5",
+                  "rest": "3-4min",
+                  "notes": "Top set, get comfortable with heavier loads while keeping perfect technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "2",
+                  "rpe": "7",
+                  "rest": "2-3 min",
+                  "notes": "Submaximal bench press, be critical of form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Don't go too heavy, focus on mind-muscle connection",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "7",
+                  "rest": "3-5 min",
+                  "notes": "Technique work, avoid turning these into touch-and-go reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "7",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Bulgarian split squat",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Start with your weaker leg working. Squat deep",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Meadows row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Brace with your other hand, stay light, emphasize form",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Use minimal momentum, control the eccentric phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Pec flye",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Perform with cables, bands, or dumbbells. Use full ROM. Stretch your pecs at the bottom",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pin squat",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to around parallel. Dead stop on the pins, don't bounce and go",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "1",
+                  "rpe": "8.5",
+                  "rest": "3-4 min",
+                  "notes": "Working top set, build confidence with heavier loads",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Focus on perfecting technique, slight pause on the chest",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "0",
+                  "working_sets": 1,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Try to stay fluid with these, think of them as \"pause-and-go\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Chin-up",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "\"AMRAP\"",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "As many reps as possible, but stop at RPE8",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep your chin tucked down and squeeze your glutes to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Cable reverse flye",
+                  "warmup_sets": "0",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Keep elbows locked in place, squeeze the cable handles hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 9,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "2\" Block pull",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "9",
+                  "rest": "4-6 min",
+                  "notes": "Get very tight prior to pulling, use 85% if you're not experienced with block pulls. Use standard Deadlift 1RM for 1RM %s.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause db incline press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "3-second pause. Sink the dumbbells as low as you comfortably can",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Rope overhead triceps extension",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on stretching the triceps at the bottom",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Lean away from the cable. Focus on squeezing your delts.",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "3",
+                  "working_sets": 5,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "Submaximal sets, approach these sets with confidence. Focus on technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "8",
+                  "rest": "2-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Unilateral leg press",
+                  "warmup_sets": "1",
+                  "working_sets": "2each",
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "High and wide foot positioning, start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Eccentric-accentuated leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "4-second lowering phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10/15",
+                  "rpe": "10",
+                  "rest": "2-3 min",
+                  "notes": "Dropset: do 10 reps, lower the weight ~30-50%, do another 15 reps. Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Weighted crunch",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "0min",
+                  "notes": "Hold a plate or DB to your chest and crunch hard!",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Long-lever plank (Optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes and position your elbows under your eyes to make the plank more difficult",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "8",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Submaximal sets, focus on form",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Weighted pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "4-6",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Egyptian lateral raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10(+4+4)",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Do 8-10 reps to failure. Rest 3-4 seconds. Do another 4 reps. Rest 2-3 seconds. Do another 4 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Constant-tension cable triceps kickback",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "10",
+                  "rest": "1-2min",
+                  "notes": "Maintain a consistent pace of 1 second up and 1 second down",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Hammer \"cheat\" curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "You can use slight momentum on the concentric, but control the eccentric with your elbows stationary",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Reset deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "Stand up between each rep to work on technqiue",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Single-leg hip thrust",
+                  "warmup_sets": "2",
+                  "working_sets": "2each",
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Contract your glutes hard at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A1: Glute-ham raise [or Nordic ham curl]",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "0min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "A2: Prisoner back extension",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Place your hands behind your head and squeeze your glutes to straighen your hips",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "20-30 sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Omni-grip lat pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "1 set wide grip (overhand), 1 set middle grip (overhand), 1 set close grip (underhand)",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Chest-supported row",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Can use machine or dumbbells. Full stretch at the bottom, squeeze at the top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Close-grip bench press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Tuck your elbows against your sides more than you would on standard grip bench press",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Seated face pull",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Mind muscle connection with rear delts on set 1 (sweep the weight out). Mind muscle connection with mid-traps on set 2 (squeeze shoulder blades hard).",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Dumbbell lateral raise 21s",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "7/7/7",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: top half of ROM, middle 7 reps: full ROM, last 7 reps: bottom half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Incline dumbbell curl",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Keep your elbows locked in place to maintain a stretch on the biceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Neck flexion/extension (optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10/10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "10 reps flexion (front of neck), 10 reps extension (back of neck)",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 4,
+                  "reps": "3",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Maintain tight pressure in your upper back against the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Wide-grip lat pulldown",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip. Think about pulling your elbows \"down\" and \"in\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Sliding leg curl",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips high, think about \"pulling your heels into your hips\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Wall slide",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Don't use weight. These will help with shoulder stability. Don't skip!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Opposite stance deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-5 min",
+                  "notes": "If you normally perform deadlifts sumo, perform conventional, and vice versa. Use your opposite stance estimated max.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "8",
+                  "rest": "2-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg press",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "2-3 min",
+                  "notes": "If you low bar squat, use a low foot placement. If you high bar squat, use a high foot placement",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Hammer curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Go heavy, use a tiny bit of momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or dumbbell isometric hold (grip work)",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "20-30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Do an isometric hold with dumbbells or a barbell",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Front squat",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Try adding weight to the load you used in Week 5",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "2",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Get comfortable pausing with heavy weight, 2-3 second pause",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Weighted neutral-grip pull-up",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Pull your chest to the bar, add weight if needed to hit RPE",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Prone trap raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about tucking your shoulder blades \"down\" as you raise your arms. Mind muscle connection with mid-lower traps",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hanging leg raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "1\" Block pull",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "9",
+                  "rest": "4-6 min",
+                  "notes": "These will start to feel very heavy. Only do 1 set if you're feeling very fatigued from it",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Dip",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Add weight or assistance as needed. Do DB floor press if no access to dip handles.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "One-arm row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use DB or cable. Minimize torso momentum.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Triceps pressdown 21s",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "7/7/7",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: full ROM, next 7 reps: bottom half of ROM, last 7 reps: top half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "DB lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your delts",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Pin squat",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to just above parallel",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6",
+                  "rest": "3-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "A1: Sissy squat",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "0 min",
+                  "notes": "Or leg press with low foot placement. Let your knees travel forward. Mind muscle connection with quads.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A2: Nordic ham curl",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "2-3min",
+                  "notes": "Keep your hips as straight as you can, can sub for lying leg curl",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hip abduction",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Machine, band, or weighted, 1 second isometric hold at the top of each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Cable crunch (abs)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "0 min",
+                  "notes": "Squeeze your six pack to crunch the weight, don't yank with your hands",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Cable shrug-in (traps)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight: https://youtu.be/C6sYjDFuq9I?t=357",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Larsen press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Machine chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Dropset on the last set",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Single-arm pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "8-10each",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Triceps pressdown",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your triceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Inverse Zottman curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hammer curl on concentric, supinated curl (palms up) on the eccentric",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Lateral raise (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Can use cable, dumbbell or bands. Use what you 'feel' the most. Stay in constant tension.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "6",
+                  "rest": "3-4 min",
+                  "notes": "These are intentionally light. Lock in your technique and move the bar with max speed",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Cable pull-through",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes hard at the top, don't allow your lower back to round",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15/10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Dropset. Do 15 reps, drop the weight up to 50%, do another 10 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Can perform seated or lying. Focus on contracting your hamstrings",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "20-30 sec",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Weighted eccentric-overload pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "N/A",
+                  "notes": "Jump up to assist with the positive or use a partner to help you on the positive, then control the negative for 5 seconds.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Eccentric-accentuated pull-up",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "3-second lowering phase. Use assistance/resistance as needed",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Pendlay row / bent over row",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "5/10",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "First 5 reps: very strict Pendlay rows. Final 10 reps: \"cheat\" barbell bent over rows (use controlled momentum and pull to stomach)",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Deficit push-up",
+                  "warmup_sets": "2",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "8",
+                  "rest": "2-3min",
+                  "notes": "4\" deficit. Sink your chest deep. Track your reps for next week.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your biceps, minimize torso momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Dumbbell lateral raise iso-hold",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "45sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the dumbbell with your arms parallel to the floor for the time specified",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 4,
+                  "reps": "2",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Maintain tight pressure in your upper back against the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Wide-grip lat pulldown",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip. Think about pulling your elbows \"down\" and \"in\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Sliding leg curl",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips high, think about \"pulling your heels into your hips\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Wall slide",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Don't use weight. These will help with shoulder stability. Don't skip!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Opposite stance deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 2,
+                  "reps": "2",
+                  "rpe": "3",
+                  "rest": "3-5 min",
+                  "notes": "If you normally perform deadlifts sumo, perform conventional, and vice versa. Use your opposite stance estimated max. Heavy deadlifts in a couple days, so go lighter on the weight",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "8",
+                  "rest": "2-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg press",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "2-3 min",
+                  "notes": "If you low bar squat, use a low foot placement. If you high bar squat, use a high foot placement",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Hammer curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Go heavy, use a tiny bit of momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or dumbbell isometric hold (grip work)",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "20-30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Do an isometric hold with dumbbells or a barbell",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Front squat",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6",
+                  "rest": "3-4 min",
+                  "notes": "Stay light, keep your torso upright",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "2",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Get comfortable pausing with heavy weight, 2-3 second pause",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Weighted neutral-grip pull-up",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Pull your chest to the bar, add weight if needed to hit RPE",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Prone trap raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about tucking your shoulder blades \"down\" as you raise your arms. Mind muscle connection with mid-lower traps",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hanging leg raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "9",
+                  "rest": "4-6 min",
+                  "notes": "Aim for a PR for 3-6 reps",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Dip",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Add weight or assistance as needed. Do DB floor press if no access to dip handles.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "One-arm row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use DB or cable. Minimize torso momentum.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Triceps pressdown 21s",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "7/7/7",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: full ROM, next 7 reps: bottom half of ROM, last 7 reps: top half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "DB lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your delts",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Pin squat",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to just above parallel",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "A1: Sissy squat",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "0 min",
+                  "notes": "Or leg press with low foot placement. Let your knees travel forward. Mind muscle connection with quads.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A2: Nordic ham curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "2-3min",
+                  "notes": "Keep your hips as straight as you can, can sub for lying leg curl",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hip abduction",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Machine, band, or weighted, 1 second isometric hold at the top of each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Cable crunch (abs)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "0 min",
+                  "notes": "Squeeze your six pack to crunch the weight, don't yank with your hands",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Cable shrug-in (traps)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight: https://youtu.be/C6sYjDFuq9I?t=357",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Larsen press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Shoulder blades still retracted and depressed. Slight arch in upper back. Zero leg drive.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Machine chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Dropset on the last set",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Single-arm pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "8-10each",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Triceps pressdown",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your triceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Inverse Zottman curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Hammer curl on concentric, supinated curl (palms up) on the eccentric",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Lateral raise (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Can use cable, dumbbell or bands. Use what you 'feel' the most. Stay in constant tension.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Use this as a time to perfect your form",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Cable pull-through",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes hard at the top, don't allow your lower back to round",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15/10",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Dropset. Do 15 reps, drop the weight up to 50%, do another 10 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Can perform seated or lying. Focus on contracting your hamstrings",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "20-30 sec",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Weighted eccentric-overload pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "9",
+                  "rest": "N/A",
+                  "notes": "Jump up to assist with the positive or use a partner to help you on the positive, then control the negative for 5 seconds.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Eccentric-accentuated pull-up",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "3-second lowering phase. Use assistance/resistance as needed",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "5",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Pendlay row / bent over row",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "5/10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "First 5 reps: very strict Pendlay rows. Final 10 reps: \"cheat\" barbell bent over rows (use controlled momentum and pull to stomach)",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Deficit push-up",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "AMRAP",
+                  "rpe": "9",
+                  "rest": "2-3min",
+                  "notes": "4\" deficit. Sink your chest deep. Beat your reps from last week.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your biceps, minimize torso momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Dumbbell lateral raise iso-hold",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "45sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the dumbbell with your arms parallel to the floor for the time specified",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 11,
+          "workouts": [
+            {
+              "name": "FULL BODY 1",
+              "type": "full",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Back squat",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "1",
+                  "rpe": "8.5",
+                  "rest": "3-4 min",
+                  "notes": "Maintain tight pressure in your upper back against the bar",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell bench press",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "6",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Set up a comfortable arch, quick pause on the chest and explode up on each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Wide-grip lat pulldown",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "6-8",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "1.5x shoulder width grip. Think about pulling your elbows \"down\" and \"in\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Sliding leg curl",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Keep your hips high, think about \"pulling your heels into your hips\"",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Wall slide",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Don't use weight. These will help with shoulder stability. Don't skip!",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 2",
+              "type": "full",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Opposite stance deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "6",
+                  "rest": "3-5 min",
+                  "notes": "If you normally perform deadlifts sumo, perform conventional, and vice versa. Use your opposite stance estimated max.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "8",
+                  "rpe": "8",
+                  "rest": "2-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Leg press",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "10-12",
+                  "rpe": "7",
+                  "rest": "2-3 min",
+                  "notes": "If you low bar squat, use a low foot placement. If you high bar squat, use a high foot placement",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Seated cable row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Focus on squeezing your shoulder blades together, drive your elbows down and back",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Hammer curl",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Go heavy, use a tiny bit of momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or dumbbell isometric hold (grip work)",
+                  "warmup_sets": "1",
+                  "working_sets": 2,
+                  "reps": "20-30sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Do an isometric hold with dumbbells or a barbell",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 3",
+              "type": "full",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Front squat",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "6",
+                  "rest": "3-4 min",
+                  "notes": "Stay light, keep your torso upright",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Pause barbell bench press",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "1",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Get comfortable pausing with heavy weight, 1-2 second pause",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Weighted neutral-grip pull-up",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "4-6",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Pull your chest to the bar, add weight if needed to hit RPE",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg curl (choice)",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Use seated leg curl if available. Can use lying leg curl or Nordic ham curl if no machine access. Focus on the mind-muscle connection",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Prone trap raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about tucking your shoulder blades \"down\" as you raise your arms. Mind muscle connection with mid-lower traps",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hanging leg raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Knees to chest, controlled reps, straighten legs more to increase difficulty",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "1-2 second pause at the bottom of each rep, full squeeze at the top",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 4",
+              "type": "full",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "4",
+                  "working_sets": 3,
+                  "reps": "3",
+                  "rpe": "8",
+                  "rest": "4-6 min",
+                  "notes": "Pull the slack out of the bar before lifting, take your time with the set up",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Dip",
+                  "warmup_sets": "3",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Add weight or assistance as needed. Do DB floor press if no access to dip handles.",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "One-arm row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Can use DB or cable. Minimize torso momentum.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Triceps pressdown 21s",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "7/7/7",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "First 7 reps: full ROM, next 7 reps: bottom half of ROM, last 7 reps: top half of ROM",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "DB lateral raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your delts",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 12,
+          "workouts": [
+            {
+              "name": "LOWER #1",
+              "type": "lower",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Pin squat",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Set the pins to just above parallel",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Emphasize the stretch in your hamstrings, prevent your lower back from rounding",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "A1: Sissy squat",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "0 min",
+                  "notes": "Or leg press with low foot placement. Let your knees travel forward. Mind muscle connection with quads.",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "A2: Nordic ham curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "2-3min",
+                  "notes": "Keep your hips as straight as you can, can sub for lying leg curl",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side. Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Hip abduction",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Machine, band, or weighted, 1 second isometric hold at the top of each rep",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "A1: Cable crunch (abs)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "0 min",
+                  "notes": "Squeeze your six pack to crunch the weight, don't yank with your hands",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "A2: Cable shrug-in (traps)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Set up two cable handles low and shrug up and in. Squeeze your upper traps to move the weight: https://youtu.be/C6sYjDFuq9I?t=357",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #1",
+              "type": "upper",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Barbell bench press (RPE 9.5 AMRAP)",
+                  "warmup_sets": "3",
+                  "working_sets": 1,
+                  "reps": "AMRAP",
+                  "rpe": "9-9.5",
+                  "rest": "3-4 min",
+                  "notes": "Do as many reps as possible to an RPE 9-9.5. Don't actually fail. Use a spotter",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Barbell bench press (Back off)",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "10",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Go lighter, flare your elbows slightly more than normal",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Machine chest-supported row",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "Dropset on the last set",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Machine incline press",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "3-4 min",
+                  "notes": "Smith machine or hammer strength machine. Use incline DB press if no machine access. ~45 degree incline.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Single-arm pulldown",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "8-10each",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker side",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Triceps pressdown",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your triceps",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Inverse Zottman curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Hammer curl on concentric, supinated curl (palms up) on the eccentric",
+                  "substitutions": []
+                },
+                {
+                  "order": 8,
+                  "name": "Lateral raise (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Can use cable, dumbbell or bands. Use what you 'feel' the most. Stay in constant tension.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "LOWER #2",
+              "type": "lower",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "3",
+                  "working_sets": 2,
+                  "reps": "6",
+                  "rpe": "7",
+                  "rest": "3-4 min",
+                  "notes": "Pull the slack out of the bar before lifting, take your time with the set up",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Hack squat",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "12",
+                  "rpe": "8",
+                  "rest": "2-3 min",
+                  "notes": "Allow your knees to come forward (past your toes), focus the tension on your quads",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Cable pull-through",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "12-15",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Contract your glutes hard at the top, don't allow your lower back to round",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Leg extension",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "15/10",
+                  "rpe": "10",
+                  "rest": "1-2 min",
+                  "notes": "Dropset. Do 15 reps, drop the weight up to 50%, do another 10 reps.",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Unilateral leg curl (choice)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12each",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Can perform seated or lying. Focus on contracting your hamstrings",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Standing calf raise",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Think about rolling back and forth on the balls of your feet",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "L-sit hold",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "20-30 sec",
+                  "rpe": "7",
+                  "rest": "1-2 min",
+                  "notes": "Hold the top position of a hanging leg raise for the time interval given. Aim to increase the hold time week to week.",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "UPPER #2",
+              "type": "upper",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Weighted eccentric-overload pull-up",
+                  "warmup_sets": "2",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "9",
+                  "rest": "N/A",
+                  "notes": "Jump up to assist with the positive or use a partner to help you on the positive, then control the negative for 5 seconds.",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "Eccentric-accentuated pull-up",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "6-8",
+                  "rpe": "9",
+                  "rest": "2-3 min",
+                  "notes": "3-second lowering phase. Use assistance/resistance as needed",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell overhead press",
+                  "warmup_sets": "3",
+                  "working_sets": 4,
+                  "reps": "6",
+                  "rpe": "8",
+                  "rest": "3-4 min",
+                  "notes": "Squeeze your glutes to keep your torso upright, press up and slightly back",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Pendlay row / bent over row",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "5/10",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "First 5 reps: very strict Pendlay rows. Final 10 reps: \"cheat\" barbell bent over rows (use controlled momentum and pull to stomach)",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Deficit push-up",
+                  "warmup_sets": "2",
+                  "working_sets": 2,
+                  "reps": "AMRAP",
+                  "rpe": "9",
+                  "rest": "2-3min",
+                  "notes": "4\" deficit. Sink your chest deep. Beat your reps from last week.",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Barbell or EZ bar curl",
+                  "warmup_sets": "2",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2 min",
+                  "notes": "Focus on contracting your biceps, minimize torso momentum",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "Dumbbell lateral raise iso-hold",
+                  "warmup_sets": "0",
+                  "working_sets": 2,
+                  "reps": "45sec",
+                  "rpe": "8",
+                  "rest": "1-2 min",
+                  "notes": "Hold the dumbbell with your arms parallel to the floor for the time specified",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "FULL BODY 5 (PUMP DAY)",
+              "type": "full",
+              "day_number": 5,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "A1: Hammer curl",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "8-10",
+                  "rpe": "9",
+                  "rest": "0min",
+                  "notes": "Do both arms at once. Use a small amount of momentum, control the eccentric",
+                  "substitutions": []
+                },
+                {
+                  "order": 2,
+                  "name": "A2: Single-arm overhead triceps extension",
+                  "warmup_sets": "1",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "9",
+                  "rest": "1-2min",
+                  "notes": "Can use cable, band or dumbbell. Focus on stretching the triceps, keep your elbow locked in place",
+                  "substitutions": []
+                },
+                {
+                  "order": 3,
+                  "name": "B1: Cable curl",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "20",
+                  "rpe": "8",
+                  "rest": "0min",
+                  "notes": "Traditional cable curl using a bar attachment. Keep the cable in motion, no pausing at the bottom or top",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "B2: Cable triceps kickback",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "20",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Lean slightly forward, lock your elbow behind your torso (shoulder hyperextension)",
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Enhanced-eccentric calf raise",
+                  "warmup_sets": "1",
+                  "working_sets": 3,
+                  "reps": "8each",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "Do the concentric with both legs, then do the eccentric unilaterally with a 3-second lowering phase",
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "C1: Plate shrug",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15-20",
+                  "rpe": "8",
+                  "rest": "0min",
+                  "notes": "Brief pause at the top and bottom of ROM. Think about pulling your shoulders up to your ears!",
+                  "substitutions": []
+                },
+                {
+                  "order": 7,
+                  "name": "C2: Neck flexion/extension (optional)",
+                  "warmup_sets": "0",
+                  "working_sets": 3,
+                  "reps": "15/15",
+                  "rpe": "8",
+                  "rest": "1-2min",
+                  "notes": "15 reps flexion (front of neck), 15 reps extension (back of neck)",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

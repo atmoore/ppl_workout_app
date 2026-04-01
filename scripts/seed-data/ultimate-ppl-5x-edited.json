@@ -1,0 +1,547 @@
+{
+  "name": "Ultimate PPL 5x (Edited)",
+  "slug": "ultimate-ppl-5x-edited",
+  "frequency": 5,
+  "description": "Jeff Nippard's Ultimate Push Pull Legs System - 5x/week (Edited)",
+  "source_file": "Edited PPL 5x.xlsx",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Mixed",
+      "description": null,
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "name": "Pull #1",
+              "type": "pull",
+              "day_number": 1,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Grip Chin Up",
+                  "warmup_sets": "0.0",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "See Notes",
+                  "rest": "~2-3 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Machine Pulldown"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Pull-Up"
+                    }
+                  ]
+                },
+                {
+                  "order": 2,
+                  "name": "Low Row",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "~2-3 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Seated Row"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Pull-Up"
+                    }
+                  ]
+                },
+                {
+                  "order": 3,
+                  "name": "Lat Pulldown (drop set last)",
+                  "warmup_sets": "2.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8-9",
+                  "rest": "~2-3 min",
+                  "notes": "After hitting failure at ~8-10 reps, do a dropset. Strip the weight back ~30-50% and do another 5 reps with nice and controlled technique",
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Bent Over Row",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "9-10",
+                  "rest": "0 min",
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 5,
+                  "name": "Lat Pullover",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "12",
+                  "rpe": "N/A",
+                  "rest": "0 min",
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Face Pull",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Reverse Cable Flye"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Bent-Over Reverse DB Flye"
+                    }
+                  ]
+                },
+                {
+                  "order": 7,
+                  "name": "EZ Bar Curls (last set to failure)",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Focus on contracting your biceps, minimize torso momentum",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "DB Curl"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Cable Curl"
+                    }
+                  ]
+                },
+                {
+                  "order": 8,
+                  "name": "Hammer Curls",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "10.0",
+                  "rest": "~1-2 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Spider Curl"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Bayesian Curl"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Legs #1",
+              "type": "legs",
+              "day_number": 2,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Squat (top set)",
+                  "warmup_sets": "3-4",
+                  "working_sets": 1,
+                  "reps": "3-5",
+                  "rpe": "8-9",
+                  "rest": "~3-4 min",
+                  "notes": "Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Hack Squat"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "DB Bulgarian Split Squat"
+                    }
+                  ]
+                },
+                {
+                  "order": 2,
+                  "name": "Pause Squat (Lower Weight)",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "5",
+                  "rpe": "8-9",
+                  "rest": "~3-4 min",
+                  "notes": "Drop the weight by ~25% from your top set. 2 second pause. Sit back and down, keep your upper back tight to the bar",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Pause Hack Squat"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Pause DB Bulgarian Split Squat"
+                    }
+                  ]
+                },
+                {
+                  "order": 3,
+                  "name": "Barbell RDL",
+                  "warmup_sets": "2.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8-9",
+                  "rest": "~2-3 min",
+                  "notes": "Maintain a neutral lower back, set your hips back, don't allow your spine to round",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "DB RDL"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "45° Hyperextension"
+                    }
+                  ]
+                },
+                {
+                  "order": 4,
+                  "name": "Seated Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Lying Leg Curl"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Nordic Ham Curl"
+                    }
+                  ]
+                },
+                {
+                  "order": 5,
+                  "name": "Leg Press",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 6,
+                  "name": "Calf Raises",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Standing Calf Raises"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Upper #1",
+              "type": "upper",
+              "day_number": 3,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Wide Grip Lat Pulldown",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8-9",
+                  "rest": "~2-3 min",
+                  "notes": "1.5x shoulder width grip, pull your chest to the bar",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Lat Pulldown"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Machine Pulldown"
+                    }
+                  ]
+                },
+                {
+                  "order": 2,
+                  "name": "Smith Machine Military Press",
+                  "warmup_sets": "2-3",
+                  "working_sets": 3,
+                  "reps": "10,8,6",
+                  "rpe": "8-9",
+                  "rest": "~3-4 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Seated Shoulder DB Press"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Machine Shoulder Press"
+                    }
+                  ]
+                },
+                {
+                  "order": 3,
+                  "name": "Machine Chest Press",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": null,
+                  "rest": null,
+                  "notes": null,
+                  "substitutions": []
+                },
+                {
+                  "order": 4,
+                  "name": "Wide Grip Seated Row",
+                  "warmup_sets": "2.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "8-9",
+                  "rest": "~2-3 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Single-Arm DB Row"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Meadows Row"
+                    }
+                  ]
+                },
+                {
+                  "order": 5,
+                  "name": "Shrugs",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "10-12",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "DB Lateral Raise"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Machine Lateral Raise"
+                    }
+                  ]
+                },
+                {
+                  "order": 6,
+                  "name": "Cable Flys",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "DB Fly"
+                    }
+                  ]
+                },
+                {
+                  "order": 7,
+                  "name": "Tricep Pushdown + Bicep Curl",
+                  "warmup_sets": "0.0",
+                  "working_sets": 3,
+                  "reps": "6-8",
+                  "rpe": "10.0",
+                  "rest": "0 min",
+                  "notes": "Superset",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "name": "Lower #1",
+              "type": "lower",
+              "day_number": 4,
+              "exercises": [
+                {
+                  "order": 1,
+                  "name": "Deadlift",
+                  "warmup_sets": "3-4",
+                  "working_sets": 1,
+                  "reps": "5",
+                  "rpe": "8-9",
+                  "rest": "~3-5 min",
+                  "notes": "Brace your lats, chest tall, pull the slack out of the bar before lifting",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Trap Bar Deadlift"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Barbell Hip Thrust"
+                    }
+                  ]
+                },
+                {
+                  "order": 2,
+                  "name": "Romanian Deadlift",
+                  "warmup_sets": "0.0",
+                  "working_sets": 2,
+                  "reps": "8",
+                  "rpe": "8-9",
+                  "rest": "~3-4 min",
+                  "notes": null,
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Barbell RDL"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "DB RDL"
+                    }
+                  ]
+                },
+                {
+                  "order": 3,
+                  "name": "Leg Press",
+                  "warmup_sets": "2-3",
+                  "working_sets": 4,
+                  "reps": "10-12",
+                  "rpe": "8-9",
+                  "rest": "~2-3 min",
+                  "notes": "Medium width feet placement on the platform, don't allow your lower back to round",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Goblet Squat"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Walking Lunge"
+                    }
+                  ]
+                },
+                {
+                  "order": 4,
+                  "name": "Standing Leg Curl",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Keep your hips straight, do Nordic ham curls if no GHR machine",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Nordic Ham Curl"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Lying Leg Curl"
+                    }
+                  ]
+                },
+                {
+                  "order": 5,
+                  "name": "Single Leg...Leg Extension",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Control the weight with a 3-4 second negative",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "DB Step-Up"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Goblet Squat"
+                    }
+                  ]
+                },
+                {
+                  "order": 6,
+                  "name": "Seated Calf Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 4,
+                  "reps": "15-20",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Press all the way up to your toes, stretch your calves at the bottom, don't bounce",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Standing Calf Raise"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Leg Press Toe Press"
+                    }
+                  ]
+                },
+                {
+                  "order": 7,
+                  "name": "Leg Raise",
+                  "warmup_sets": "1.0",
+                  "working_sets": 3,
+                  "reps": "8-10",
+                  "rpe": "9-10",
+                  "rest": "~1-2 min",
+                  "notes": "Don't swing your legs at the bottom, minimize momentum, tuck your knees towards your chest if lifting your legs straight out is too challenging",
+                  "substitutions": [
+                    {
+                      "option_number": 1,
+                      "name": "Hanging Leg Raise"
+                    },
+                    {
+                      "option_number": 2,
+                      "name": "Reverse Crunch"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
