@@ -60,7 +60,7 @@ export function WorkoutCard({
         <ExerciseList exercises={exercises} />
         <Link
           href="/chat"
-          className="inline-flex w-full items-center justify-center rounded-lg bg-zinc-50 px-4 py-2 text-sm font-medium text-zinc-950 transition-colors hover:bg-zinc-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+          className="inline-flex w-full items-center justify-center rounded-xl bg-zinc-50 px-4 py-3.5 text-base font-semibold text-zinc-950 transition-colors active:bg-zinc-300 active:scale-[0.98]"
         >
           Start Workout
         </Link>

@@ -123,8 +123,25 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
   }
   html {
     @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* Prevent iOS zoom on input focus */
+  input, textarea, select {
+    font-size: 16px !important;
+  }
+}
+
+/* Safe area support for iOS */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
   }
 }
