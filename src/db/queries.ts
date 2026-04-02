@@ -250,45 +250,45 @@ export async function getAllPrograms() {
 }
 
 export async function getAllProgramsWithDetails() {
-  const allPrograms = await db.select().from(programs).orderBy(programs.name);
+  // Fetch all programs + all phases in just 2 queries
+  const [allPrograms, allPhases] = await Promise.all([
+    db.select().from(programs).orderBy(programs.name),
+    db.select().from(phases).orderBy(phases.programId, phases.phaseNumber),
+  ]);
 
-  const result = await Promise.all(
-    allPrograms.map(async (program) => {
-      const programPhases = await db
-        .select()
-        .from(phases)
-        .where(eq(phases.programId, program.id))
-        .orderBy(phases.phaseNumber);
-
-      let totalWorkouts = 0;
-      let totalExercises = 0;
-      let totalWeeks = 0;
-
-      for (const phase of programPhases) {
-        const phaseWeeks = await db.select().from(weeks).where(eq(weeks.phaseId, phase.id));
-        totalWeeks += phaseWeeks.length;
-        for (const week of phaseWeeks) {
-          const wts = await db.select().from(workoutTemplates).where(eq(workoutTemplates.weekId, week.id));
-          totalWorkouts += wts.length;
-          for (const wt of wts) {
-            const ets = await db.select().from(exerciseTemplates).where(eq(exerciseTemplates.workoutTemplateId, wt.id));
-            totalExercises += ets.length;
-          }
-        }
-      }
-
-      return {
-        ...program,
-        phaseCount: programPhases.length,
-        totalWeeks,
-        totalWorkouts,
-        totalExercises,
-        phaseNames: programPhases.map(p => p.name ?? `Phase ${p.phaseNumber}`),
-      };
+  // Single aggregation query for all counts across all programs
+  const stats = await db
+    .select({
+      programId: phases.programId,
+      totalWeeks: sql<number>`count(distinct ${weeks.id})`,
+      totalWorkouts: sql<number>`count(distinct ${workoutTemplates.id})`,
+      totalExercises: sql<number>`count(distinct ${exerciseTemplates.id})`,
     })
-  );
+    .from(phases)
+    .leftJoin(weeks, eq(weeks.phaseId, phases.id))
+    .leftJoin(workoutTemplates, eq(workoutTemplates.weekId, weeks.id))
+    .leftJoin(exerciseTemplates, eq(exerciseTemplates.workoutTemplateId, workoutTemplates.id))
+    .groupBy(phases.programId);
 
-  return result;
+  const statsMap = new Map(stats.map(s => [s.programId, s]));
+  const phasesMap = new Map<number, typeof allPhases>();
+  for (const phase of allPhases) {
+    if (!phasesMap.has(phase.programId)) phasesMap.set(phase.programId, []);
+    phasesMap.get(phase.programId)!.push(phase);
+  }
+
+  return allPrograms.map(program => {
+    const programPhases = phasesMap.get(program.id) || [];
+    const s = statsMap.get(program.id);
+    return {
+      ...program,
+      phaseCount: programPhases.length,
+      totalWeeks: Number(s?.totalWeeks) || 0,
+      totalWorkouts: Number(s?.totalWorkouts) || 0,
+      totalExercises: Number(s?.totalExercises) || 0,
+      phaseNames: programPhases.map(p => p.name ?? `Phase ${p.phaseNumber}`),
+    };
+  });
 }
 
 export async function getProgramDetails(programId: number) {
