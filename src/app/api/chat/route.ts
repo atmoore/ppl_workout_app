@@ -2,7 +2,7 @@ import { convertToModelMessages, streamText, UIMessage } from "ai";
 import { z } from "zod";
 import { buildSystemPrompt } from "@/lib/chat-context";
 import { db } from "@/db";
-import { setLogs, workoutSessions, exerciseMaxes } from "@/db/schema";
+import { setLogs, workoutSessions, exerciseMaxes, chatMessages } from "@/db/schema";
 import { getCurrentWorkout, advanceDay } from "@/db/queries";
 import { eq } from "drizzle-orm";
 
@@ -13,10 +13,35 @@ export async function POST(req: Request) {
   const systemPrompt = await buildSystemPrompt();
   const workoutData = await getCurrentWorkout();
 
+  // Save user message to DB
+  const lastUserMsg = messages[messages.length - 1];
+  if (lastUserMsg?.role === "user") {
+    const session = await getOrCreateSession(workoutData);
+    const textPart = lastUserMsg.parts?.find((p: { type: string }) => p.type === "text");
+    const textContent = textPart && "text" in textPart ? (textPart as { text: string }).text : "";
+    if (textContent) {
+      await db.insert(chatMessages).values({
+        sessionId: session.id,
+        role: "user",
+        content: textContent,
+      });
+    }
+  }
+
   const result = streamText({
     model: "anthropic/claude-sonnet-4.6",
     system: systemPrompt,
     messages: await convertToModelMessages(messages),
+    onFinish: async ({ text }) => {
+      if (text) {
+        const session = await getOrCreateSession(workoutData);
+        await db.insert(chatMessages).values({
+          sessionId: session.id,
+          role: "assistant",
+          content: text,
+        });
+      }
+    },
     tools: {
       logSets: {
         description: "Log one or more sets for an exercise. Call this whenever the user reports what they did.",

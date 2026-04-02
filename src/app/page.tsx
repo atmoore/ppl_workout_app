@@ -1,10 +1,11 @@
-import { getWeekWorkouts, getAllPrograms } from "@/db/queries";
+import { getWeekWorkouts, getAllPrograms, cleanupAbandonedSessions } from "@/db/queries";
 import { TodayView } from "@/components/today-view";
 import { Onboarding } from "@/components/onboarding";
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
+  await cleanupAbandonedSessions();
   const data = await getWeekWorkouts();
 
   if (!data) {

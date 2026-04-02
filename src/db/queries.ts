@@ -11,7 +11,7 @@ import {
   workoutSessions,
   exerciseMaxes,
 } from "./schema";
-import { eq, desc, sql } from "drizzle-orm";
+import { eq, desc, sql, and } from "drizzle-orm";
 
 export type UserProfile = typeof userProfile.$inferSelect;
 export type Program = typeof programs.$inferSelect;
@@ -314,8 +314,16 @@ export async function getProgramDetails(programId: number) {
 }
 
 export async function switchProgram(programId: number) {
-  const profile = await getUserProfile();
-  if (!profile) return;
+  let profile = await getUserProfile();
+
+  // Create profile if it doesn't exist
+  if (!profile) {
+    const [newProfile] = await db
+      .insert(userProfile)
+      .values({ units: "lbs" })
+      .returning();
+    profile = newProfile;
+  }
 
   // Get first phase of the new program
   const programPhases = await db
@@ -336,6 +344,19 @@ export async function switchProgram(programId: number) {
       currentDayNumber: 1,
     })
     .where(eq(userProfile.id, profile.id));
+}
+
+export async function cleanupAbandonedSessions() {
+  const today = new Date().toISOString().split("T")[0];
+  await db
+    .update(workoutSessions)
+    .set({ status: "skipped" })
+    .where(
+      and(
+        eq(workoutSessions.status, "active"),
+        sql`${workoutSessions.date} < ${today}`
+      )
+    );
 }
 
 export async function getWorkoutHistory(limit: number = 20) {
