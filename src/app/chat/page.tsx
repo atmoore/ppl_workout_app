@@ -44,12 +44,24 @@ export default function ChatPage() {
       .then((r) => r.json())
       .then((data) => {
         if (data.name) setWorkoutName(data.name);
-      })
-      .catch(() => {});
 
-    if (messages.length === 0) {
-      sendMessage({ text: "Let's go" });
-    }
+        if (messages.length === 0) {
+          if (data.hasActiveSession && data.activeSession?.setsLogged > 0) {
+            // Resume existing session
+            const names = data.activeSession.exerciseNames.slice(0, 3).join(", ");
+            sendMessage({
+              text: `I'm back. I already logged ${data.activeSession.exercisesLogged} exercises (${names}). What's next?`,
+            });
+          } else {
+            sendMessage({ text: "Let's go" });
+          }
+        }
+      })
+      .catch(() => {
+        if (messages.length === 0) {
+          sendMessage({ text: "Let's go" });
+        }
+      });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
