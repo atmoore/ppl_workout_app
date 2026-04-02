@@ -240,6 +240,45 @@ export async function getAllPrograms() {
   return db.select().from(programs).orderBy(programs.name);
 }
 
+export async function getAllProgramsWithDetails() {
+  const allPrograms = await db.select().from(programs).orderBy(programs.name);
+
+  const result = await Promise.all(
+    allPrograms.map(async (program) => {
+      const programPhases = await db
+        .select()
+        .from(phases)
+        .where(eq(phases.programId, program.id))
+        .orderBy(phases.phaseNumber);
+
+      let totalWorkouts = 0;
+      let totalExercises = 0;
+
+      for (const phase of programPhases) {
+        const phaseWeeks = await db.select().from(weeks).where(eq(weeks.phaseId, phase.id));
+        for (const week of phaseWeeks) {
+          const wts = await db.select().from(workoutTemplates).where(eq(workoutTemplates.weekId, week.id));
+          totalWorkouts += wts.length;
+          for (const wt of wts) {
+            const ets = await db.select().from(exerciseTemplates).where(eq(exerciseTemplates.workoutTemplateId, wt.id));
+            totalExercises += ets.length;
+          }
+        }
+      }
+
+      return {
+        ...program,
+        phaseCount: programPhases.length,
+        totalWorkouts,
+        totalExercises,
+        phaseNames: programPhases.map(p => p.name ?? `Phase ${p.phaseNumber}`),
+      };
+    })
+  );
+
+  return result;
+}
+
 export async function getProgramDetails(programId: number) {
   const [program] = await db.select().from(programs).where(eq(programs.id, programId));
   if (!program) return null;
