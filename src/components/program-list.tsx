@@ -30,6 +30,7 @@ function categorize(name: string): string {
 
 export function ProgramList({ programs, currentProgramId }: ProgramListProps) {
   const [switching, setSwitching] = useState<number | null>(null);
+  const [pendingSwitch, setPendingSwitch] = useState<Program | null>(null);
   const router = useRouter();
 
   const grouped = programs.reduce((acc, p) => {
@@ -64,7 +65,7 @@ export function ProgramList({ programs, currentProgramId }: ProgramListProps) {
             return (
               <button
                 key={program.id}
-                onClick={() => !isCurrent && handleSwitch(program.id)}
+                onClick={() => !isCurrent && setPendingSwitch(program)}
                 disabled={isCurrent || switching !== null}
                 className="text-left w-full disabled:opacity-70"
               >
@@ -106,6 +107,33 @@ export function ProgramList({ programs, currentProgramId }: ProgramListProps) {
           })}
         </div>
       ))}
+      {pendingSwitch && (
+        <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-zinc-700 bg-zinc-900 px-4 py-4">
+          <div className="mx-auto max-w-md">
+            <p className="text-sm text-zinc-200 mb-1">
+              Switch to <span className="font-semibold">{pendingSwitch.name}</span>?
+            </p>
+            <p className="text-xs text-zinc-500 mb-4">
+              This will start you at Phase 1, Week 1.
+            </p>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setPendingSwitch(null)}
+                className="flex-1 rounded-xl border border-zinc-700 bg-zinc-800 px-4 py-3 text-sm font-medium text-zinc-300 active:bg-zinc-700"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => { handleSwitch(pendingSwitch.id); setPendingSwitch(null); }}
+                disabled={switching !== null}
+                className="flex-1 rounded-xl bg-zinc-50 px-4 py-3 text-sm font-semibold text-zinc-950 active:bg-zinc-300 disabled:opacity-50"
+              >
+                {switching ? "Switching..." : "Switch"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

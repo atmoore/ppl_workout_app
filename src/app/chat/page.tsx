@@ -2,7 +2,7 @@
 
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChatMessage } from "@/components/chat-message";
 import { ChatInput } from "@/components/chat-input";
 import { WorkoutHeader } from "@/components/workout-header";
@@ -13,13 +13,19 @@ export default function ChatPage() {
   });
 
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [workoutName, setWorkoutName] = useState("Workout");
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages]);
 
-  // Auto-send greeting on mount
+  // Fetch workout name and auto-send greeting on mount
   useEffect(() => {
+    fetch("/api/current-workout")
+      .then((r) => r.json())
+      .then((data) => { if (data.name) setWorkoutName(data.name); })
+      .catch(() => {});
+
     if (messages.length === 0) {
       sendMessage({ text: "Let's go" });
     }
@@ -30,7 +36,7 @@ export default function ChatPage() {
 
   return (
     <div className="flex h-[100dvh] flex-col">
-      <WorkoutHeader workoutName="Workout" />
+      <WorkoutHeader workoutName={workoutName} />
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
         {messages.filter(m => m.role !== "system").map(message => (
           <ChatMessage key={message.id} message={message} />
