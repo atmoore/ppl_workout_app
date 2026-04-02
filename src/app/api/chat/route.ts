@@ -76,6 +76,41 @@ export async function POST(req: Request) {
           return { logged: true, exerciseName, weight, sets: reps.map((r: number, idx: number) => ({ set: idx + 1, reps: r })) };
         },
       },
+      calculatePlates: {
+        description: "Calculate what plates to put on each side of a barbell for a given weight. Call this when the user asks about plates, loading, or what to put on the bar.",
+        inputSchema: z.object({
+          targetWeight: z.number().describe("The total target weight in lbs"),
+          barWeight: z.number().default(45).describe("Bar weight in lbs, default 45"),
+        }),
+        execute: async ({ targetWeight, barWeight }) => {
+          const plates = [45, 35, 25, 10, 5, 2.5];
+          let remaining = (targetWeight - barWeight) / 2;
+
+          if (remaining < 0) {
+            return { error: `Target weight ${targetWeight} lbs is less than the bar (${barWeight} lbs)` };
+          }
+
+          const perSide: { plate: number; count: number }[] = [];
+          for (const plate of plates) {
+            if (remaining >= plate) {
+              const count = Math.floor(remaining / plate);
+              perSide.push({ plate, count });
+              remaining -= plate * count;
+            }
+          }
+
+          if (remaining > 0) {
+            return {
+              targetWeight,
+              barWeight,
+              perSide,
+              note: `Cannot make exact weight. ${remaining * 2} lbs remaining.`
+            };
+          }
+
+          return { targetWeight, barWeight, perSide };
+        },
+      },
       endWorkout: {
         description: "End the current workout session. Call when user says 'done', 'finished', or 'that's it'.",
         inputSchema: z.object({

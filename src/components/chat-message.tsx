@@ -69,6 +69,33 @@ export function ChatMessage({ message }: { message: UIMessage }) {
               </div>
             );
           }
+          if (part.type === "tool-calculatePlates" && part.state === "output-available") {
+            const result = part.output as {
+              targetWeight?: number;
+              barWeight?: number;
+              perSide?: Array<{ plate: number; count: number }>;
+              error?: string;
+              note?: string;
+            };
+            if (result.error) {
+              return (
+                <div key={i} className="my-1 rounded-lg bg-red-950 border border-red-800 p-2.5 text-xs text-red-200">
+                  {result.error}
+                </div>
+              );
+            }
+            return (
+              <div key={i} className="my-1 rounded-lg bg-zinc-900 border border-zinc-700 p-2.5 font-mono text-xs">
+                <div className="text-zinc-400 mb-1">{result.targetWeight} lbs — each side:</div>
+                <div className="text-zinc-100">
+                  {result.perSide?.map((p, j) => (
+                    <span key={j}>{p.count}×{p.plate} </span>
+                  ))}
+                </div>
+                {result.note && <div className="text-amber-400 mt-1 text-xs">{result.note}</div>}
+              </div>
+            );
+          }
           return null;
         })}
       </div>
