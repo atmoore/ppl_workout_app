@@ -4,7 +4,7 @@ import { buildSystemPrompt } from "@/lib/chat-context";
 import { db } from "@/db";
 import { setLogs, workoutSessions, exerciseMaxes, chatMessages } from "@/db/schema";
 import { getCurrentWorkout, advanceDay } from "@/db/queries";
-import { eq } from "drizzle-orm";
+import { eq, and, desc } from "drizzle-orm";
 
 export const maxDuration = 60;
 
@@ -128,6 +128,60 @@ export async function POST(req: Request) {
           const sets = await db.select().from(setLogs).where(eq(setLogs.sessionId, session.id));
           const exercises = new Set(sets.map((s) => s.exerciseName));
           return { completed: true, duration, totalSets: sets.length, exercisesLogged: exercises.size };
+        },
+      },
+      editLastLog: {
+        description: "Edit or delete the most recently logged sets for an exercise. Call when user says they made a mistake, logged wrong weight/reps, or wants to undo the last entry.",
+        inputSchema: z.object({
+          exerciseName: z.string().describe("The exercise to correct"),
+          action: z.enum(["edit", "delete"]).describe("Whether to edit or delete"),
+          newWeight: z.number().optional().describe("New weight if editing"),
+          newReps: z.array(z.number()).optional().describe("New reps if editing"),
+        }),
+        execute: async ({ exerciseName, action, newWeight, newReps }) => {
+          const session = await getActiveSession();
+          if (!session) return { success: false, error: "No active session" };
+
+          const recentSets = await db
+            .select()
+            .from(setLogs)
+            .where(
+              and(
+                eq(setLogs.sessionId, session.id),
+                eq(setLogs.exerciseName, exerciseName)
+              )
+            )
+            .orderBy(desc(setLogs.id));
+
+          if (recentSets.length === 0) {
+            return { success: false, error: `No logged sets found for ${exerciseName}` };
+          }
+
+          if (action === "delete") {
+            for (const set of recentSets) {
+              await db.delete(setLogs).where(eq(setLogs.id, set.id));
+            }
+            return { success: true, action: "deleted", exerciseName, setsRemoved: recentSets.length };
+          }
+
+          if (action === "edit" && newWeight !== undefined && newReps) {
+            for (const set of recentSets) {
+              await db.delete(setLogs).where(eq(setLogs.id, set.id));
+            }
+            for (let i = 0; i < newReps.length; i++) {
+              await db.insert(setLogs).values({
+                sessionId: session.id,
+                exerciseName,
+                setNumber: i + 1,
+                setType: "working",
+                weight: String(newWeight),
+                reps: newReps[i],
+              });
+            }
+            return { success: true, action: "edited", exerciseName, newWeight, newReps };
+          }
+
+          return { success: false, error: "Missing weight or reps for edit" };
         },
       },
     },

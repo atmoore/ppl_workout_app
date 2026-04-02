@@ -69,6 +69,28 @@ export function ChatMessage({ message }: { message: UIMessage }) {
               </div>
             );
           }
+          if (part.type === "tool-editLastLog" && part.state === "output-available") {
+            const result = part.output as { success: boolean; action?: string; exerciseName?: string; error?: string; setsRemoved?: number; newWeight?: number; newReps?: number[] };
+            if (!result.success) {
+              return (
+                <div key={i} className="my-1 rounded-lg bg-red-950 border border-red-800 p-2.5 text-xs text-red-200">
+                  {result.error}
+                </div>
+              );
+            }
+            return (
+              <div key={i} className="my-1 rounded-lg bg-amber-950 border border-amber-800 p-2.5 font-mono text-xs">
+                <div className="text-amber-400 mb-1">
+                  {result.action === "deleted" ? "Removed" : "Corrected"}
+                </div>
+                <div className="text-amber-200">
+                  {result.exerciseName}
+                  {result.action === "deleted" && ` — ${result.setsRemoved} sets removed`}
+                  {result.action === "edited" && `: ${result.newWeight} lbs × ${result.newReps?.join(", ")}`}
+                </div>
+              </div>
+            );
+          }
           if (part.type === "tool-calculatePlates" && part.state === "output-available") {
             const result = part.output as {
               targetWeight?: number;

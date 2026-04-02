@@ -162,8 +162,16 @@ export async function advanceDay(): Promise<void> {
 
       if (nextPhase) {
         nextPhaseId = nextPhase.id;
+      } else {
+        // Program complete — set sentinel value
+        await db
+          .update(userProfile)
+          .set({
+            currentDayNumber: 0,
+          })
+          .where(eq(userProfile.id, profile.id));
+        return;
       }
-      // If no next phase, stay (program complete) — nextPhaseId remains current
     }
   }
 
@@ -233,6 +241,7 @@ export async function getWeekWorkouts() {
     workouts: workoutsWithExercises,
     currentDayNumber: profile.currentDayNumber ?? 1,
     todaySession,
+    programComplete: profile.currentDayNumber === 0,
   };
 }
 

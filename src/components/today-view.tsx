@@ -5,6 +5,7 @@ import Link from "next/link";
 import { WeekPills } from "./week-pills";
 import { WorkoutPreview } from "./workout-preview";
 
+
 interface Exercise {
   name: string;
   workingSets: number | null;
@@ -32,9 +33,10 @@ interface TodayViewProps {
   workouts: Workout[];
   currentDayNumber: number;
   todaySession: TodaySession | null;
+  programComplete?: boolean;
 }
 
-export function TodayView({ programName, phaseName, weekNumber, workouts, currentDayNumber, todaySession }: TodayViewProps) {
+export function TodayView({ programName, phaseName, weekNumber, workouts, currentDayNumber, todaySession, programComplete }: TodayViewProps) {
   const [selectedDay, setSelectedDay] = useState(currentDayNumber);
 
   const days = workouts.map(w => ({
@@ -49,6 +51,24 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
   const isActive = isCurrentDay && todaySession?.status === "active";
 
   const nextWorkout = workouts.find(w => w.dayNumber === currentDayNumber + 1);
+
+  if (programComplete) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4 px-4 pt-6">
+        <span className="text-4xl">🎉</span>
+        <h2 className="text-xl font-bold text-zinc-50">Program Complete!</h2>
+        <p className="text-sm text-zinc-400 text-center">
+          You finished {programName}. Time to pick your next program.
+        </p>
+        <Link
+          href="/programs"
+          className="rounded-xl bg-zinc-50 px-6 py-3 text-base font-semibold text-zinc-950 active:bg-zinc-300"
+        >
+          Browse Programs
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col gap-4 px-4 pt-6">

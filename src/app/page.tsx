@@ -22,7 +22,7 @@ export default async function Home() {
     );
   }
 
-  const { program, phase, weekNumber, workouts, currentDayNumber, todaySession } = data;
+  const { program, phase, weekNumber, workouts, currentDayNumber, todaySession, programComplete } = data;
 
   return (
     <TodayView
@@ -42,6 +42,7 @@ export default async function Home() {
         })),
       }))}
       currentDayNumber={currentDayNumber}
+      programComplete={programComplete}
       todaySession={todaySession ? {
         status: todaySession.status ?? "active",
         durationMinutes: todaySession.durationMinutes,
