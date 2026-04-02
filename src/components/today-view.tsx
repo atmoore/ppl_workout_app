@@ -20,15 +20,21 @@ interface Workout {
   exercises: Exercise[];
 }
 
+interface TodaySession {
+  status: string;
+  durationMinutes: number | null;
+}
+
 interface TodayViewProps {
   programName: string;
   phaseName: string;
   weekNumber: number;
   workouts: Workout[];
   currentDayNumber: number;
+  todaySession: TodaySession | null;
 }
 
-export function TodayView({ programName, phaseName, weekNumber, workouts, currentDayNumber }: TodayViewProps) {
+export function TodayView({ programName, phaseName, weekNumber, workouts, currentDayNumber, todaySession }: TodayViewProps) {
   const [selectedDay, setSelectedDay] = useState(currentDayNumber);
 
   const days = workouts.map(w => ({
@@ -39,6 +45,10 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
 
   const selectedWorkout = workouts.find(w => w.dayNumber === selectedDay);
   const isCurrentDay = selectedDay === currentDayNumber;
+  const isCompleted = isCurrentDay && todaySession?.status === "completed";
+  const isActive = isCurrentDay && todaySession?.status === "active";
+
+  const nextWorkout = workouts.find(w => w.dayNumber === currentDayNumber + 1);
 
   return (
     <div className="flex flex-col gap-4 px-4 pt-6">
@@ -64,19 +74,47 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
       {/* Selected workout */}
       {selectedWorkout && (
         <>
-          <WorkoutPreview
-            name={selectedWorkout.name ?? "Workout"}
-            type={selectedWorkout.type ?? "full"}
-            exercises={selectedWorkout.exercises}
-            isFuture={selectedDay > currentDayNumber}
-          />
-          {isCurrentDay && (
-            <Link
-              href="/chat"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-zinc-50 px-4 py-3.5 text-base font-semibold text-zinc-950 transition-colors active:bg-zinc-300 active:scale-[0.98]"
-            >
-              Start Workout
-            </Link>
+          {isCompleted ? (
+            <div className="flex flex-col gap-3">
+              {/* Completion card */}
+              <div className="rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-5 flex flex-col gap-1">
+                <div className="flex items-center gap-2">
+                  <span className="text-green-400 text-lg font-bold">✓</span>
+                  <span className="text-zinc-50 font-semibold text-base">Workout Complete</span>
+                </div>
+                <p className="text-sm text-zinc-400 pl-7">
+                  {selectedWorkout.name ?? "Workout"}
+                  {todaySession?.durationMinutes ? ` · ${todaySession.durationMinutes} min` : ""}
+                </p>
+              </div>
+
+              {/* Next up */}
+              {nextWorkout && (
+                <div className="flex flex-col gap-1 px-1">
+                  <p className="text-xs font-medium text-zinc-500 uppercase tracking-wider">Next up</p>
+                  <p className="text-sm text-zinc-300">
+                    Day {nextWorkout.dayNumber} · {nextWorkout.name ?? "Workout"}
+                  </p>
+                </div>
+              )}
+            </div>
+          ) : (
+            <>
+              <WorkoutPreview
+                name={selectedWorkout.name ?? "Workout"}
+                type={selectedWorkout.type ?? "full"}
+                exercises={selectedWorkout.exercises}
+                isFuture={selectedDay > currentDayNumber}
+              />
+              {isCurrentDay && (
+                <Link
+                  href="/chat"
+                  className="inline-flex w-full items-center justify-center rounded-xl bg-zinc-50 px-4 py-3.5 text-base font-semibold text-zinc-950 transition-colors active:bg-zinc-300 active:scale-[0.98]"
+                >
+                  {isActive ? "Resume Workout" : "Start Workout"}
+                </Link>
+              )}
+            </>
           )}
         </>
       )}
