@@ -1,0 +1,575 @@
+{
+  "name": "Bench Press Specialization",
+  "slug": "bench-specialization",
+  "frequency": 5,
+  "description": "Jeff Nippard's Bench Press Specialization Program - 8 weeks, 2 blocks (Volume Accumulation + Peaking)",
+  "source_file": "Bench Press.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1: Volume Accumulation",
+      "description": "Weeks 1-4, conjugate-style volume accumulation focusing on bench press technique and work capacity",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Upper Body #1",
+              "type": "upper",
+              "exercises": [
+                {
+                  "name": "Barbell Bench Press",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "72.5%",
+                  "rest": "3-5min",
+                  "notes": "45° elbow tuck",
+                  "substitutions": []
+                },
+                {
+                  "name": "Pull-Up",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Pull your shoulders down and in",
+                  "substitutions": ["Wide-grip pulldown", "Neutral-grip pulldown"]
+                },
+                {
+                  "name": "Eccentric-Accentuated Barbell Incline Press",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "2-second lowering phase. Elbows tucked ~30°",
+                  "substitutions": ["Eccentric-accentuated dumbbell incline press", "Eccentric-accentuated incline machine chest press"]
+                },
+                {
+                  "name": "Inverted Row",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Scapulae back and down. Pull with your elbows out",
+                  "substitutions": ["Cable seated row", "Pendlay row"]
+                },
+                {
+                  "name": "Dip",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your scapulae retracted and depressed",
+                  "substitutions": ["Assisted dip", "Close-grip bench press"]
+                },
+                {
+                  "name": "Barbell Floor Skull Crusher",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your elbows over your head. Keep your shoulder joint motionless",
+                  "substitutions": ["Cable tricep kickback", "Dumbbell skull crusher"]
+                },
+                {
+                  "name": "Hammer Curl",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Curl the weight \"out\", not \"up\"",
+                  "substitutions": ["Pronated EZ bar curl", "Rope cable curl"]
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #1",
+              "type": "lower",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "75%",
+                  "rest": "3-4min",
+                  "notes": "Sit down and back",
+                  "substitutions": ["Hack squat", "Front squat"]
+                },
+                {
+                  "name": "Stiff Leg Deadlift",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your hips high",
+                  "substitutions": ["Barbell RDL", "45° hyperextension"]
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Use a pad. Rib cage and chin tucked down",
+                  "substitutions": ["45° hyperextension", "Barbell glute bridge"]
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "20",
+                  "load": "RPE8",
+                  "rest": "0min",
+                  "notes": "A1 superset. Focus on squeezing your hamstrings to move the weight",
+                  "superset_group": "A",
+                  "substitutions": ["Seated leg curl", "Glute ham raise"]
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 3,
+                  "reps": "20",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "A2 superset. Focus on squeezing your quads to move the weight",
+                  "superset_group": "A",
+                  "substitutions": ["Single-leg leg extension", "Sissy squat"]
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Upper Body #2",
+              "type": "upper",
+              "exercises": [
+                {
+                  "name": "Barbell Bench Press",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "45° elbow tuck",
+                  "substitutions": []
+                },
+                {
+                  "name": "Neutral-Grip Pulldown",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Pull your shoulders down against your sides",
+                  "substitutions": ["Supinated pulldown", "Single-arm pulldown"]
+                },
+                {
+                  "name": "Barbell Pin Press",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Start with the bar on the pins. Focus on speed off of the chest",
+                  "substitutions": ["Pause barbell floor press", "Pause dumbbell floor press"]
+                },
+                {
+                  "name": "Seated Face Pull",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Pull your elbows up and back. Focus on scapular retraction",
+                  "substitutions": ["Elbows out row", "Prone trap raise"]
+                },
+                {
+                  "name": "Military Press",
+                  "sets": 2,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Reset the bar after each rep. Think about doing a 'dead press'. Squeeze your glutes to keep your torso upright",
+                  "substitutions": ["Dumbbell seated shoulder press", "Machine shoulder press"]
+                },
+                {
+                  "name": "Dumbbell Lateral Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your deltoids to move the weight",
+                  "substitutions": ["Machine lateral raise", "Band lateral raise"]
+                },
+                {
+                  "name": "Reverse Pec Deck",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Take your scapulae through a ROM",
+                  "substitutions": ["Reverse cable flye", "Dumbbell bent over rear delt raise"]
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #2",
+              "type": "lower",
+              "exercises": [
+                {
+                  "name": "Deadlift",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "70%",
+                  "rest": "3-4min",
+                  "notes": "Focus on keeping your spine neutral",
+                  "substitutions": ["Stiff leg deadlift", "Block pull"]
+                },
+                {
+                  "name": "Front Squat",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your torso upright",
+                  "substitutions": ["Hack squat", "Goblet squat"]
+                },
+                {
+                  "name": "Leg Press",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": ["Hack squat", "Walking lunge"]
+                },
+                {
+                  "name": "Eccentric-Accentuated Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "3-second lowering phase",
+                  "substitutions": ["Eccentric-accentuated seated leg curl", "Nordic ham curl"]
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Press all the way up to your toes, get a stretch at the bottom. Don't bounce",
+                  "substitutions": ["Leg press calf raise", "Seated calf raise"]
+                }
+              ]
+            },
+            {
+              "day_number": 5,
+              "name": "Day 5 - Upper Body #3",
+              "type": "upper",
+              "exercises": [
+                {
+                  "name": "Pause Barbell Bench Press",
+                  "sets": 5,
+                  "reps": "5",
+                  "load": "67.5%",
+                  "rest": "3-5min",
+                  "notes": "3-second pause. Focus on speed off the chest",
+                  "substitutions": []
+                },
+                {
+                  "name": "Supinated Pulldown",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Pull your shoulders down against your sides",
+                  "substitutions": ["Cable pull-over", "Single-arm pulldown"]
+                },
+                {
+                  "name": "Dumbbell Incline Press",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on pressing evenly. 30° elbow tuck",
+                  "substitutions": ["Machine incline press", "Barbell incline press"]
+                },
+                {
+                  "name": "Machine Chest-Supported T-Bar Row/Retraction",
+                  "sets": 3,
+                  "reps": "10/10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "First 10 reps retract your scapulae and pull your elbows out, last 10 reps only go through a scapular ROM (your arms don't move)",
+                  "substitutions": ["Chest-supported dumbbell row", "Seal row"]
+                },
+                {
+                  "name": "Cable Flye",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your scapulae retracted and depressed",
+                  "substitutions": ["Dumbbell flye"]
+                },
+                {
+                  "name": "V-Bar Pressdown",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your shoulder and elbow locked in place",
+                  "substitutions": ["Rope pressdown", "Straight bar pressdown"]
+                },
+                {
+                  "name": "Prone Trap Raise",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your upper back to move the weight",
+                  "substitutions": ["Scaption", "45° bent over shrug"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Block 2: Peaking Phase",
+      "description": "Weeks 5-8, DUP-style peaking with increased intensity and decreased volume",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Upper Body #1",
+              "type": "upper",
+              "exercises": [
+                {
+                  "name": "Barbell Bench Press",
+                  "sets": 1,
+                  "reps": "5",
+                  "load": "RPE9",
+                  "rest": null,
+                  "notes": "Work up to a heavy set of 5 @RPE9",
+                  "substitutions": []
+                },
+                {
+                  "name": "Pause Barbell Bench Press",
+                  "sets": 2,
+                  "reps": "5",
+                  "load": "65%",
+                  "rest": "3-5min",
+                  "notes": "3-second pause. Focus on speed off the chest",
+                  "substitutions": []
+                },
+                {
+                  "name": "Pull-Up",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Pull your shoulders down and in",
+                  "substitutions": ["Wide-grip pulldown", "Neutral-grip pulldown"]
+                },
+                {
+                  "name": "Military Press",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Reset the bar after each rep. Think about doing a 'dead press'. Squeeze your glutes to keep your torso upright",
+                  "substitutions": ["Dumbbell seated shoulder press", "Machine shoulder press"]
+                },
+                {
+                  "name": "Machine Chest-Supported T-Bar Row/Retraction",
+                  "sets": 3,
+                  "reps": "10/10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "First 10 reps retract your scapulae and pull your elbows out, last 10 reps only go through a scapular ROM",
+                  "substitutions": ["Chest-supported dumbbell row", "Seal row"]
+                },
+                {
+                  "name": "Hammer Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Curl the weight \"out\", not \"up\"",
+                  "substitutions": ["Pronated EZ bar curl", "Rope cable curl"]
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #1",
+              "type": "lower",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 4,
+                  "reps": "8",
+                  "load": "70%",
+                  "rest": "3-4min",
+                  "notes": "Sit down and back",
+                  "substitutions": ["Hack squat", "Front squat"]
+                },
+                {
+                  "name": "Barbell RDL",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": ["Seated leg curl", "Glute ham raise"]
+                },
+                {
+                  "name": "Dumbbell Walking Lunge",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "12 steps each leg. Medium stride length",
+                  "substitutions": ["Single-leg leg press", "Bulgarian split squat"]
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Press all the way up to your toes, get a stretch at the bottom. Don't bounce",
+                  "substitutions": ["Leg press calf raise", "Seated calf raise"]
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Upper Body #2",
+              "type": "upper",
+              "exercises": [
+                {
+                  "name": "Barbell Speed Bench Press",
+                  "sets": 6,
+                  "reps": "3",
+                  "load": "70%",
+                  "rest": "2-3min",
+                  "notes": "Focus on staying tight and speed off the chest",
+                  "substitutions": []
+                },
+                {
+                  "name": "Wide-Grip Lat Pulldown",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Pull your shoulders down and in",
+                  "substitutions": []
+                },
+                {
+                  "name": "Dumbbell Lateral Raise",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your deltoids to move the weight",
+                  "substitutions": ["Machine lateral raise", "Band lateral raise"]
+                },
+                {
+                  "name": "Seated Face Pull",
+                  "sets": 3,
+                  "reps": "20",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Pull your elbows up and back. Focus on scapular retraction",
+                  "substitutions": ["Elbows out row", "Prone trap raise"]
+                },
+                {
+                  "name": "Prone Trap Raise",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your upper back to move the weight",
+                  "substitutions": ["Scaption", "45° bent over shrug"]
+                },
+                {
+                  "name": "EZ Bar Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Curl the weight \"out\", not \"up\"",
+                  "substitutions": ["Dumbbell supinated curl"]
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #2",
+              "type": "lower",
+              "exercises": [
+                {
+                  "name": "Deadlift",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "70%",
+                  "rest": "3-5min",
+                  "notes": "Focus on keeping your spine neutral",
+                  "substitutions": ["Stiff leg deadlift", "Block pull"]
+                },
+                {
+                  "name": "Hack Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Sit down and back",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Squeeze your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": ["Single-leg leg extension", "Sissy squat"]
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
