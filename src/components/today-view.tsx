@@ -43,9 +43,14 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
   return (
     <div className="flex flex-col gap-4 px-4 pt-6">
       {/* Program header */}
-      <div className="flex flex-col gap-1">
-        <h1 className="text-2xl font-bold text-zinc-50 tracking-tight">{programName}</h1>
-        <p className="text-sm text-zinc-400">{phaseName} · Week {weekNumber}</p>
+      <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-1">
+          <h1 className="text-2xl font-bold text-zinc-50 tracking-tight">{programName}</h1>
+          <p className="text-sm text-zinc-400">{phaseName} · Week {weekNumber}</p>
+        </div>
+        <Link href="/programs" className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+          Change
+        </Link>
       </div>
 
       {/* Week pills */}

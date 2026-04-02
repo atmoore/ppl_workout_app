@@ -221,6 +221,69 @@ export async function getWeekWorkouts() {
   };
 }
 
+export async function getAllPrograms() {
+  return db.select().from(programs).orderBy(programs.name);
+}
+
+export async function getProgramDetails(programId: number) {
+  const [program] = await db.select().from(programs).where(eq(programs.id, programId));
+  if (!program) return null;
+
+  const programPhases = await db
+    .select()
+    .from(phases)
+    .where(eq(phases.programId, programId))
+    .orderBy(phases.phaseNumber);
+
+  // Count total workouts and exercises
+  let totalWorkouts = 0;
+  let totalExercises = 0;
+
+  for (const phase of programPhases) {
+    const phaseWeeks = await db.select().from(weeks).where(eq(weeks.phaseId, phase.id));
+    for (const week of phaseWeeks) {
+      const workouts = await db.select().from(workoutTemplates).where(eq(workoutTemplates.weekId, week.id));
+      totalWorkouts += workouts.length;
+      for (const workout of workouts) {
+        const exercises = await db.select().from(exerciseTemplates).where(eq(exerciseTemplates.workoutTemplateId, workout.id));
+        totalExercises += exercises.length;
+      }
+    }
+  }
+
+  return {
+    ...program,
+    phases: programPhases,
+    totalWorkouts,
+    totalExercises,
+  };
+}
+
+export async function switchProgram(programId: number) {
+  const profile = await getUserProfile();
+  if (!profile) return;
+
+  // Get first phase of the new program
+  const programPhases = await db
+    .select()
+    .from(phases)
+    .where(eq(phases.programId, programId))
+    .orderBy(phases.phaseNumber);
+
+  const firstPhase = programPhases[0];
+  if (!firstPhase) return;
+
+  await db
+    .update(userProfile)
+    .set({
+      currentProgramId: programId,
+      currentPhaseId: firstPhase.id,
+      currentWeekNumber: 1,
+      currentDayNumber: 1,
+    })
+    .where(eq(userProfile.id, profile.id));
+}
+
 export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
   const logs = await db
     .select({
