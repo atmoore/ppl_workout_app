@@ -1,12 +1,14 @@
-import { getWorkoutHistory, getExerciseMaxes } from "@/db/queries";
+import { getWorkoutHistory, getExerciseMaxes, getTopExercises, getWeeklyInsights } from "@/db/queries";
 import { ProgressView } from "@/components/progress-view";
 
 export const dynamic = "force-dynamic";
 
 export default async function ProgressPage() {
-  const [history, maxes] = await Promise.all([
+  const [history, maxes, topExercises, weeklyInsights] = await Promise.all([
     getWorkoutHistory(20),
     getExerciseMaxes(),
+    getTopExercises(8),
+    getWeeklyInsights(),
   ]);
 
   return (
@@ -26,6 +28,8 @@ export default async function ProgressPage() {
           weight: m.weight,
           updatedAt: m.updatedAt?.toISOString() ?? "",
         }))}
+        topExercises={topExercises}
+        weeklyInsights={weeklyInsights}
       />
     </div>
   );

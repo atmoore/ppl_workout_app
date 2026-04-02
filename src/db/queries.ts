@@ -487,6 +487,87 @@ export async function getEssentialsWorkout(workoutType: string) {
   };
 }
 
+export async function getExerciseProgressData(exerciseName: string) {
+  const logs = await db
+    .select({
+      date: workoutSessions.date,
+      weight: setLogs.weight,
+      reps: setLogs.reps,
+    })
+    .from(setLogs)
+    .innerJoin(workoutSessions, eq(setLogs.sessionId, workoutSessions.id))
+    .where(eq(setLogs.exerciseName, exerciseName))
+    .orderBy(workoutSessions.date);
+
+  // Group by date, take max weight per date
+  const byDate = new Map<string, number>();
+  for (const log of logs) {
+    const date = log.date ?? "";
+    const weight = Number(log.weight) || 0;
+    if (!byDate.has(date) || weight > byDate.get(date)!) {
+      byDate.set(date, weight);
+    }
+  }
+
+  return Array.from(byDate.entries()).map(([date, weight]) => ({ date, weight }));
+}
+
+export async function getTopExercises(limit: number = 8) {
+  // Get exercises with the most logged sets
+  const result = await db
+    .select({
+      exerciseName: setLogs.exerciseName,
+    })
+    .from(setLogs)
+    .groupBy(setLogs.exerciseName)
+    .orderBy(desc(sql`count(*)`))
+    .limit(limit);
+
+  return result.map(r => r.exerciseName).filter(Boolean) as string[];
+}
+
+export async function getWeeklyInsights() {
+  // Get sessions from the last 7 days
+  const sevenDaysAgo = new Date();
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const dateStr = sevenDaysAgo.toISOString().split("T")[0];
+
+  const sessions = await db
+    .select()
+    .from(workoutSessions)
+    .where(
+      and(
+        eq(workoutSessions.status, "completed"),
+        sql`${workoutSessions.date} >= ${dateStr}`
+      )
+    );
+
+  let totalSets = 0;
+  let totalVolume = 0; // weight × reps
+  const exerciseNames = new Set<string>();
+
+  for (const session of sessions) {
+    const sets = await db.select().from(setLogs).where(eq(setLogs.sessionId, session.id));
+    totalSets += sets.length;
+    for (const set of sets) {
+      const w = Number(set.weight) || 0;
+      const r = set.reps || 0;
+      totalVolume += w * r;
+      if (set.exerciseName) exerciseNames.add(set.exerciseName);
+    }
+  }
+
+  const totalMinutes = sessions.reduce((sum, s) => sum + (s.durationMinutes || 0), 0);
+
+  return {
+    workouts: sessions.length,
+    totalSets,
+    totalVolume,
+    totalMinutes,
+    uniqueExercises: exerciseNames.size,
+  };
+}
+
 export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
   const logs = await db
     .select({
