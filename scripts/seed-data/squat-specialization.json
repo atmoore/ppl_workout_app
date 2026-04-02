@@ -1,0 +1,1582 @@
+{
+  "name": "Squat Specialization",
+  "slug": "squat-specialization",
+  "frequency": 4,
+  "description": "Jeff Nippard's Squat Specialization Program - 10 weeks, 3 blocks (Volume Accumulation, Deload, Peaking + Testing)",
+  "source_file": "406115590-Jeff-Nippard-s-Squat-Specialization-Program-pdf.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1: Volume Accumulation Phase",
+      "description": "Weeks 1-4, 4 lower body days per week focusing on squat volume accumulation with progressive overload",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 4,
+                  "reps": "2",
+                  "load": "85%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Good Morning",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Keep your lumbar and thoracic spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Snatch Grip Deadlift",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Pause Squat",
+                  "sets": 3,
+                  "reps": "6",
+                  "load": "70%",
+                  "rest": "3-5min",
+                  "notes": "Full 2-second pause. Explode during the concentric",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Elevate your rear foot",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Lower Body #3",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "75%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Knee-Banded Barbell Box Squat",
+                  "sets": 2,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Set box to parallel. Sit back, keep your knees out",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Hanging Leg Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on flexing your lumbar spine",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #4",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Front Squat",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "3-4min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Press",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE6",
+                  "rest": "2-3min",
+                  "notes": "Don't allow your lumbar spine to round",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 4,
+                  "reps": "2",
+                  "load": "87.5%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Good Morning",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Keep your lumbar and thoracic spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Snatch Grip Deadlift",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Pause Squat",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Full 2-second pause. Explode during the concentric",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Elevate your rear foot",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Lower Body #3",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "77.5%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Knee-Banded Barbell Box Squat",
+                  "sets": 2,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Set box to parallel. Sit back, keep your knees out",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Hanging Leg Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on flexing your lumbar spine",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #4",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Front Squat",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "3-4min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Don't allow your lumbar spine to round",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 4,
+                  "reps": "2",
+                  "load": "90%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Good Morning",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Keep your lumbar and thoracic spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Snatch Grip Deadlift",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Pause Squat",
+                  "sets": 3,
+                  "reps": "6",
+                  "load": "72.5%",
+                  "rest": "3-5min",
+                  "notes": "Full 2-second pause. Explode during the concentric",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Elevate your rear foot",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Lower Body #3",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Knee-Banded Barbell Box Squat",
+                  "sets": 2,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Set box to parallel. Sit back, keep your knees out",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Hanging Leg Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on flexing your lumbar spine",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #4",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Front Squat",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "3-4min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Don't allow your lumbar spine to round",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 1,
+                  "reps": "2",
+                  "load": "95%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "2",
+                  "load": "75%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Snatch Grip Deadlift",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Keep your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Leg Extension",
+                  "sets": 2,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your quads to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Pause Squat",
+                  "sets": 3,
+                  "reps": "6",
+                  "load": "75%",
+                  "rest": "3-5min",
+                  "notes": "Full 2-second pause. Explode during the concentric",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Elevate your rear foot",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Lower Body #3",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Knee-Banded Barbell Box Squat",
+                  "sets": 2,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Set box to parallel. Sit back, keep your knees out",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Hanging Leg Raise",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on flexing your lumbar spine",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Lower Body #4",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Front Squat",
+                  "sets": 4,
+                  "reps": "6",
+                  "load": "RPE7",
+                  "rest": "3-4min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Don't allow your lumbar spine to round",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Deload Week",
+      "description": "Week 5, reduced volume deload with 2 lower body days",
+      "weeks": [
+        {
+          "week_number": 5,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "70%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Touch-and-Go Deadlift",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "60%",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 2,
+                  "reps": "12",
+                  "load": "RPE6",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Single-Leg Leg Press",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE6",
+                  "rest": "1-2min",
+                  "notes": "Don't allow your lumbar spine to round",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 2,
+                  "reps": "5",
+                  "load": "RPE6",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Pause Squat",
+                  "sets": 3,
+                  "reps": "6",
+                  "load": "75%",
+                  "rest": "3-5min",
+                  "notes": "Full 2-second pause. Explode during the concentric",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Bulgarian Split Squat",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "2-3min",
+                  "notes": "Elevate your rear foot",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Hip Abduction Machine",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE9",
+                  "rest": "1-2min",
+                  "notes": "Focus on using a full ROM",
+                  "substitutions": []
+                },
+                {
+                  "name": "Standing Calf Raise",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE7",
+                  "rest": "1-2min",
+                  "notes": "Press all the way onto your toes, don't bounce",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "name": "Block 2: Peaking Phase",
+      "description": "Weeks 6-10, reduced to 2 lower body days per week with increasing intensity and reduced volume, culminating in a testing week",
+      "weeks": [
+        {
+          "week_number": 6,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 1,
+                  "reps": "AMRAP",
+                  "load": "85%",
+                  "rest": "N/A",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Front Squat",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE6",
+                  "rest": "2-3min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Touch-and-Go Deadlift",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "65%",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Single-Leg Leg Press",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Plank",
+                  "sets": 3,
+                  "reps": "30sec",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Squeeze your glutes the entire duration",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 2,
+                  "reps": "5",
+                  "load": "85%",
+                  "rest": "N/A",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Front Squat",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE6",
+                  "rest": "2-3min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Touch-and-Go Deadlift",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "65%",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Single-Leg Leg Press",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Plank",
+                  "sets": 3,
+                  "reps": "30sec",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Squeeze your glutes the entire duration",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 1,
+                  "reps": "AMRAP",
+                  "load": "92.5%",
+                  "rest": "N/A",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Front Squat",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE6",
+                  "rest": "2-3min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Touch-and-Go Deadlift",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "65%",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Single-Leg Leg Press",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Plank",
+                  "sets": 3,
+                  "reps": "30sec",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Squeeze your glutes the entire duration",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 9,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Lower Body #1",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 2,
+                  "reps": "3",
+                  "load": "90%",
+                  "rest": "N/A",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Front Squat",
+                  "sets": 2,
+                  "reps": "10",
+                  "load": "RPE6",
+                  "rest": "2-3min",
+                  "notes": "Maintain a hyperextended thoracic and lumbar spine",
+                  "substitutions": []
+                },
+                {
+                  "name": "Touch-and-Go Deadlift",
+                  "sets": 2,
+                  "reps": "8",
+                  "load": "65%",
+                  "rest": "2-3min",
+                  "notes": "Focus on keeping your lumbar spine neutral",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Single-Leg Leg Press",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Start with your weaker leg",
+                  "substitutions": []
+                },
+                {
+                  "name": "Ab Wheel Rollout",
+                  "sets": 3,
+                  "reps": "8",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your glutes locked out throughout the ROM",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Lower Body #2",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 5,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "3-5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE7",
+                  "rest": "2-3min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Barbell Hip Thrust",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Keep your rib cage and chin tucked down. Use a pad",
+                  "substitutions": []
+                },
+                {
+                  "name": "Seated Leg Curl",
+                  "sets": 3,
+                  "reps": "15",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                },
+                {
+                  "name": "Plank",
+                  "sets": 3,
+                  "reps": "30sec",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Squeeze your glutes the entire duration",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "week_number": 10,
+          "workouts": [
+            {
+              "day_number": 1,
+              "name": "Day 1 - Full Body Deload",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 3,
+                  "reps": "5",
+                  "load": "70%",
+                  "rest": "5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 2,
+              "name": "Day 2 - Rest",
+              "type": "legs",
+              "exercises": []
+            },
+            {
+              "day_number": 3,
+              "name": "Day 3 - Full Body Deload",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 2,
+                  "reps": "3",
+                  "load": "80%",
+                  "rest": "5min",
+                  "notes": "Sit down, keep your hips open",
+                  "substitutions": []
+                }
+              ]
+            },
+            {
+              "day_number": 4,
+              "name": "Day 4 - Rest",
+              "type": "legs",
+              "exercises": []
+            },
+            {
+              "day_number": 5,
+              "name": "Day 5 - Testing Day",
+              "type": "legs",
+              "exercises": [
+                {
+                  "name": "Back Squat",
+                  "sets": 1,
+                  "reps": "NOTES",
+                  "load": "NOTES",
+                  "rest": "5min",
+                  "notes": "Work up to a new 1RM (only if you have spotters/safety bars), or do an AMRAP with 95%",
+                  "substitutions": []
+                },
+                {
+                  "name": "Reverse Hyperextension",
+                  "sets": 3,
+                  "reps": "10",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your glutes to move your legs",
+                  "substitutions": []
+                },
+                {
+                  "name": "Lying Leg Curl",
+                  "sets": 3,
+                  "reps": "12",
+                  "load": "RPE8",
+                  "rest": "1-2min",
+                  "notes": "Focus on squeezing your hamstrings to move the weight",
+                  "substitutions": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
