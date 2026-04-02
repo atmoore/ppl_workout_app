@@ -3,6 +3,7 @@
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { ChatMessage } from "@/components/chat-message";
 import { ChatInput } from "@/components/chat-input";
 import { WorkoutHeader } from "@/components/workout-header";
@@ -14,16 +15,36 @@ export default function ChatPage() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
   const [workoutName, setWorkoutName] = useState("Workout");
+  const [workoutEnded, setWorkoutEnded] = useState(false);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
+  }, [messages]);
+
+  // Detect workout end from tool results in messages
+  useEffect(() => {
+    for (const msg of messages) {
+      for (const part of msg.parts) {
+        if (
+          part.type === "tool-endWorkout" &&
+          part.state === "output-available"
+        ) {
+          const result = part.output as { completed?: boolean };
+          if (result?.completed) {
+            setWorkoutEnded(true);
+          }
+        }
+      }
+    }
   }, [messages]);
 
   // Fetch workout name and auto-send greeting on mount
   useEffect(() => {
     fetch("/api/current-workout")
       .then((r) => r.json())
-      .then((data) => { if (data.name) setWorkoutName(data.name); })
+      .then((data) => {
+        if (data.name) setWorkoutName(data.name);
+      })
       .catch(() => {});
 
     if (messages.length === 0) {
@@ -38,16 +59,36 @@ export default function ChatPage() {
     <div className="flex h-[100dvh] flex-col">
       <WorkoutHeader workoutName={workoutName} />
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
-        {messages.filter(m => m.role !== "system").map(message => (
-          <ChatMessage key={message.id} message={message} />
-        ))}
+        {messages
+          .filter((m) => m.role !== "system")
+          .map((message) => (
+            <ChatMessage key={message.id} message={message} />
+          ))}
         {isStreaming && messages[messages.length - 1]?.role !== "assistant" && (
           <div className="flex justify-start">
-            <div className="rounded-2xl bg-zinc-800 px-4 py-2.5 text-sm text-zinc-400">...</div>
+            <div className="rounded-2xl bg-zinc-800 px-4 py-2.5 text-sm text-zinc-400">
+              ...
+            </div>
           </div>
         )}
       </div>
-      <ChatInput onSend={(text) => sendMessage({ text })} disabled={isStreaming} />
+
+      {/* Post-workout: show "Back to Today" instead of input */}
+      {workoutEnded ? (
+        <div className="border-t border-zinc-800 bg-zinc-950 px-4 py-4 safe-bottom">
+          <Link
+            href="/"
+            className="block w-full rounded-xl bg-zinc-50 px-4 py-3.5 text-center text-base font-semibold text-zinc-950 active:bg-zinc-300 active:scale-[0.98]"
+          >
+            Back to Today
+          </Link>
+        </div>
+      ) : (
+        <ChatInput
+          onSend={(text) => sendMessage({ text })}
+          disabled={isStreaming}
+        />
+      )}
     </div>
   );
 }
