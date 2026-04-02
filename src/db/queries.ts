@@ -9,6 +9,7 @@ import {
   substitutions,
   setLogs,
   workoutSessions,
+  exerciseMaxes,
 } from "./schema";
 import { eq, desc } from "drizzle-orm";
 
@@ -176,6 +177,17 @@ export async function advanceDay(): Promise<void> {
     .where(eq(userProfile.id, profile.id));
 }
 
+export async function getTodaySession() {
+  const today = new Date().toISOString().split("T")[0];
+  const rows = await db
+    .select()
+    .from(workoutSessions)
+    .where(eq(workoutSessions.date, today))
+    .orderBy(desc(workoutSessions.id))
+    .limit(1);
+  return rows[0] || null;
+}
+
 export async function getWeekWorkouts() {
   const profile = await getUserProfile();
   if (!profile?.currentProgramId || !profile.currentPhaseId) return null;
@@ -211,6 +223,8 @@ export async function getWeekWorkouts() {
   const [program] = await db.select().from(programs).where(eq(programs.id, profile.currentProgramId!));
   const [phase] = await db.select().from(phases).where(eq(phases.id, profile.currentPhaseId!));
 
+  const todaySession = await getTodaySession();
+
   return {
     profile,
     program,
@@ -218,6 +232,7 @@ export async function getWeekWorkouts() {
     weekNumber: currentWeek.weekNumber,
     workouts: workoutsWithExercises,
     currentDayNumber: profile.currentDayNumber ?? 1,
+    todaySession,
   };
 }
 
@@ -282,6 +297,65 @@ export async function switchProgram(programId: number) {
       currentDayNumber: 1,
     })
     .where(eq(userProfile.id, profile.id));
+}
+
+export async function getWorkoutHistory(limit: number = 20) {
+  const sessions = await db
+    .select({
+      id: workoutSessions.id,
+      date: workoutSessions.date,
+      durationMinutes: workoutSessions.durationMinutes,
+      status: workoutSessions.status,
+      workoutTemplateId: workoutSessions.workoutTemplateId,
+    })
+    .from(workoutSessions)
+    .where(eq(workoutSessions.status, "completed"))
+    .orderBy(desc(workoutSessions.date))
+    .limit(limit);
+
+  // Enrich with workout name and set count
+  const enriched = await Promise.all(
+    sessions.map(async (s) => {
+      let workoutName = "Workout";
+      if (s.workoutTemplateId) {
+        const [wt] = await db.select().from(workoutTemplates).where(eq(workoutTemplates.id, s.workoutTemplateId));
+        if (wt) workoutName = wt.name ?? "Workout";
+      }
+      const sets = await db.select().from(setLogs).where(eq(setLogs.sessionId, s.id));
+      const exerciseNames = new Set(sets.map(sl => sl.exerciseName));
+      return {
+        ...s,
+        workoutName,
+        totalSets: sets.length,
+        exerciseCount: exerciseNames.size,
+      };
+    })
+  );
+
+  return enriched;
+}
+
+export async function getExerciseMaxes() {
+  return db.select().from(exerciseMaxes).orderBy(desc(exerciseMaxes.updatedAt));
+}
+
+export async function getActiveSession() {
+  const rows = await db
+    .select()
+    .from(workoutSessions)
+    .where(eq(workoutSessions.status, "active"))
+    .limit(1);
+  return rows[0] || null;
+}
+
+export async function getLastCompletedSession() {
+  const rows = await db
+    .select()
+    .from(workoutSessions)
+    .where(eq(workoutSessions.status, "completed"))
+    .orderBy(desc(workoutSessions.completedAt))
+    .limit(1);
+  return rows[0] || null;
 }
 
 export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
