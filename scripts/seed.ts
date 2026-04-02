@@ -180,22 +180,21 @@ async function seed() {
     console.log(`  Done with ${data.name}\n`);
   }
 
-  // Insert default user profile pointing to first program/phase
-  if (firstProgramId !== null && firstPhaseId !== null) {
+  // Create user profile with no program selected — user picks during onboarding
+  const existingProfile = await db.select().from(schema.userProfile).limit(1);
+  if (existingProfile.length === 0) {
     const [profile] = await db
       .insert(schema.userProfile)
       .values({
         units: "lbs",
-        currentProgramId: firstProgramId,
-        currentPhaseId: firstPhaseId,
+        currentProgramId: null,
+        currentPhaseId: null,
         currentWeekNumber: 1,
         currentDayNumber: 1,
       })
       .returning();
 
-    console.log(
-      `Default user profile created (id=${profile.id}, programId=${firstProgramId}, phaseId=${firstPhaseId})`
-    );
+    console.log(`User profile created (id=${profile.id}) — no program selected, user will pick during onboarding`);
   }
 
   console.log("\nSeeding complete.");
