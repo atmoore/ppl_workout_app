@@ -1,0 +1,255 @@
+{
+  "name": "Arm Hypertrophy",
+  "slug": "arm-hypertrophy",
+  "frequency": 3,
+  "description": "Jeff Nippard's Arm Hypertrophy Program - 8 weeks, 2 blocks, 3 days per week (Arm Day, Supplemental A, Supplemental B)",
+  "source_file": "Jeff Nippard_s Arm Hypertrophy Program.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1",
+      "description": "Weeks 1-4, progressive volume increase",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 3, "reps": "6-8", "rpe": "8", "rest": "3.0 min", "notes": "Tempo 2:1:1:1. Shoulder width grip, touch bar to chest with slight pause", "substitutions": [] },
+              { "order": 2, "name": "Machine Preacher Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Tempo 2:0:2:0. Preactivation, smooth and controlled reps, get a slight pump with light weight", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "3.0 min", "notes": "Tempo 2:0:1:0. 2 sets wider grip, 2 sets shoulder width, last set taken to failure, 1-2 effective cheat reps at end of set", "substitutions": [] },
+              { "order": 4, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Face away from cable machine, feel stretch at bottom end ROM", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "Tempo 2:0:1:0. Use bar attachment, 2 sets wide, 2 sets narrow, keep elbows locked in place, minimize swinging", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Perform both arms at once, press rope apart at the top end ROM", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Optional, perform with forearm braced on horizontal bench", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Tempo 2:0:1:0. Elbow pinned against thigh, rotating grip (supinate throughout concentric)", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Curl Reverse 21's", "warmup_sets": null, "working_sets": 2, "reps": "7+7+7", "rpe": "9", "rest": "1.5 min", "notes": "Perform both arms at once, 7 reps full ROM, 7 reps top 1/2 ROM, 7 reps bottom 1/2 ROM", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Tempo 2:0:1:0. Maintain more upright posture and mind-muscle connection with triceps", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Keep elbow locked into place and tucked in", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Optional, perform with forearm braced on horizontal bench", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 3, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Tempo 2:1:1:1. Can use regular grip if fits better with your chest goals/training split", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 1:0:1:0. Make a diamond shape with hands and perform controlled pushups, take the last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Tempo 2:0:1:0. Use barbell or EZ bar, at bottom end ROM arms should be aligned vertically", "substitutions": [] },
+              { "order": 4, "name": "Preacher Death Curls", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "10", "rest": "1.5 min", "notes": "1 second pause at 90 degrees elbow flexion on positive and negative of every rep, reach failure, rest 3 seconds, then do a 15 second hold at 90 degrees", "substitutions": [] },
+              { "order": 5, "name": "Heavy Negative Concentration Curls", "warmup_sets": null, "working_sets": 0, "reps": "0", "rpe": "10", "rest": "1.5 min", "notes": "Use your free hand to assist with the positive, control the negative without assistance, load heavily but maintain control", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work, lift heavy dumbbells for 40 total strides", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 3, "reps": "6-8", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip, touch bar to chest with slight pause", "substitutions": [] },
+              { "order": 2, "name": "Machine Preacher Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation, smooth and controlled reps", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "3.0 min", "notes": "2 sets wider grip, 2 sets shoulder width, last set to failure", "substitutions": [] },
+              { "order": 4, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Face away from cable, feel stretch at bottom", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 sets wide, 2 sets narrow, elbows locked", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, press rope apart at top", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional, forearm braced on bench", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned against thigh, rotating grip", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Curl Reverse 21's", "warmup_sets": null, "working_sets": 2, "reps": "7+7+7", "rpe": "9", "rest": "1.5 min", "notes": "7 reps bottom 1/2 ROM, 7 reps top 1/2 ROM, 7 reps full ROM", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture, mind-muscle connection with triceps", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked, tucked in", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional, forearm braced on bench", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 3, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape hands, last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Grip dumbbell in middle of handle, perform standing, 1 arm at a time", "substitutions": [] },
+              { "order": 4, "name": "Preacher Death Curls", "warmup_sets": null, "working_sets": 0, "reps": "0", "rpe": "10", "rest": "1.5 min", "notes": "1 second pause at 90 degrees on positive and negative", "substitutions": [] },
+              { "order": 5, "name": "Heavy Negative Concentration Curls", "warmup_sets": null, "working_sets": 2, "reps": "6-8", "rpe": "10", "rest": "1.5 min", "notes": "Use free hand to assist positive, control negative without assistance", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work, 40 total strides", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Machine Preacher Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "3.0 min", "notes": "2 sets wider, 2 sets shoulder width, last set to failure", "substitutions": [] },
+              { "order": 4, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Face away from cable", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 wide, 2 narrow, elbows locked", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, press rope apart at top", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional, forearm braced", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned, rotating grip", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Curl Reverse 21's", "warmup_sets": null, "working_sets": 2, "reps": "7+7+7", "rpe": "9", "rest": "1.5 min", "notes": "Both arms at once", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked, tucked in", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape, last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Standing, 1 arm at a time", "substitutions": [] },
+              { "order": 4, "name": "Preacher Death Curls", "warmup_sets": null, "working_sets": 0, "reps": "0", "rpe": "10", "rest": "1.5 min", "notes": "1 second pause at 90 degrees", "substitutions": [] },
+              { "order": 5, "name": "Heavy Negative Concentration Curls", "warmup_sets": null, "working_sets": 2, "reps": "6-8", "rpe": "10", "rest": "1.5 min", "notes": "Assist positive, control negative", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "6-8", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip, slight pause on chest", "substitutions": [] },
+              { "order": 2, "name": "Machine Preacher Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "3.0 min", "notes": "2 wider, 2 shoulder width, last set to failure, cheat reps", "substitutions": [] },
+              { "order": 4, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Face away from cable", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 wide, 2 narrow", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, press rope apart", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned, rotating grip", "substitutions": [] },
+              { "order": 2, "name": "Incline Dumbbell Curl Reverse 21's", "warmup_sets": null, "working_sets": 2, "reps": "7+7+7", "rpe": "9", "rest": "1.5 min", "notes": "Both arms at once", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape, last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Barbell or EZ bar", "substitutions": [] },
+              { "order": 4, "name": "Preacher Death Curls", "warmup_sets": null, "working_sets": 0, "reps": "0", "rpe": "10", "rest": "1.5 min", "notes": "1 second pause at 90 degrees", "substitutions": [] },
+              { "order": 5, "name": "Heavy Negative Concentration Curls", "warmup_sets": null, "working_sets": 2, "reps": "6-8", "rpe": "10", "rest": "1.5 min", "notes": "Assist positive, control negative", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Block 2",
+      "description": "Weeks 5-8, exercise variations - Bayesian Cable Curl replaces Machine Preacher, Dumbbell Preacher Hammer Curl added, Standing EZ Bar Curl descending ROM, take last set of each exercise to failure (except CGBP)",
+      "weeks": [
+        {
+          "week_number": 5,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "4-6", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip, touch bar to chest with slight pause", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation, smooth and controlled reps, light weight", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "4-6", "rpe": "9", "rest": "3.0 min", "notes": "2 sets wider grip, 2 sets shoulder width, last set to failure, cheat reps", "substitutions": [] },
+              { "order": 4, "name": "Dumbbell Preacher Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Perform both arms at once, hammer grip in the middle of dumbbells", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 sets wide, 2 sets narrow, elbows locked", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, press rope apart at top end ROM", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional, forearm braced on bench", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned, rotating grip", "substitutions": [] },
+              { "order": 2, "name": "Standing EZ Bar Curl (Descending ROM)", "warmup_sets": null, "working_sets": 2, "reps": "10+5+5", "rpe": "9", "rest": "1.5 min", "notes": "10 reps full ROM, 5 reps top end ROM, 5 reps bottom end ROM", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture, mind-muscle with triceps", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked, tucked in", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional, forearm braced", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape, last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Barbell or EZ bar, arms aligned vertically at bottom", "substitutions": [] },
+              { "order": 4, "name": "Lying Incline Death Curls", "warmup_sets": null, "working_sets": 2, "reps": "20", "rpe": "10", "rest": "1.5 min", "notes": "Pause for a 5 second squeeze at the top of every 5th rep", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip EZ Bar Curl (Metabolic)", "warmup_sets": null, "working_sets": 0, "reps": "0", "rpe": "10", "rest": "1.5 min", "notes": "Tempo 2:0:2:0. Use very light weight and maintain control, note tempo", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work, 40 total strides", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "4-6", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "4-6", "rpe": "9", "rest": "3.0 min", "notes": "2 wider, 2 shoulder width, last set to failure", "substitutions": [] },
+              { "order": 4, "name": "Dumbbell Preacher Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, hammer grip", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 wide, 2 narrow", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, press rope apart", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned, rotating grip", "substitutions": [] },
+              { "order": 2, "name": "Standing EZ Bar Curl (Descending ROM)", "warmup_sets": null, "working_sets": 3, "reps": "10+5+5", "rpe": "9", "rest": "1.5 min", "notes": "10 full, 5 top, 5 bottom", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape, last set to failure", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Barbell or EZ bar", "substitutions": [] },
+              { "order": 4, "name": "Lying Incline Death Curls", "warmup_sets": null, "working_sets": 2, "reps": "20", "rpe": "10", "rest": "1.5 min", "notes": "5 second squeeze at top every 5th rep", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip EZ Bar Curl (Metabolic)", "warmup_sets": null, "working_sets": 2, "reps": "50", "rpe": "10", "rest": "1.5 min", "notes": "Tempo 2:0:2:0. Very light weight, maintain control", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "4-6", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "4-6", "rpe": "9", "rest": "3.0 min", "notes": "2 wider, 2 shoulder width", "substitutions": [] },
+              { "order": 4, "name": "Dumbbell Preacher Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, hammer grip", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 wide, 2 narrow", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned", "substitutions": [] },
+              { "order": 2, "name": "Standing EZ Bar Curl (Descending ROM)", "warmup_sets": null, "working_sets": 3, "reps": "10+5+5", "rpe": "9", "rest": "1.5 min", "notes": "10 full, 5 top, 5 bottom", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Barbell or EZ bar", "substitutions": [] },
+              { "order": 4, "name": "Lying Incline Death Curls", "warmup_sets": null, "working_sets": 2, "reps": "20", "rpe": "10", "rest": "1.5 min", "notes": "5 second squeeze every 5th rep", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip EZ Bar Curl (Metabolic)", "warmup_sets": null, "working_sets": 2, "reps": "50", "rpe": "10", "rest": "1.5 min", "notes": "Very light weight, tempo 2:0:2:0", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            { "name": "Arm Day", "type": "upper", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "4-6", "rpe": "8", "rest": "3.0 min", "notes": "Shoulder width grip", "substitutions": [] },
+              { "order": 2, "name": "Bayesian Cable Curl", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "1.0 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Standing EZ Bar Curl", "warmup_sets": null, "working_sets": 4, "reps": "4-6", "rpe": "9", "rest": "3.0 min", "notes": "2 wider, 2 shoulder width", "substitutions": [] },
+              { "order": 4, "name": "Dumbbell Preacher Hammer Curl", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms, hammer grip", "substitutions": [] },
+              { "order": 5, "name": "Tricep Pressdown", "warmup_sets": null, "working_sets": 4, "reps": "10-12", "rpe": "9", "rest": "2.0 min", "notes": "2 wide, 2 narrow", "substitutions": [] },
+              { "order": 6, "name": "Overhead Rope Tricep Extension", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.0 min", "notes": "Both arms", "substitutions": [] },
+              { "order": 7, "name": "Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental A", "type": "upper", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Dumbbell Concentration Curl", "warmup_sets": null, "working_sets": 4, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Elbow pinned", "substitutions": [] },
+              { "order": 2, "name": "Standing EZ Bar Curl (Descending ROM)", "warmup_sets": null, "working_sets": 3, "reps": "10+5+5", "rpe": "9", "rest": "1.5 min", "notes": "10 full, 5 top, 5 bottom", "substitutions": [] },
+              { "order": 3, "name": "Weighted Dip (Close Grip)", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "2.0 min", "notes": "Upright posture", "substitutions": [] },
+              { "order": 4, "name": "1-Arm Overhead Cable Extension", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Elbow locked", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip Forearm Wrist Curl", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Optional", "substitutions": [] }
+            ] },
+            { "name": "Supplemental B", "type": "upper", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Close Grip Bench Press", "warmup_sets": "2", "working_sets": 4, "reps": "8-10", "rpe": "8", "rest": "3.0 min", "notes": "Can use regular grip", "substitutions": [] },
+              { "order": 2, "name": "Medicine Ball Pushups", "warmup_sets": null, "working_sets": 2, "reps": "8-10", "rpe": "9", "rest": "1.0 min", "notes": "Diamond shape", "substitutions": [] },
+              { "order": 3, "name": "Scott Curl", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Barbell or EZ bar", "substitutions": [] },
+              { "order": 4, "name": "Lying Incline Death Curls", "warmup_sets": null, "working_sets": 2, "reps": "20", "rpe": "10", "rest": "1.5 min", "notes": "5 second squeeze every 5th rep", "substitutions": [] },
+              { "order": 5, "name": "Reverse Grip EZ Bar Curl (Metabolic)", "warmup_sets": null, "working_sets": 2, "reps": "50", "rpe": "10", "rest": "1.5 min", "notes": "Very light weight", "substitutions": [] },
+              { "order": 6, "name": "Farmer's Walks", "warmup_sets": null, "working_sets": 3, "reps": "40", "rpe": null, "rest": "1.0 min", "notes": "Optional forearm work", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    }
+  ]
+}

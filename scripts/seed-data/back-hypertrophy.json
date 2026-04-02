@@ -1,0 +1,272 @@
+{
+  "name": "Back Hypertrophy",
+  "slug": "back-hypertrophy",
+  "frequency": 2,
+  "description": "Jeff Nippard's Back Hypertrophy Program - 9 weeks (8 + deload), 2 blocks, 2 back days per week with supplemental cluster sets",
+  "source_file": "Jeff Nippard_s Back Hypertrophy Program.pdf",
+  "phases": [
+    {
+      "phase_number": 1,
+      "name": "Block 1",
+      "description": "Weeks 1-4, Strength + Hypertrophy focus with supplemental cluster sets",
+      "weeks": [
+        {
+          "week_number": 1,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Below Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "2.5 min", "notes": "Tempo 2:1:1:1. Set up barbell just below the knee, use straps and a belt as needed", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Tempo 2:0:2:0. Preactivation, smooth and controlled reps, get a slight pump with light weight, drive elbows down", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "8", "rest": "2.5 min", "notes": "Tempo 2:0:1:0. 1.5x shoulder width grip, very slight lean back, controlled reps", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "8", "rest": "2.0 min", "notes": "Tempo 2:0:1:0. Keep chest pinned to support pad, full stretch at bottom, squeeze shoulder blades at top", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Tempo 2:0:1:0. Brace non-rowing hand against knee for support, lat focus: drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Superset with B1, one arm at a time, lie on stomach and pull cable in toward sides", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Set up cables 6 in above eye level and pull to the eyes, retract shoulder blades", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "7", "rest": "0.5 min", "notes": "Tempo 2:0:2:0. Keep elbows tucked in at sides, drive elbows down and slightly back, smooth tempo", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row (7's)", "warmup_sets": null, "working_sets": 3, "reps": "7+7", "rpe": "9", "rest": "2.0 min", "notes": "Tempo 2:0:1:0. Overhand, 1.5x shoulder width grip, 45 degree bend at hips, 7 reps full ROM, 7 reps bottom 1/2 ROM", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Tempo 2:0:1:0. Retract scapulae on each rep, full stretch on lats at bottom, keep lower back engaged", "substitutions": [] },
+              { "order": 4, "name": "Omni-Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Tempo 2:0:1:0. 3 different widths for 3 sets: 2x shoulder width, then 1.5x, then 1x (all overhand to front)", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "0.0 min", "notes": "Tempo 2:0:1:0. Stop ROM once elbows reach shoulder height, lean slightly back and engage upper traps", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Tempo 2:0:1:0. Set up at eye level, pull rope up and out like in a back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Reverse Pyramid)", "warmup_sets": null, "working_sets": 3, "reps": "10,15,20", "rpe": "9.5", "rest": "1.5 min", "notes": "Tempo 2:0:1:0. Heavy weight for 10 reps, then drop weight back and increase reps for next 2 sets", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "15-20", "rpe": "9", "rest": "2.0 min", "notes": "Tempo 1:1:1:0. Performed at beginning of workout. Use moderate leg drive and shrug up to ears", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Tempo 2:1:1:1. Short rest times, 1.5x shoulder width grip, initiate reps from dead hang, hold 1 sec at top", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Tempo 1:0:1:0. Short rest times, wide grip, neutral grip, heavy weight with good control", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 2,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Below Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "2.5 min", "notes": "Set up barbell just below the knee, use straps and a belt as needed", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation, smooth and controlled reps, light weight", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Lat Pulldown", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "8", "rest": "2.5 min", "notes": "1.5x shoulder width grip, slight lean back, controlled reps", "substitutions": [] },
+              { "order": 4, "name": "Smith Machine Row", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "8", "rest": "2.0 min", "notes": "Set up Smith machine on lowest setting, back angle close to 90 degrees (Pendlay position)", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Brace non-rowing hand against knee, lat focus: drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1, lie on stomach and pull cable in toward sides", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Set up cables 6 in above eye level, retract shoulder blades", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "7", "rest": "0.5 min", "notes": "Elbows tucked, drive elbows down and slightly back", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row (7's)", "warmup_sets": null, "working_sets": 3, "reps": "7+7", "rpe": "9", "rest": "2.0 min", "notes": "Overhand, 1.5x shoulder width grip, 45 degree bend at hips", "substitutions": [] },
+              { "order": 3, "name": "Meadows Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "12-15 reps each side, use straps as needed, use opposite hand for support on knee", "substitutions": [] },
+              { "order": 4, "name": "Omni-Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "3 different widths for 3 sets", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "0.0 min", "notes": "Stop ROM once elbows reach shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Pull rope up and out like a back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Reverse Pyramid)", "warmup_sets": null, "working_sets": 3, "reps": "10,15,20", "rpe": "9.5", "rest": "1.5 min", "notes": "Heavy weight for 10, then drop and increase reps", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "15-20", "rpe": "9", "rest": "2.0 min", "notes": "Performed at beginning of workout", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Short rest, 1.5x shoulder width, dead hang start, 1 sec hold at top", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, wide neutral grip, heavy weight", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 3,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Below Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "2.5 min", "notes": "Set up barbell just below the knee", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.5 min", "notes": "1.5x shoulder width grip", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Keep chest pinned to support pad", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Lat focus: drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level, retract shoulder blades", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "7", "rest": "0.5 min", "notes": "Elbows tucked, drive down and back", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row (7's)", "warmup_sets": null, "working_sets": 3, "reps": "7+7", "rpe": "9", "rest": "2.0 min", "notes": "Overhand, 45 degree bend at hips", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Retract scapulae, full stretch at bottom", "substitutions": [] },
+              { "order": 4, "name": "Omni-Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "3 widths for 3 sets", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "0.0 min", "notes": "Stop at shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Eye level, back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Reverse Pyramid)", "warmup_sets": null, "working_sets": 3, "reps": "10,15,20", "rpe": "9.5", "rest": "1.5 min", "notes": "Heavy 10, then drop weight increase reps", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "15-20", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout, moderate leg drive", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "4", "rpe": "8", "rest": "0.5 min", "notes": "Short rest, hold 1 sec at top", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 6, "reps": "4", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy weight, good control", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 4,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Below Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "6-8", "rpe": "7.5", "rest": "2.5 min", "notes": "Set up barbell just below the knee", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Lat Pulldown", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.5 min", "notes": "1.5x shoulder width grip", "substitutions": [] },
+              { "order": 4, "name": "Smith Machine Row", "warmup_sets": null, "working_sets": 3, "reps": "8-10", "rpe": "9", "rest": "2.0 min", "notes": "Back angle close to 90 degrees", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 2, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "7", "rest": "0.5 min", "notes": "Drive elbows down and back", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row (7's)", "warmup_sets": null, "working_sets": 3, "reps": "7+7", "rpe": "9", "rest": "2.0 min", "notes": "45 degree bend at hips", "substitutions": [] },
+              { "order": 3, "name": "Meadows Row", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Use straps as needed", "substitutions": [] },
+              { "order": 4, "name": "Omni-Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "3 widths for 3 sets", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "8", "rest": "0.0 min", "notes": "Stop at shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Reverse Pyramid)", "warmup_sets": null, "working_sets": 3, "reps": "10,15,20", "rpe": "9.5", "rest": "1.5 min", "notes": "Drop weight increase reps", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "15-20", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "4", "rpe": "8", "rest": "0.5 min", "notes": "Short rest, hold at top", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 6, "reps": "4", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy weight", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Block 2",
+      "description": "Weeks 5-8, Rack Pull above knee, exercise variation, increased intensity",
+      "weeks": [
+        {
+          "week_number": 5,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Above Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "5", "rpe": "7.5", "rest": "2.5 min", "notes": "Set up barbell just above the knee", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.5 min", "notes": "1.5x shoulder width grip", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Full stretch at bottom, squeeze at top", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "0.5 min", "notes": "Elbows tucked, drive down", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row", "warmup_sets": null, "working_sets": 3, "reps": "8+2", "rpe": "9", "rest": "2.0 min", "notes": "8 reps full control, 2 cheat reps using moderate momentum", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Retract scapulae, full stretch", "substitutions": [] },
+              { "order": 4, "name": "Close Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Neutral grip, drive elbows down, minimize bicep involvement", "substitutions": [] },
+              { "order": 5, "name": "C1. 1 Arm DB Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "0.0 min", "notes": "Stop ROM once elbows reach shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Reverse Cable Crossover", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Set up at eye level, pull rope up and out like back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Myo-Rep)", "warmup_sets": null, "working_sets": 2, "reps": "20+5x", "rpe": "10", "rest": "1.0 min", "notes": "Do 20 reps, rest 2-3 breaths, do 5 more, repeat until you can't do 5", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout, moderate leg drive", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Short rest, hold at top", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy weight", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 6,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Above Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "4", "rpe": "8", "rest": "2.5 min", "notes": "Set up barbell just above the knee", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.5 min", "notes": "1.5x shoulder width grip", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Full stretch at bottom", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "0.5 min", "notes": "Drive elbows down", "substitutions": [] },
+              { "order": 2, "name": "T-Bar Row (In Corner)", "warmup_sets": null, "working_sets": 3, "reps": "8+2", "rpe": "9", "rest": "2.0 min", "notes": "V-bar attachment, neutral grip, 8 reps full control, 2 cheat reps", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Retract scapulae, full stretch", "substitutions": [] },
+              { "order": 4, "name": "Close Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Neutral grip, drive elbows down", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "0.0 min", "notes": "Stop at shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Myo-Rep)", "warmup_sets": null, "working_sets": 2, "reps": "20+5x", "rpe": "10", "rest": "1.0 min", "notes": "20 reps then rest-pause sets of 5", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Short rest", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 7,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Above Knee)", "warmup_sets": "3", "working_sets": 3, "reps": "3", "rpe": "7.5", "rest": "2.5 min", "notes": "Above the knee", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 4, "reps": "6-8", "rpe": "9", "rest": "2.5 min", "notes": "1.5x shoulder width", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Squeeze at top", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Drive elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "0.5 min", "notes": "Drive elbows down", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row", "warmup_sets": null, "working_sets": 3, "reps": "8+2", "rpe": "9", "rest": "2.0 min", "notes": "8 reps full, 2 cheat reps", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Retract scapulae", "substitutions": [] },
+              { "order": 4, "name": "Close Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Neutral grip", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "0.0 min", "notes": "Stop at shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Myo-Rep)", "warmup_sets": null, "working_sets": 2, "reps": "20+5x", "rpe": "10", "rest": "1.0 min", "notes": "20 reps then rest-pause 5s", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "12-15", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Short rest", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy", "substitutions": [] }
+            ] }
+          ]
+        },
+        {
+          "week_number": 8,
+          "workouts": [
+            { "name": "Strength Focus", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull (Above Knee)", "warmup_sets": "3", "working_sets": 2, "reps": "2", "rpe": "9.5", "rest": "2.5 min", "notes": "2 near-max effort sets! Push yourself, maintain proper form, go heavier on set 2 if set 1 is RPE 9 or lower", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "7", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 2, "reps": "6-8", "rpe": "6", "rest": "2.5 min", "notes": "Reduced volume, lighter", "substitutions": [] },
+              { "order": 4, "name": "Chest Supported T-Bar Row", "warmup_sets": null, "working_sets": 3, "reps": "6-8", "rpe": "9", "rest": "2.0 min", "notes": "Squeeze at top", "substitutions": [] },
+              { "order": 5, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9", "rest": "0.0 min", "notes": "Elbow down and back", "substitutions": [] },
+              { "order": 6, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "9.5", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] },
+              { "order": 7, "name": "Rope Facepull (Scapular Retraction)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Above eye level", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "9", "rest": "0.5 min", "notes": "Drive elbows down", "substitutions": [] },
+              { "order": 2, "name": "T-Bar Row (In Corner)", "warmup_sets": null, "working_sets": 3, "reps": "8+2", "rpe": "9", "rest": "2.0 min", "notes": "V-bar, 8 reps full, 2 cheat", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "8", "rest": "1.5 min", "notes": "Retract scapulae", "substitutions": [] },
+              { "order": 4, "name": "Close Grip Lat Pulldown", "warmup_sets": null, "working_sets": 3, "reps": "12-15", "rpe": "9", "rest": "1.5 min", "notes": "Neutral grip", "substitutions": [] },
+              { "order": 5, "name": "C1. Cable Rope Upright Row", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "0.0 min", "notes": "Stop at shoulder height", "substitutions": [] },
+              { "order": 6, "name": "C2. Rope Facepull (External Rotation)", "warmup_sets": null, "working_sets": 3, "reps": "15-20", "rpe": "9", "rest": "1.0 min", "notes": "Back double bicep", "substitutions": [] },
+              { "order": 7, "name": "Lower Back Extension (Myo-Rep)", "warmup_sets": null, "working_sets": 2, "reps": "20+5x", "rpe": "10", "rest": "1.0 min", "notes": "20 reps then rest-pause 5s", "substitutions": [] },
+              { "order": 8, "name": "Power Shrug (Optional)", "warmup_sets": null, "working_sets": 4, "reps": "15-20", "rpe": "9", "rest": "2.0 min", "notes": "Beginning of workout", "substitutions": [] }
+            ] },
+            { "name": "Supplemental (Cluster Sets)", "type": "pull", "day_number": 3, "exercises": [
+              { "order": 1, "name": "Wide Grip Pull Up (Cluster Sets)", "warmup_sets": null, "working_sets": 4, "reps": "3", "rpe": "8", "rest": "0.5 min", "notes": "Short rest", "substitutions": [] },
+              { "order": 2, "name": "Wide Grip Seated Cable Row (Cluster Sets)", "warmup_sets": null, "working_sets": 8, "reps": "3", "rpe": "8.5", "rest": "0.5 min", "notes": "Short rest, heavy", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "name": "Deload",
+      "description": "Week 9, reduced volume and intensity for recovery",
+      "weeks": [
+        {
+          "week_number": 9,
+          "workouts": [
+            { "name": "Strength Focus (Deload)", "type": "pull", "day_number": 1, "exercises": [
+              { "order": 1, "name": "Rack Pull", "warmup_sets": "2", "working_sets": 2, "reps": "6-8", "rpe": "5", "rest": "2.5 min", "notes": "Set up barbell just below the knee, use straps and belt as needed", "substitutions": [] },
+              { "order": 2, "name": "1-Arm Lat Pull In", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "6", "rest": "0.5 min", "notes": "Preactivation", "substitutions": [] },
+              { "order": 3, "name": "Wide Grip Pull Up", "warmup_sets": null, "working_sets": 2, "reps": "6-8", "rpe": "6", "rest": "2.5 min", "notes": "1.5x shoulder width grip, controlled", "substitutions": [] },
+              { "order": 4, "name": "B1. Half Kneeling Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "0.0 min", "notes": "Elbow down and back", "substitutions": [] },
+              { "order": 5, "name": "B2. Half Lying Moto Row", "warmup_sets": null, "working_sets": 3, "reps": "10-12", "rpe": "8", "rest": "1.0 min", "notes": "Superset with B1", "substitutions": [] }
+            ] },
+            { "name": "Hypertrophy Focus (Deload)", "type": "pull", "day_number": 2, "exercises": [
+              { "order": 1, "name": "Rope Pullover", "warmup_sets": null, "working_sets": 2, "reps": "15-20", "rpe": "6", "rest": "0.5 min", "notes": "Light, controlled", "substitutions": [] },
+              { "order": 2, "name": "Bent Over Barbell Row", "warmup_sets": null, "working_sets": 2, "reps": "8", "rpe": "6", "rest": "2.0 min", "notes": "1.5x shoulder width, 45 degree bend", "substitutions": [] },
+              { "order": 3, "name": "Close Grip Seated Cable Row", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "6", "rest": "1.5 min", "notes": "Retract scapulae", "substitutions": [] },
+              { "order": 4, "name": "Omni-Grip Lat Pulldown", "warmup_sets": null, "working_sets": 2, "reps": "12-15", "rpe": "6", "rest": "1.5 min", "notes": "3 different widths", "substitutions": [] }
+            ] }
+          ]
+        }
+      ]
+    }
+  ]
+}

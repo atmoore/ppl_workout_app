@@ -82,6 +82,18 @@ async function seed() {
 
     console.log(`Seeding program: ${data.name}`);
 
+    // Skip if already exists
+    const existing = await db
+      .select()
+      .from(schema.programs)
+      .where(require("drizzle-orm").eq(schema.programs.slug, data.slug))
+      .limit(1);
+    if (existing.length > 0) {
+      console.log(`  → Skipped (already exists, id=${existing[0].id})`);
+      if (firstProgramId === null) firstProgramId = existing[0].id;
+      continue;
+    }
+
     // Insert program
     const [program] = await db
       .insert(schema.programs)
