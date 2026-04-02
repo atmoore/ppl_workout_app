@@ -154,7 +154,7 @@ export function ProgramList({ programs, currentProgramId }: ProgramListProps) {
                       <button
                         onClick={(e) => { e.stopPropagation(); handleSwitch(program.id); }}
                         disabled={isSwitching || switching !== null}
-                        className="w-full rounded-xl bg-zinc-50 px-4 py-3 text-sm font-semibold text-zinc-950 active:bg-zinc-300 active:scale-[0.98] disabled:opacity-50"
+                        className="w-full rounded-xl bg-zinc-50 px-4 py-3.5 min-h-[48px] text-sm font-semibold text-zinc-950 active:bg-zinc-300 active:scale-[0.98] disabled:opacity-50"
                       >
                         {isSwitching ? "Switching..." : "Start this program"}
                       </button>

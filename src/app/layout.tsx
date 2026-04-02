@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("dark", GeistSans.variable, GeistMono.variable, "font-sans", geist.variable)}>
       <body className="font-sans antialiased bg-zinc-950 text-zinc-50">
-        <main className="mx-auto max-w-md pb-24">
+        <main className="mx-auto max-w-md pb-[72px]">
           {children}
         </main>
         <BottomNav />

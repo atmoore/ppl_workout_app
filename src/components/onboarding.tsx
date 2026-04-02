@@ -63,7 +63,7 @@ export function Onboarding({ programs }: { programs: Program[] }) {
           <button
             onClick={() => setSelected(null)}
             disabled={loading}
-            className="text-sm text-zinc-500 hover:text-zinc-300"
+            className="text-sm text-zinc-500 hover:text-zinc-300 px-4 py-3 rounded-lg active:bg-zinc-800/50 min-h-[44px]"
           >
             Choose a different program
           </button>

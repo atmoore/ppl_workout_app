@@ -26,7 +26,7 @@ const typeAbbreviation: Record<string, string> = {
 
 export function WeekPills({ days, currentDay, selectedDay, onSelectDay }: WeekPillsProps) {
   return (
-    <div className="flex gap-2 overflow-x-auto scrollbar-hide py-1">
+    <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1">
       {days.map((day) => {
         const isCurrentDay = day.dayNumber === currentDay;
         const isPast = day.dayNumber < currentDay;
@@ -37,7 +37,7 @@ export function WeekPills({ days, currentDay, selectedDay, onSelectDay }: WeekPi
             key={day.dayNumber}
             onClick={() => onSelectDay(day.dayNumber)}
             className={cn(
-              "flex flex-col items-center gap-1 rounded-xl px-3 py-2 min-w-[56px] transition-colors",
+              "flex flex-col items-center gap-1 rounded-xl px-4 py-3 min-w-[60px] min-h-[52px] transition-colors",
               isSelected
                 ? "bg-zinc-100 text-zinc-900"
                 : isPast
@@ -46,7 +46,7 @@ export function WeekPills({ days, currentDay, selectedDay, onSelectDay }: WeekPi
               !isSelected && "active:bg-zinc-700"
             )}
           >
-            <span className="text-[10px] font-medium uppercase tracking-wider opacity-60">
+            <span className="text-[11px] font-medium uppercase tracking-wider opacity-60">
               Day {day.dayNumber}
             </span>
             <span className={cn("text-xs font-semibold", isSelected ? "text-zinc-900" : "")}>

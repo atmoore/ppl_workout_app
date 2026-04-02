@@ -71,7 +71,7 @@ export function ProgressView({ history, maxes, topExercises, weeklyInsights }: P
               key={t}
               onClick={() => setTab(t)}
               className={cn(
-                "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
+                "rounded-lg px-5 py-2.5 min-h-[44px] flex items-center justify-center text-sm font-medium transition-colors",
                 tab === t ? "bg-zinc-100 text-zinc-900" : "bg-zinc-800 text-zinc-400"
               )}
             >
@@ -82,7 +82,7 @@ export function ProgressView({ history, maxes, topExercises, weeklyInsights }: P
         <a
           href="/api/export"
           download
-          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-xs text-zinc-300 active:bg-zinc-700 transition-colors shrink-0"
+          className="rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-2.5 min-h-[44px] flex items-center text-sm text-zinc-300 active:bg-zinc-700 transition-colors shrink-0"
         >
           Export CSV
         </a>

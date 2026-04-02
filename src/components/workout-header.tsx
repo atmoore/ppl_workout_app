@@ -34,7 +34,7 @@ export function WorkoutHeader({ workoutName }: { workoutName: string }) {
     <div className="sticky top-0 z-10 flex items-center justify-between border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-sm px-4 py-3 safe-top">
       <Link
         href="/"
-        className="flex items-center justify-center h-10 w-10 -ml-2 rounded-lg text-zinc-400 active:bg-zinc-800"
+        className="flex items-center justify-center h-11 w-11 -ml-1 rounded-lg text-zinc-400 active:bg-zinc-800"
       >
         <ArrowLeft className="h-5 w-5" />
       </Link>
@@ -50,7 +50,7 @@ export function WorkoutHeader({ workoutName }: { workoutName: string }) {
         </span>
         <button
           onClick={togglePause}
-          className="flex items-center justify-center h-10 w-10 -mr-2 rounded-lg text-zinc-400 active:bg-zinc-800"
+          className="flex items-center justify-center h-11 w-11 -mr-1 rounded-lg text-zinc-400 active:bg-zinc-800"
         >
           {paused ? (
             <Play className="h-5 w-5" />
