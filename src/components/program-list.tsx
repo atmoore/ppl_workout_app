@@ -14,6 +14,7 @@ interface Program {
   frequency: number | null;
   description: string | null;
   phases: number;
+  totalWeeks: number;
   totalWorkouts: number;
   totalExercises: number;
   phaseNames: string[];
@@ -121,6 +122,10 @@ export function ProgramList({ programs, currentProgramId }: ProgramListProps) {
                       <div className="flex flex-col">
                         <span className="font-mono text-zinc-200">{program.phases}</span>
                         <span className="text-zinc-500">phases</span>
+                      </div>
+                      <div className="flex flex-col">
+                        <span className="font-mono text-zinc-200">{program.totalWeeks}</span>
+                        <span className="text-zinc-500">weeks</span>
                       </div>
                       <div className="flex flex-col">
                         <span className="font-mono text-zinc-200">{program.totalWorkouts}</span>

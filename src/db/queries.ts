@@ -253,9 +253,11 @@ export async function getAllProgramsWithDetails() {
 
       let totalWorkouts = 0;
       let totalExercises = 0;
+      let totalWeeks = 0;
 
       for (const phase of programPhases) {
         const phaseWeeks = await db.select().from(weeks).where(eq(weeks.phaseId, phase.id));
+        totalWeeks += phaseWeeks.length;
         for (const week of phaseWeeks) {
           const wts = await db.select().from(workoutTemplates).where(eq(workoutTemplates.weekId, week.id));
           totalWorkouts += wts.length;
@@ -269,6 +271,7 @@ export async function getAllProgramsWithDetails() {
       return {
         ...program,
         phaseCount: programPhases.length,
+        totalWeeks,
         totalWorkouts,
         totalExercises,
         phaseNames: programPhases.map(p => p.name ?? `Phase ${p.phaseNumber}`),

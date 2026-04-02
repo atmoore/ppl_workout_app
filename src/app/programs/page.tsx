@@ -23,6 +23,7 @@ export default async function ProgramsPage() {
           frequency: p.frequency,
           description: p.description,
           phases: p.phaseCount,
+          totalWeeks: p.totalWeeks,
           totalWorkouts: p.totalWorkouts,
           totalExercises: p.totalExercises,
           phaseNames: p.phaseNames,
