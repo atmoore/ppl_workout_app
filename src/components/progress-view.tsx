@@ -29,20 +29,29 @@ export function ProgressView({ history, maxes }: ProgressViewProps) {
 
   return (
     <div className="flex flex-col gap-4">
-      {/* Tab pills */}
-      <div className="flex gap-2">
-        {(["history", "maxes"] as const).map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            className={cn(
-              "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
-              tab === t ? "bg-zinc-100 text-zinc-900" : "bg-zinc-800 text-zinc-400"
-            )}
-          >
-            {t === "history" ? "History" : "PRs"}
-          </button>
-        ))}
+      {/* Tab pills + export */}
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex gap-2">
+          {(["history", "maxes"] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className={cn(
+                "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
+                tab === t ? "bg-zinc-100 text-zinc-900" : "bg-zinc-800 text-zinc-400"
+              )}
+            >
+              {t === "history" ? "History" : "PRs"}
+            </button>
+          ))}
+        </div>
+        <a
+          href="/api/export"
+          download
+          className="rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-xs text-zinc-300 active:bg-zinc-700 transition-colors shrink-0"
+        >
+          Export CSV
+        </a>
       </div>
 
       {tab === "history" && (
