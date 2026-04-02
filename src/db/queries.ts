@@ -11,7 +11,7 @@ import {
   workoutSessions,
   exerciseMaxes,
 } from "./schema";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, sql } from "drizzle-orm";
 
 export type UserProfile = typeof userProfile.$inferSelect;
 export type Program = typeof programs.$inferSelect;
@@ -356,6 +356,72 @@ export async function getLastCompletedSession() {
     .orderBy(desc(workoutSessions.completedAt))
     .limit(1);
   return rows[0] || null;
+}
+
+export async function getEssentialsWorkout(workoutType: string) {
+  // Find an Essentials program
+  const essentialsPrograms = await db
+    .select()
+    .from(programs)
+    .where(sql`${programs.name} LIKE '%Essentials%'`);
+
+  if (essentialsPrograms.length === 0) return null;
+
+  // Get first phase, first week
+  const program = essentialsPrograms[0];
+  const [phase] = await db
+    .select()
+    .from(phases)
+    .where(eq(phases.programId, program.id))
+    .orderBy(phases.phaseNumber)
+    .limit(1);
+  if (!phase) return null;
+
+  const [week] = await db
+    .select()
+    .from(weeks)
+    .where(eq(weeks.phaseId, phase.id))
+    .orderBy(weeks.weekNumber)
+    .limit(1);
+  if (!week) return null;
+
+  // Find all workouts in that week
+  const workouts = await db
+    .select()
+    .from(workoutTemplates)
+    .where(eq(workoutTemplates.weekId, week.id));
+
+  // Match by type
+  const typeMap: Record<string, string[]> = {
+    push: ["push", "upper"],
+    pull: ["pull", "upper"],
+    legs: ["legs", "lower"],
+    upper: ["upper", "push"],
+    lower: ["lower", "legs"],
+    full: ["full", "upper"],
+  };
+
+  const matchTypes = typeMap[workoutType.toLowerCase()] || [workoutType.toLowerCase()];
+  const match = workouts.find(w => matchTypes.includes(w.type?.toLowerCase() ?? ""));
+
+  if (!match) return null;
+
+  const exercises = await db
+    .select()
+    .from(exerciseTemplates)
+    .where(eq(exerciseTemplates.workoutTemplateId, match.id))
+    .orderBy(exerciseTemplates.order);
+
+  return {
+    programName: program.name,
+    workoutName: match.name,
+    exercises: exercises.map(e => ({
+      name: e.name,
+      workingSets: e.workingSets,
+      reps: e.reps,
+      rpe: e.rpe,
+    })),
+  };
 }
 
 export async function getExerciseHistory(exerciseName: string, limit: number = 4) {
