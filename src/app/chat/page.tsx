@@ -18,7 +18,7 @@ export default function ChatPage() {
   const [workoutEnded, setWorkoutEnded] = useState(false);
 
   useEffect(() => {
-    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
+    scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "instant" });
   }, [messages]);
 
   // Detect workout end from tool results in messages
@@ -87,7 +87,7 @@ export default function ChatPage() {
 
       {/* Post-workout: show "Back to Today" instead of input */}
       {workoutEnded ? (
-        <div className="border-t border-zinc-800 bg-zinc-950 px-4 py-4 safe-bottom">
+        <div className="border-t border-zinc-800 bg-zinc-950 px-4 pt-4 pb-[calc(1rem+env(safe-area-inset-bottom,0px))]">
           <Link
             href="/"
             className="block w-full rounded-xl bg-zinc-50 px-4 py-3.5 text-center text-base font-semibold text-zinc-950 active:bg-zinc-300 active:scale-[0.98]"

@@ -78,7 +78,7 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
           <h1 className="text-2xl font-bold text-zinc-50 tracking-tight">{programName}</h1>
           <p className="text-sm text-zinc-400">{phaseName} · Week {weekNumber}</p>
         </div>
-        <Link href="/programs" className="text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
+        <Link href="/programs" className="flex items-center justify-center min-h-[44px] px-3 text-xs text-zinc-500 hover:text-zinc-300 transition-colors">
           Change
         </Link>
       </div>

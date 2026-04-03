@@ -130,6 +130,10 @@
     @apply font-sans;
     -webkit-text-size-adjust: 100%;
   }
+  /* Eliminate double-tap zoom delay on iOS for all interactive elements */
+  button, a, input, select, textarea {
+    touch-action: manipulation;
+  }
   /* Prevent iOS zoom on input focus */
   input, textarea, select {
     font-size: 16px !important;
@@ -143,5 +147,13 @@
   }
   .safe-top {
     padding-top: env(safe-area-inset-top);
+  }
+}
+
+/* Hide scrollbars while keeping scroll functionality */
+@utility scrollbar-hide {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
