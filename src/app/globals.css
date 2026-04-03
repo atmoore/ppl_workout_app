@@ -135,6 +135,11 @@
   button, a, input, select, textarea {
     touch-action: manipulation;
   }
+  /* Prevent long-press context menu and text selection on interactive elements */
+  button, a {
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
   /* Prevent iOS zoom on input focus */
   input, textarea, select {
     font-size: 16px !important;
