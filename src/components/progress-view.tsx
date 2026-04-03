@@ -172,7 +172,7 @@ function ExerciseChart({ exerciseName }: { exerciseName: string }) {
     <div className="rounded-xl border border-zinc-800 bg-zinc-900 overflow-hidden">
       <button
         onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between px-4 py-3 text-left"
+        className="w-full flex items-center justify-between px-4 py-3 min-h-[44px] text-left"
       >
         <span className="text-sm text-zinc-200">{exerciseName}</span>
         <span className="text-xs text-zinc-500">{expanded ? "▲" : "▼"}</span>

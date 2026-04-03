@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 interface DayInfo {
@@ -25,8 +26,14 @@ const typeAbbreviation: Record<string, string> = {
 };
 
 export function WeekPills({ days, currentDay, selectedDay, onSelectDay }: WeekPillsProps) {
+  const currentRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    currentRef.current?.scrollIntoView({ behavior: "instant", inline: "nearest", block: "nearest" });
+  }, []);
+
   return (
-    <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1">
+    <div className="flex gap-3 overflow-x-auto scrollbar-hide py-1 snap-x snap-mandatory scroll-pl-4">
       {days.map((day) => {
         const isCurrentDay = day.dayNumber === currentDay;
         const isPast = day.dayNumber < currentDay;
@@ -35,9 +42,10 @@ export function WeekPills({ days, currentDay, selectedDay, onSelectDay }: WeekPi
         return (
           <button
             key={day.dayNumber}
+            ref={isCurrentDay ? currentRef : undefined}
             onClick={() => onSelectDay(day.dayNumber)}
             className={cn(
-              "flex flex-col items-center gap-1 rounded-xl px-4 py-3 min-w-[60px] min-h-[52px] transition-colors",
+              "flex flex-col items-center gap-1 rounded-xl px-4 py-3 min-w-[60px] min-h-[52px] transition-colors snap-start",
               isSelected
                 ? "bg-zinc-100 text-zinc-900"
                 : isPast

@@ -31,7 +31,7 @@ export function WorkoutHeader({ workoutName }: { workoutName: string }) {
   const seconds = elapsed % 60;
 
   return (
-    <div className="sticky top-0 z-10 flex items-center justify-between border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-sm px-4 py-3 safe-top">
+    <div className="sticky top-0 z-10 flex items-center justify-between border-b border-zinc-800 bg-zinc-950/95 backdrop-blur-sm px-4 pb-3 pt-[calc(0.75rem+env(safe-area-inset-top,0px))]">
       <Link
         href="/"
         className="flex items-center justify-center h-11 w-11 -ml-1 rounded-lg text-zinc-400 active:bg-zinc-800"
