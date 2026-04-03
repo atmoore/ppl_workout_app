@@ -62,6 +62,8 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
           enterKeyHint="send"
           autoComplete="off"
           autoCorrect="off"
+          autoCapitalize="none"
+          spellCheck={false}
           className="flex-1 rounded-xl border border-zinc-700 bg-zinc-900 px-4 py-3 text-base text-zinc-100 placeholder:text-zinc-500 focus:border-zinc-500 focus:outline-none disabled:opacity-50"
         />
         <button

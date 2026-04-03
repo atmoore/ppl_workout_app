@@ -70,7 +70,7 @@ export default function ChatPage() {
   return (
     <div className="flex h-[100dvh] flex-col">
       <WorkoutHeader workoutName={workoutName} />
-      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-3">
+      <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-y-contain px-4 py-4 space-y-3">
         {messages
           .filter((m) => m.role !== "system")
           .map((message) => (
