@@ -14,10 +14,8 @@ export async function POST(req: Request) {
   let systemPrompt: string;
   let workoutData: Awaited<ReturnType<typeof getCurrentWorkout>>;
   try {
-    [systemPrompt, workoutData] = await Promise.all([
-      buildSystemPrompt(),
-      getCurrentWorkout(),
-    ]);
+    workoutData = await getCurrentWorkout();
+    systemPrompt = await buildSystemPrompt(workoutData);
   } catch (e) {
     console.error("Chat setup failed:", e);
     return Response.json({ error: "Failed to load workout data" }, { status: 500 });
@@ -44,12 +42,16 @@ export async function POST(req: Request) {
     messages: await convertToModelMessages(messages),
     onFinish: async ({ text }) => {
       if (text) {
-        const session = await getOrCreateSession(workoutData);
-        await db.insert(chatMessages).values({
-          sessionId: session.id,
-          role: "assistant",
-          content: text,
-        });
+        try {
+          const session = await getOrCreateSession(workoutData);
+          await db.insert(chatMessages).values({
+            sessionId: session.id,
+            role: "assistant",
+            content: text,
+          });
+        } catch (e) {
+          console.error("Failed to save assistant message:", e);
+        }
       }
     },
     tools: {
@@ -69,23 +71,27 @@ export async function POST(req: Request) {
             .from(setLogs)
             .where(and(eq(setLogs.sessionId, session.id), eq(setLogs.exerciseName, exerciseName)));
           const startSet = (existing[0]?.maxSet ?? 0) + 1;
-          for (let i = 0; i < reps.length; i++) {
-            await db.insert(setLogs).values({
+          await db.insert(setLogs).values(
+            reps.map((r: number, i: number) => ({
               sessionId: session.id,
               exerciseName,
               setNumber: startSet + i,
-              setType: "working",
+              setType: "working" as const,
               weight: String(weight),
-              reps: reps[i],
+              reps: r,
               substitutedFor: substitutedFor || null,
-            });
-          }
-          // Update exercise max
-          const existingMax = await db.select().from(exerciseMaxes).where(eq(exerciseMaxes.exerciseName, exerciseName)).limit(1);
-          if (!existingMax[0] || Number(existingMax[0].weight) < weight) {
-            if (existingMax[0]) {
-              await db.update(exerciseMaxes).set({ weight: String(weight), updatedAt: new Date() }).where(eq(exerciseMaxes.id, existingMax[0].id));
-            } else {
+            }))
+          );
+          // Update exercise max — check-and-update to avoid duplicates
+          const [existingMax] = await db.select().from(exerciseMaxes).where(eq(exerciseMaxes.exerciseName, exerciseName)).limit(1);
+          if (existingMax) {
+            if (Number(existingMax.weight) < weight) {
+              await db.update(exerciseMaxes).set({ weight: String(weight), updatedAt: new Date() }).where(eq(exerciseMaxes.id, existingMax.id));
+            }
+          } else {
+            // Use a guard to avoid duplicate inserts from concurrent requests
+            const existing = await db.select({ id: exerciseMaxes.id }).from(exerciseMaxes).where(eq(exerciseMaxes.exerciseName, exerciseName)).limit(1);
+            if (existing.length === 0) {
               await db.insert(exerciseMaxes).values({ exerciseName, weight: String(weight) });
             }
           }
@@ -178,29 +184,26 @@ export async function POST(req: Request) {
           const lastWeight = allSets[0].weight;
           const lastBatch = allSets.filter(s => s.weight === lastWeight);
 
+          const batchIds = lastBatch.map(s => s.id);
+
           if (action === "delete") {
-            for (const set of lastBatch) {
-              await db.delete(setLogs).where(eq(setLogs.id, set.id));
-            }
+            await db.delete(setLogs).where(sql`${setLogs.id} IN (${sql.join(batchIds.map(id => sql`${id}`), sql`, `)})`);
             return { success: true, action: "deleted", exerciseName, setsRemoved: lastBatch.length };
           }
 
           if (action === "edit" && newWeight !== undefined && newReps) {
-            // Get the starting set number for the replacement batch
             const startSetNumber = Math.min(...lastBatch.map(s => s.setNumber ?? 1));
-            for (const set of lastBatch) {
-              await db.delete(setLogs).where(eq(setLogs.id, set.id));
-            }
-            for (let i = 0; i < newReps.length; i++) {
-              await db.insert(setLogs).values({
+            await db.delete(setLogs).where(sql`${setLogs.id} IN (${sql.join(batchIds.map(id => sql`${id}`), sql`, `)})`);
+            await db.insert(setLogs).values(
+              newReps.map((r: number, i: number) => ({
                 sessionId: session.id,
                 exerciseName,
                 setNumber: startSetNumber + i,
-                setType: "working",
+                setType: "working" as const,
                 weight: String(newWeight),
-                reps: newReps[i],
-              });
-            }
+                reps: r,
+              }))
+            );
             return { success: true, action: "edited", exerciseName, newWeight, newReps };
           }
 

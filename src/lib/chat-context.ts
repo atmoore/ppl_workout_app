@@ -1,4 +1,4 @@
-import { getCurrentWorkout, getExerciseHistory, getEssentialsWorkout } from "@/db/queries";
+import { getCurrentWorkout, getExerciseHistory, getEssentialsWorkout, type CurrentWorkoutData } from "@/db/queries";
 
 function classifyExercise(name: string): "primary" | "secondary" | "tertiary" {
   const lower = name.toLowerCase();
@@ -32,8 +32,8 @@ function classifyExercise(name: string): "primary" | "secondary" | "tertiary" {
   return "tertiary";
 }
 
-export async function buildSystemPrompt() {
-  const data = await getCurrentWorkout();
+export async function buildSystemPrompt(preloaded?: CurrentWorkoutData | null) {
+  const data = preloaded !== undefined ? preloaded : await getCurrentWorkout();
   if (!data) return "No workout is currently scheduled. Tell the user to select a program first.";
 
   const { program, phase, week, workout, exercises } = data;
