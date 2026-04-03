@@ -70,16 +70,20 @@ export async function getCurrentWorkout(): Promise<CurrentWorkoutData | null> {
     .where(eq(exerciseTemplates.workoutTemplateId, workout.id))
     .orderBy(exerciseTemplates.order);
 
-  // Get substitutions for all exercises
-  const exercisesWithSubs = await Promise.all(
-    exerciseRows.map(async (exercise) => {
-      const subs = await db
-        .select()
-        .from(substitutions)
-        .where(eq(substitutions.exerciseTemplateId, exercise.id));
-      return { ...exercise, substitutions: subs };
-    })
-  );
+  // Get substitutions for all exercises in one query
+  const exerciseIds = exerciseRows.map(e => e.id);
+  const allSubs = exerciseIds.length > 0
+    ? await db.select().from(substitutions).where(sql`${substitutions.exerciseTemplateId} IN (${sql.join(exerciseIds.map(id => sql`${id}`), sql`, `)})`)
+    : [];
+  const subsByExercise = new Map<number, typeof allSubs>();
+  for (const sub of allSubs) {
+    if (!subsByExercise.has(sub.exerciseTemplateId)) subsByExercise.set(sub.exerciseTemplateId, []);
+    subsByExercise.get(sub.exerciseTemplateId)!.push(sub);
+  }
+  const exercisesWithSubs = exerciseRows.map(exercise => ({
+    ...exercise,
+    substitutions: subsByExercise.get(exercise.id) || [],
+  }));
 
   // Get program and phase records
   const programRows = await db
@@ -291,40 +295,6 @@ export async function getAllProgramsWithDetails() {
   });
 }
 
-export async function getProgramDetails(programId: number) {
-  const [program] = await db.select().from(programs).where(eq(programs.id, programId));
-  if (!program) return null;
-
-  const programPhases = await db
-    .select()
-    .from(phases)
-    .where(eq(phases.programId, programId))
-    .orderBy(phases.phaseNumber);
-
-  // Count total workouts and exercises
-  let totalWorkouts = 0;
-  let totalExercises = 0;
-
-  for (const phase of programPhases) {
-    const phaseWeeks = await db.select().from(weeks).where(eq(weeks.phaseId, phase.id));
-    for (const week of phaseWeeks) {
-      const workouts = await db.select().from(workoutTemplates).where(eq(workoutTemplates.weekId, week.id));
-      totalWorkouts += workouts.length;
-      for (const workout of workouts) {
-        const exercises = await db.select().from(exerciseTemplates).where(eq(exerciseTemplates.workoutTemplateId, workout.id));
-        totalExercises += exercises.length;
-      }
-    }
-  }
-
-  return {
-    ...program,
-    phases: programPhases,
-    totalWorkouts,
-    totalExercises,
-  };
-}
-
 export async function switchProgram(programId: number) {
   let profile = await getUserProfile();
 
@@ -385,26 +355,34 @@ export async function getWorkoutHistory(limit: number = 20) {
     .orderBy(desc(workoutSessions.date))
     .limit(limit);
 
-  // Enrich with workout name and set count
-  const enriched = await Promise.all(
-    sessions.map(async (s) => {
-      let workoutName = "Workout";
-      if (s.workoutTemplateId) {
-        const [wt] = await db.select().from(workoutTemplates).where(eq(workoutTemplates.id, s.workoutTemplateId));
-        if (wt) workoutName = wt.name ?? "Workout";
-      }
-      const sets = await db.select().from(setLogs).where(eq(setLogs.sessionId, s.id));
-      const exerciseNames = new Set(sets.map(sl => sl.exerciseName));
-      return {
-        ...s,
-        workoutName,
-        totalSets: sets.length,
-        exerciseCount: exerciseNames.size,
-      };
-    })
-  );
+  if (sessions.length === 0) return [];
 
-  return enriched;
+  // Batch: get all workout template names
+  const templateIds = [...new Set(sessions.map(s => s.workoutTemplateId).filter(Boolean))] as number[];
+  const templates = templateIds.length > 0
+    ? await db.select().from(workoutTemplates).where(sql`${workoutTemplates.id} IN (${sql.join(templateIds.map(id => sql`${id}`), sql`, `)})`)
+    : [];
+  const templateMap = new Map(templates.map(t => [t.id, t.name ?? "Workout"]));
+
+  // Batch: get set counts and exercise counts per session
+  const sessionIds = sessions.map(s => s.id);
+  const setCounts = await db
+    .select({
+      sessionId: setLogs.sessionId,
+      totalSets: sql<number>`count(*)`,
+      exerciseCount: sql<number>`count(distinct ${setLogs.exerciseName})`,
+    })
+    .from(setLogs)
+    .where(sql`${setLogs.sessionId} IN (${sql.join(sessionIds.map(id => sql`${id}`), sql`, `)})`)
+    .groupBy(setLogs.sessionId);
+  const setCountMap = new Map(setCounts.map(s => [s.sessionId, s]));
+
+  return sessions.map(s => ({
+    ...s,
+    workoutName: (s.workoutTemplateId ? templateMap.get(s.workoutTemplateId) : null) ?? "Workout",
+    totalSets: Number(setCountMap.get(s.id)?.totalSets) || 0,
+    exerciseCount: Number(setCountMap.get(s.id)?.exerciseCount) || 0,
+  }));
 }
 
 export async function getExerciseMaxes() {
@@ -536,14 +514,21 @@ export async function getTopExercises(limit: number = 8) {
 }
 
 export async function getWeeklyInsights() {
-  // Get sessions from the last 7 days
   const sevenDaysAgo = new Date();
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
   const dateStr = sevenDaysAgo.toISOString().split("T")[0];
 
-  const sessions = await db
-    .select()
+  // Single query: join sessions with set logs and aggregate
+  const [result] = await db
+    .select({
+      workouts: sql<number>`count(distinct ${workoutSessions.id})`,
+      totalSets: sql<number>`count(${setLogs.id})`,
+      totalVolume: sql<number>`coalesce(sum(cast(${setLogs.weight} as numeric) * ${setLogs.reps}), 0)`,
+      totalMinutes: sql<number>`coalesce(sum(distinct ${workoutSessions.durationMinutes}), 0)`,
+      uniqueExercises: sql<number>`count(distinct ${setLogs.exerciseName})`,
+    })
     .from(workoutSessions)
+    .leftJoin(setLogs, eq(setLogs.sessionId, workoutSessions.id))
     .where(
       and(
         eq(workoutSessions.status, "completed"),
@@ -551,29 +536,12 @@ export async function getWeeklyInsights() {
       )
     );
 
-  let totalSets = 0;
-  let totalVolume = 0; // weight × reps
-  const exerciseNames = new Set<string>();
-
-  for (const session of sessions) {
-    const sets = await db.select().from(setLogs).where(eq(setLogs.sessionId, session.id));
-    totalSets += sets.length;
-    for (const set of sets) {
-      const w = Number(set.weight) || 0;
-      const r = set.reps || 0;
-      totalVolume += w * r;
-      if (set.exerciseName) exerciseNames.add(set.exerciseName);
-    }
-  }
-
-  const totalMinutes = sessions.reduce((sum, s) => sum + (s.durationMinutes || 0), 0);
-
   return {
-    workouts: sessions.length,
-    totalSets,
-    totalVolume,
-    totalMinutes,
-    uniqueExercises: exerciseNames.size,
+    workouts: Number(result?.workouts) || 0,
+    totalSets: Number(result?.totalSets) || 0,
+    totalVolume: Number(result?.totalVolume) || 0,
+    totalMinutes: Number(result?.totalMinutes) || 0,
+    uniqueExercises: Number(result?.uniqueExercises) || 0,
   };
 }
 

@@ -4,7 +4,7 @@ import { buildSystemPrompt } from "@/lib/chat-context";
 import { db } from "@/db";
 import { setLogs, workoutSessions, exerciseMaxes, chatMessages } from "@/db/schema";
 import { getCurrentWorkout, advanceDay } from "@/db/queries";
-import { eq, and, desc } from "drizzle-orm";
+import { eq, and, desc, sql } from "drizzle-orm";
 
 export const maxDuration = 60;
 
@@ -53,11 +53,17 @@ export async function POST(req: Request) {
         }),
         execute: async ({ exerciseName, weight, reps, substitutedFor }) => {
           const session = await getOrCreateSession(workoutData);
+          // Get current max set number for this exercise in this session
+          const existing = await db
+            .select({ maxSet: sql<number>`coalesce(max(${setLogs.setNumber}), 0)` })
+            .from(setLogs)
+            .where(and(eq(setLogs.sessionId, session.id), eq(setLogs.exerciseName, exerciseName)));
+          const startSet = (existing[0]?.maxSet ?? 0) + 1;
           for (let i = 0; i < reps.length; i++) {
             await db.insert(setLogs).values({
               sessionId: session.id,
               exerciseName,
-              setNumber: i + 1,
+              setNumber: startSet + i,
               setType: "working",
               weight: String(weight),
               reps: reps[i],
@@ -142,7 +148,8 @@ export async function POST(req: Request) {
           const session = await getActiveSession();
           if (!session) return { success: false, error: "No active session" };
 
-          const recentSets = await db
+          // Get all sets for this exercise, newest first
+          const allSets = await db
             .select()
             .from(setLogs)
             .where(
@@ -153,26 +160,32 @@ export async function POST(req: Request) {
             )
             .orderBy(desc(setLogs.id));
 
-          if (recentSets.length === 0) {
+          if (allSets.length === 0) {
             return { success: false, error: `No logged sets found for ${exerciseName}` };
           }
 
+          // Find only the last batch: sets sharing the same weight as the most recent set
+          const lastWeight = allSets[0].weight;
+          const lastBatch = allSets.filter(s => s.weight === lastWeight);
+
           if (action === "delete") {
-            for (const set of recentSets) {
+            for (const set of lastBatch) {
               await db.delete(setLogs).where(eq(setLogs.id, set.id));
             }
-            return { success: true, action: "deleted", exerciseName, setsRemoved: recentSets.length };
+            return { success: true, action: "deleted", exerciseName, setsRemoved: lastBatch.length };
           }
 
           if (action === "edit" && newWeight !== undefined && newReps) {
-            for (const set of recentSets) {
+            // Get the starting set number for the replacement batch
+            const startSetNumber = Math.min(...lastBatch.map(s => s.setNumber ?? 1));
+            for (const set of lastBatch) {
               await db.delete(setLogs).where(eq(setLogs.id, set.id));
             }
             for (let i = 0; i < newReps.length; i++) {
               await db.insert(setLogs).values({
                 sessionId: session.id,
                 exerciseName,
-                setNumber: i + 1,
+                setNumber: startSetNumber + i,
                 setType: "working",
                 weight: String(newWeight),
                 reps: newReps[i],

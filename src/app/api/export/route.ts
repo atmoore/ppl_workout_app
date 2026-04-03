@@ -5,46 +5,40 @@ import { eq, desc } from "drizzle-orm";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  // Get all completed sessions with their sets
-  const sessions = await db
-    .select()
+  // Single join query: sessions + templates + set logs
+  const data = await db
+    .select({
+      date: workoutSessions.date,
+      workoutName: workoutTemplates.name,
+      exerciseName: setLogs.exerciseName,
+      setNumber: setLogs.setNumber,
+      weight: setLogs.weight,
+      reps: setLogs.reps,
+      rpe: setLogs.rpe,
+      substitutedFor: setLogs.substitutedFor,
+    })
     .from(workoutSessions)
+    .innerJoin(setLogs, eq(setLogs.sessionId, workoutSessions.id))
+    .leftJoin(workoutTemplates, eq(workoutTemplates.id, workoutSessions.workoutTemplateId))
     .where(eq(workoutSessions.status, "completed"))
-    .orderBy(desc(workoutSessions.date));
+    .orderBy(desc(workoutSessions.date), setLogs.exerciseName, setLogs.setNumber);
 
   const rows: string[] = [
     "Date,Workout,Exercise,Set,Weight (lbs),Reps,RPE,Substituted For",
   ];
 
-  for (const session of sessions) {
-    let workoutName = "Workout";
-    if (session.workoutTemplateId) {
-      const [wt] = await db
-        .select()
-        .from(workoutTemplates)
-        .where(eq(workoutTemplates.id, session.workoutTemplateId));
-      if (wt) workoutName = wt.name ?? "Workout";
-    }
-
-    const sets = await db
-      .select()
-      .from(setLogs)
-      .where(eq(setLogs.sessionId, session.id))
-      .orderBy(setLogs.exerciseName, setLogs.setNumber);
-
-    for (const set of sets) {
-      const csvRow = [
-        session.date ?? "",
-        escapeCsv(workoutName),
-        escapeCsv(set.exerciseName ?? ""),
-        set.setNumber ?? "",
-        set.weight ?? "",
-        set.reps ?? "",
-        set.rpe ?? "",
-        escapeCsv(set.substitutedFor ?? ""),
-      ].join(",");
-      rows.push(csvRow);
-    }
+  for (const row of data) {
+    const csvRow = [
+      row.date ?? "",
+      escapeCsv(row.workoutName ?? "Workout"),
+      escapeCsv(row.exerciseName ?? ""),
+      row.setNumber ?? "",
+      row.weight ?? "",
+      row.reps ?? "",
+      row.rpe ?? "",
+      escapeCsv(row.substitutedFor ?? ""),
+    ].join(",");
+    rows.push(csvRow);
   }
 
   const csv = rows.join("\n");
