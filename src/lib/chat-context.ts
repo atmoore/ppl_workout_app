@@ -46,21 +46,24 @@ export async function buildSystemPrompt() {
     })
     .join("\n");
 
+  // Fetch all exercise histories + essentials in parallel
+  const workoutType = workout.type ?? "full";
+  const [histories, essentials] = await Promise.all([
+    Promise.all(exercises.map(ex => getExerciseHistory(ex.name, 4).then(h => ({ name: ex.name, history: h })))),
+    getEssentialsWorkout(workoutType),
+  ]);
+
   const historyLines: string[] = [];
-  for (const ex of exercises) {
-    const history = await getExerciseHistory(ex.name, 4);
+  for (const { name, history } of histories) {
     if (history.length > 0) {
       const sessions = history
         .map((h) => `${h.date}: ${h.sets.map((s) => `${s.weight}×${s.reps}`).join(", ")}`)
         .join(" | ");
-      historyLines.push(`${ex.name}: ${sessions}`);
+      historyLines.push(`${name}: ${sessions}`);
     }
   }
 
-  // Essentials cross-reference for time constraints
   let essentialsSection = "";
-  const workoutType = workout.type ?? "full";
-  const essentials = await getEssentialsWorkout(workoutType);
   if (essentials) {
     const essList = essentials.exercises
       .map((e, i) => `${i + 1}. ${e.name} — ${e.workingSets}×${e.reps || "?"}`)

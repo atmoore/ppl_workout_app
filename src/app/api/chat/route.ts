@@ -3,15 +3,25 @@ import { z } from "zod";
 import { buildSystemPrompt } from "@/lib/chat-context";
 import { db } from "@/db";
 import { setLogs, workoutSessions, exerciseMaxes, chatMessages } from "@/db/schema";
-import { getCurrentWorkout, advanceDay } from "@/db/queries";
+import { getCurrentWorkout, advanceDay, getActiveSession } from "@/db/queries";
 import { eq, and, desc, sql } from "drizzle-orm";
 
 export const maxDuration = 60;
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
-  const systemPrompt = await buildSystemPrompt();
-  const workoutData = await getCurrentWorkout();
+
+  let systemPrompt: string;
+  let workoutData: Awaited<ReturnType<typeof getCurrentWorkout>>;
+  try {
+    [systemPrompt, workoutData] = await Promise.all([
+      buildSystemPrompt(),
+      getCurrentWorkout(),
+    ]);
+  } catch (e) {
+    console.error("Chat setup failed:", e);
+    return Response.json({ error: "Failed to load workout data" }, { status: 500 });
+  }
 
   // Save user message to DB
   const lastUserMsg = messages[messages.length - 1];
@@ -204,18 +214,26 @@ export async function POST(req: Request) {
 }
 
 async function getOrCreateSession(workoutData: Awaited<ReturnType<typeof getCurrentWorkout>>) {
-  const existing = await db.select().from(workoutSessions).where(eq(workoutSessions.status, "active")).limit(1);
+  const today = new Date().toISOString().split("T")[0];
+  const existing = await db
+    .select()
+    .from(workoutSessions)
+    .where(and(eq(workoutSessions.status, "active"), eq(workoutSessions.date, today)))
+    .limit(1);
   if (existing[0]) return existing[0];
+
+  // Mark any stale active sessions from previous days as skipped
+  await db
+    .update(workoutSessions)
+    .set({ status: "skipped" })
+    .where(and(eq(workoutSessions.status, "active"), sql`${workoutSessions.date} < ${today}`));
+
+  // Create new session — use ON CONFLICT to handle race conditions
   const [session] = await db.insert(workoutSessions).values({
     workoutTemplateId: workoutData?.workout.id || null,
-    date: new Date().toISOString().split("T")[0],
+    date: today,
     startedAt: new Date(),
     status: "active",
   }).returning();
   return session;
-}
-
-async function getActiveSession() {
-  const rows = await db.select().from(workoutSessions).where(eq(workoutSessions.status, "active")).limit(1);
-  return rows[0] || null;
 }
