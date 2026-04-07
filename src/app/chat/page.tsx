@@ -14,6 +14,7 @@ export default function ChatPage() {
   });
 
   const scrollRef = useRef<HTMLDivElement>(null);
+  const initRef = useRef(false);
   const [workoutName, setWorkoutName] = useState("Workout");
   const [workoutEnded, setWorkoutEnded] = useState(false);
 
@@ -40,27 +41,25 @@ export default function ChatPage() {
 
   // Fetch workout name and auto-send greeting on mount
   useEffect(() => {
+    if (initRef.current) return;
+    initRef.current = true;
+
     fetch("/api/current-workout")
       .then((r) => r.json())
       .then((data) => {
         if (data.name) setWorkoutName(data.name);
 
-        if (messages.length === 0) {
-          if (data.hasActiveSession && data.activeSession?.setsLogged > 0) {
-            // Resume existing session
-            const names = data.activeSession.exerciseNames.slice(0, 3).join(", ");
-            sendMessage({
-              text: `I'm back. I already logged ${data.activeSession.exercisesLogged} exercises (${names}). What's next?`,
-            });
-          } else {
-            sendMessage({ text: "Let's go" });
-          }
+        if (data.hasActiveSession && data.activeSession?.setsLogged > 0) {
+          const names = data.activeSession.exerciseNames.slice(0, 3).join(", ");
+          sendMessage({
+            text: `I'm back. I already logged ${data.activeSession.exercisesLogged} exercises (${names}). What's next?`,
+          });
+        } else {
+          sendMessage({ text: "Let's go" });
         }
       })
       .catch(() => {
-        if (messages.length === 0) {
-          sendMessage({ text: "Let's go" });
-        }
+        sendMessage({ text: "Let's go" });
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
