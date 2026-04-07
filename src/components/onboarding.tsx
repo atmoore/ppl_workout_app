@@ -73,7 +73,7 @@ export function Onboarding({ programs }: { programs: Program[] }) {
   }
 
   return (
-    <div className="flex flex-col gap-6 px-4 pt-8 pb-8">
+    <div className="flex flex-col gap-6 px-4 pt-8 pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <div className="text-center">
         <h1 className="text-2xl font-bold text-zinc-50 mb-2">Choose Your Program</h1>
         <p className="text-sm text-zinc-400">Pick a program to get started</p>

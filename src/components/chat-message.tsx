@@ -37,12 +37,17 @@ export function ChatMessage({ message }: { message: UIMessage }) {
             return (
               <div
                 key={i}
-                className="my-1 rounded-lg bg-zinc-900 border border-zinc-700 p-2.5 font-mono text-xs"
+                className="my-1 rounded-lg bg-zinc-900 border border-zinc-700/50 p-2.5 text-xs"
               >
-                <div className="text-zinc-400 mb-1">Logged</div>
-                <div className="text-zinc-100">
-                  {result.exerciseName}: {result.weight} lbs ×{" "}
-                  {result.sets.map((s) => s.reps).join(", ")}
+                <div className="flex items-center gap-1.5 mb-0.5">
+                  <span className="text-green-400 text-[10px]">✓</span>
+                  <span className="text-zinc-400 text-[10px] uppercase tracking-wide">Logged</span>
+                </div>
+                <div className="text-zinc-100 font-medium">
+                  {result.exerciseName}
+                </div>
+                <div className="text-zinc-400 mt-0.5">
+                  {result.weight} lbs — {result.sets.map((s) => s.reps).join(", ")} reps
                 </div>
               </div>
             );

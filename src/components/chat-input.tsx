@@ -11,6 +11,15 @@ interface ChatInputProps {
 export function ChatInput({ onSend, disabled }: ChatInputProps) {
   const [input, setInput] = useState("");
   const [showHelp, setShowHelp] = useState(true);
+  const [hasSent, setHasSent] = useState(false);
+
+  function handleSend(text: string) {
+    onSend(text);
+    if (!hasSent) {
+      setHasSent(true);
+      setShowHelp(false);
+    }
+  }
   const chips = ["done", "skip exercise", "what's next", "help"];
 
   return (
@@ -35,7 +44,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
         {chips.map((chip) => (
           <button
             key={chip}
-            onClick={() => onSend(chip)}
+            onClick={() => handleSend(chip)}
             disabled={disabled}
             className="shrink-0 rounded-full border border-zinc-700 bg-zinc-900 px-5 py-2.5 min-h-[44px] text-sm text-zinc-300 active:bg-zinc-700 disabled:opacity-50"
           >
@@ -48,7 +57,7 @@ export function ChatInput({ onSend, disabled }: ChatInputProps) {
         onSubmit={(e) => {
           e.preventDefault();
           if (input.trim() && !disabled) {
-            onSend(input.trim());
+            handleSend(input.trim());
             setInput("");
           }
         }}
