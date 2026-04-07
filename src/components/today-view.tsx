@@ -54,7 +54,7 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
 
   if (programComplete) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4 px-4 pt-6">
+      <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4 px-4 pt-6 pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
         <span className="text-4xl">🎉</span>
         <h2 className="text-xl font-bold text-zinc-50">Program Complete!</h2>
         <p className="text-sm text-zinc-400 text-center">
@@ -71,7 +71,7 @@ export function TodayView({ programName, phaseName, weekNumber, workouts, curren
   }
 
   return (
-    <div className="flex flex-col gap-4 px-4 pt-6">
+    <div className="flex flex-col gap-4 px-4 pt-6 pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       {/* Program header */}
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-1">

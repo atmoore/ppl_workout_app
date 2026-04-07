@@ -12,7 +12,7 @@ export default async function ProgressPage() {
   ]);
 
   return (
-    <div className="flex flex-col gap-6 px-4 pt-6 pb-8">
+    <div className="flex flex-col gap-6 px-4 pt-6 pb-[calc(6rem+env(safe-area-inset-bottom,0px))]">
       <h1 className="text-2xl font-bold text-zinc-50 tracking-tight">Progress</h1>
       <ProgressView
         history={history.map(h => ({
